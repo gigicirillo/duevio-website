@@ -24,7 +24,7 @@ Aprire http://localhost:4173 oppure http://localhost:4173/it/.
 
 Le pagine HTML e le traduzioni sono contenuti originali. `assets/css/redesign.css` contiene il restyling condiviso e i breakpoint responsive. `assets/js/app.js` conserva il comportamento originale; `assets/js/seo-route.js` gestisce le pagine interne.
 
-Il sito statico va servito dalla radice di un dominio: i percorsi degli asset sono assoluti. Non occorre alcuna build. Per GitHub Pages usare un dominio personalizzato o un hosting che pubblichi questa cartella alla radice; il sottopercorso standard `/duevio-website/` richiede una configurazione del base path.
+Il sito statico supporta sia la radice di un dominio sia sottopercorsi come `/duevio-website/` su GitHub Pages. Gli asset HTML sono relativi alla pagina; navigazione e traduzioni ricavano la radice del sito dall’URL degli script. Non occorre alcuna build.
 
 ## Verifica
 

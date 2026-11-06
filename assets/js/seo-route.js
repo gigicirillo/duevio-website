@@ -6,8 +6,9 @@
   const lang = html.dataset.lang || 'en';
   if (!route) return;
 
-  const prefix = code => code === 'en' ? '' : `/${code}`;
-  const coreUrl = (code, page) => page === 'home' ? `${prefix(code)}/` : `${prefix(code)}/${page}/`;
+  const root = new URL('../../', document.currentScript.src).href;
+  const prefix = code => root + (code === 'en' ? '' : `${code}/`);
+  const coreUrl = (code, page) => page === 'home' ? prefix(code) : `${prefix(code)}${page}/`;
   const routeHash = `#${route}`;
   const injectedInitialRoute = !window.location.hash;
 
@@ -52,8 +53,8 @@
     if (targetLang) {
       event.preventDefault();
       event.stopImmediatePropagation();
-      const target = `${prefix(targetLang)}/${slug ? slug + '/' : ''}`;
-      window.location.href = target || '/';
+      const target = `${prefix(targetLang)}${slug ? slug + '/' : ''}`;
+      window.location.href = target || root;
       return;
     }
 

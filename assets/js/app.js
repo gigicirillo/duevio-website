@@ -3,7 +3,8 @@
 
   const html = document.documentElement;
   const lang = html.dataset.lang || 'en';
-  const root = html.dataset.root || '';
+  // Resolve from this script, so root hosting and project subpaths both work.
+  const root = new URL('../../', document.currentScript.src).href;
   const validPages = new Set(['home','product','industries','pricing','enterprise','demo','privacy','cookies','ai','terms']);
   const preferenceKey = 'duevio_privacy_preferences_v1';
   let messages = {};
@@ -41,7 +42,7 @@
     if(!document.querySelector('[data-page="'+page+'"]')){
       const landing=html.dataset.seoRoute||'';
       if(landing&&['demo','enterprise','privacy','cookies','terms','ai'].includes(page)){
-        window.location.replace((lang==='en'?'/':'/'+lang+'/')+'#'+page);
+        window.location.replace(root+(lang==='en'?'':lang+'/')+'#'+page);
         return;
       }
       page=landing&&validPages.has(landing)?landing:'home';
@@ -105,11 +106,11 @@
         // SEO landings use their existing canonical per-language paths.
         if(html.dataset.seoRoute) return;
         const nextLang=link.dataset.langLink;
-        const prefix=nextLang==='en'?'':('/'+nextLang);
+        const prefix=root+(nextLang==='en'?'':nextLang+'/');
         const hash=window.location.hash.replace(/^#/,'').split('?')[0];
-        let target=prefix+'/';
-        if(['product','industries','pricing'].includes(hash)) target=prefix+'/'+hash+'/';
-        if(['demo','enterprise','privacy','cookies','terms','ai'].includes(hash)) target=prefix+'/#'+hash;
+        let target=prefix;
+        if(['product','industries','pricing'].includes(hash)) target=prefix+hash+'/';
+        if(['demo','enterprise','privacy','cookies','terms','ai'].includes(hash)) target=prefix+'#'+hash;
         event.preventDefault();
         window.location.assign(target);
       });
@@ -132,12 +133,12 @@
     const nav=document.getElementById('mobileNav');
     if(!nav) return;
     // Mobile visitors must have direct, working links even on standalone SEO routes.
-    const prefix=lang==='en'?'':('/'+lang);
+    const prefix=root+(lang==='en'?'':lang+'/');
     nav.querySelectorAll('a[data-route],a[href^="#"]').forEach(link=>{
       const href=link.getAttribute('href')||'';
       const page=link.dataset.route||(href.startsWith('#')?href.slice(1):'');
       if(!['home','product','industries','pricing'].includes(page)) return;
-      link.href=page==='home'?prefix+'/':prefix+'/'+page+'/';
+      link.href=page==='home'?prefix:prefix+page+'/';
       link.dataset.route=page;
     });
     nav.hidden=window.matchMedia('(min-width:861px)').matches;
