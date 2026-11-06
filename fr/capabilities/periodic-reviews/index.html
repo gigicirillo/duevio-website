@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-lang="fr" data-root="/" data-seo-route="product" data-seo-slug="capabilities/periodic-reviews">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Revues KYC périodiques et suivi continu | Duevio</title>
+  <base href="/">
+<meta name="description" content="Revues KYC périodiques et suivi continu. KYC/KYB, revues, workflows et preuves dans un environnement LCB-FT contrôlé.">
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#22386f" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta property="og:title" content="Revues KYC périodiques et suivi continu | Duevio">
+<meta property="og:description" content="Revues KYC périodiques et suivi continu. KYC/KYB, revues, workflows et preuves dans un environnement LCB-FT contrôlé.">
+<meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+<meta content="Duevio" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/fr/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/capabilities/periodic-reviews/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/capabilities/periodic-reviews/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<link href="/assets/css/styles.css?v=20261103-feedback21" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+<script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script defer="" src="/assets/js/app.js?v=20261103-feedback21"></script>
+  <meta property="og:url" content="https://duevio.com/fr/capabilities/periodic-reviews/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Logiciel LCB-FT / AML et KYC pour onboarding, vigilance client, bénéficiaires effectifs, évaluation des risques, revues, workflows et piste d’audit.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/fr/capabilities/periodic-reviews/#webpage","url":"https://duevio.com/fr/capabilities/periodic-reviews/","name":"Revues KYC périodiques et suivi continu | Duevio","description":"Revues KYC périodiques et suivi continu. KYC/KYB, revues, workflows et preuves dans un environnement LCB-FT contrôlé.","inLanguage":"fr","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+<a class="skip-link" data-i18n="access.skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Duevio home" class="brand" href="#home">
+<img alt="Duevio" src="/assets/img/brand-DUEVIO-01.svg"/>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a data-i18n="nav.home" data-route="home" href="/fr/">Accueil</a>
+<a data-i18n="nav.product" data-route="product" href="/fr/product/">Produit</a>
+<a data-i18n="nav.industries" data-route="industries" href="/fr/industries/">Secteurs</a>
+<a data-i18n="nav.plans" data-route="pricing" href="/fr/pricing/">Tarifs</a>
+<!-- <a data-i18n="nav.signup" data-route="signup" href="#signup">Inscription</a> -->
+<!-- <a data-i18n="nav.demo" data-route="demo" href="/fr/#demo">Démo</a> -->
+</nav>
+<div class="header-actions">
+<div class="language-switcher">
+<button aria-expanded="false" aria-haspopup="true" class="language-button" id="languageButton" type="button">
+<span class="language-code">FR</span><span aria-hidden="true">▾</span>
+</button>
+<div class="language-menu" hidden="" id="languageMenu" role="menu">
+<a data-lang-link="en" href="/capabilities/periodic-reviews/" role="menuitem">English</a>
+<a data-lang-link="it" href="/it/capabilities/periodic-reviews/" role="menuitem">Italiano</a>
+<a data-lang-link="de" href="/de/capabilities/periodic-reviews/" role="menuitem">Deutsch</a>
+<a data-lang-link="es" href="/es/capabilities/periodic-reviews/" role="menuitem">Español</a>
+<a data-lang-link="fr" href="/fr/capabilities/periodic-reviews/" role="menuitem">Français</a>
+<a data-lang-link="ru" href="/ru/capabilities/periodic-reviews/" role="menuitem">Русский</a>
+
+            <a role="menuitem" href="/mt/capabilities/periodic-reviews/" data-lang-link="mt">Malti</a>
+          </div>
+</div>
+<a class="button button-ghost compact desktop-cta" data-i18n="cta.bookDemo" href="/fr/#demo">Demander une démo</a>
+<a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-menu-button" type="button">☰</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav">
+<a data-i18n="nav.home" href="/fr/" data-route="home">Accueil</a>
+<a data-i18n="nav.product" href="/fr/product/" data-route="product">Produit</a>
+<a data-i18n="nav.industries" href="/fr/industries/" data-route="industries">Secteurs</a>
+<a data-i18n="nav.plans" href="/fr/pricing/" data-route="pricing">Tarifs</a>
+<!-- <a data-i18n="nav.signup" href="#signup">Inscription</a> -->
+<!-- <a data-i18n="nav.demo" href="/fr/#demo">Démo</a> -->
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="product-title" class="page" data-page="product" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">Logiciel LCB-FT / AML et KYC pour Vigilance Client et Audit</p><h1 id="product-title">Revues KYC périodiques et suivi continu</h1><p class="lead">Un environnement LCB-FT/KYC pour vigilance client, bénéficiaires effectifs, évaluation des risques, revues, workflows, preuves et piste d’audit.</p><div class="button-row"><a class="button button-primary" data-i18n="cta.startOnline" href="/fr/pricing/">Commencer en ligne</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="product.overviewLabel">Vue du produit</span><span class="status-dot"><span></span><span data-i18n="product.modular">Modulaire</span></span></div><h2 data-i18n="product.overviewTitle">Conçu pour les workflows LCB-FT et la gestion des dossiers, pas seulement la collecte</h2><div class="metric-grid"><div><span data-i18n="product.metric1Label">Modules principaux</span><strong>6</strong></div><div><span data-i18n="product.metric2Label">Workflows</span><strong data-i18n="product.metric2Value">Structurés</strong></div><div><span data-i18n="product.metric3Label">Preuves</span><strong data-i18n="product.metric3Value">Exportables</strong></div><div><span data-i18n="product.metric4Label">Évolutivité</span><strong data-i18n="product.metric4Value">Intégrée</strong></div></div><div class="highlight-list"><p><span>✓</span><span data-i18n="product.highlight1">Onboarding guidé, contrôle documentaire et visibilité sur la propriété</span></p><p><span>✓</span><span data-i18n="product.highlight2">Tâches, approbations, cycles de revue et suivi de la remédiation</span></p><p><span>✓</span><span data-i18n="product.highlight3">Des preuves qui restent reliées au dossier client</span></p></div></div></div></div>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.modulesEyebrow">Modules principaux</p><h2 data-i18n="product.modulesTitle">Modules AML et KYC pour tout le cycle de vie client.</h2><p class="section-lead" data-i18n="product.modulesLead">Configurez KYC/KYB, vigilance fondée sur les risques, revues et preuves selon vos contrôles internes.</p><div class="feature-grid three module-grid">
+<article class="module-card"><span>1</span><h3 data-i18n="product.m1Title">Onboarding KYC/KYB et vigilance client</h3><p data-i18n="product.m1Text">Créez des parcours guidés de vigilance pour personnes, sociétés et structures de propriété complexes.</p><ul><li data-i18n="product.m1a">Parcours configurables</li><li data-i18n="product.m1b">Collecte structurée</li><li data-i18n="product.m1c">Collecte initiale plus propre</li></ul></article>
+<article class="module-card"><span>2</span><h3 data-i18n="product.m2Title">Bénéficiaires effectifs et UBO</h3><p data-i18n="product.m2Text">Conservez structures de propriété, UBO et rôles dans le dossier KYC/KYB actualisé.</p><ul><li data-i18n="product.m2a">Propriété directe et indirecte</li><li data-i18n="product.m2b">Visibilité des rôles</li><li data-i18n="product.m2c">Support de confirmation client</li></ul></article>
+<article class="module-card"><span>3</span><h3 data-i18n="product.m3Title">Questionnaires dynamiques</h3><p data-i18n="product.m3Text">Utilisez des formulaires qui s’adaptent au type de client, à sa structure et aux informations déjà collectées.</p><ul><li data-i18n="product.m3a">Formulaires configurables</li><li data-i18n="product.m3b">Données préremplies</li><li data-i18n="product.m3c">Moins de doublons</li></ul></article>
+<article class="module-card"><span>4</span><h3 data-i18n="product.m4Title">Contrôle documentaire</h3><p data-i18n="product.m4Text">Traitez les documents comme des preuves de conformité avec statut, validité et contexte.</p><ul><li data-i18n="product.m4a">Suivi des expirations</li><li data-i18n="product.m4b">Suivi des versions</li><li data-i18n="product.m4c">Orienté preuves</li></ul></article>
+<article class="module-card"><span>5</span><h3 data-i18n="product.m5Title">Revues périodiques et suivi continu</h3><p data-i18n="product.m5Text">Suivez cycles de revue KYC, expirations documentaires, actions ouvertes et remédiation avant qu’ils ne deviennent des écarts.</p><ul><li data-i18n="product.m5a">Revues périodiques</li><li data-i18n="product.m5b">Support d’escalade</li><li data-i18n="product.m5c">Visibilité des éléments ouverts</li></ul></article>
+<article class="module-card"><span>6</span><h3 data-i18n="product.m6Title">Piste d’audit et dossiers de preuves</h3><p data-i18n="product.m6Text">Produisez des preuves LCB-FT structurées pour audits, inspections, contrôles internes et demandes de supervision.</p><ul><li data-i18n="product.m6a">Dossiers de preuves</li><li data-i18n="product.m6b">Chronologie client</li><li data-i18n="product.m6c">Accès plus rapide</li></ul></article>
+</div></div></section>
+<section class="section section-light"><div class="container"><p class="eyebrow" data-i18n="product.howEyebrow">Fonctionnement</p><h2 data-i18n="product.howTitle">Pilotez KYC et workflows LCB-FT de l’onboarding aux preuves d’audit.</h2><p class="section-lead" data-i18n="product.howLead">Gardez vigilance client, contexte de risque, tâches, validations et décisions reliés durant tout le cycle de vie client.</p><div class="steps-grid"><article><span>1</span><p data-i18n="product.step1">Collectez données et documents d’onboarding via un processus guidé.</p></article><article><span>2</span><p data-i18n="product.step2">Construisez le dossier vivant avec propriété, rôles, contrôles, notes et décisions.</p></article><article><span>3</span><p data-i18n="product.step3">Suivez tâches, approbations, revues, exceptions et remédiations depuis un tableau de bord unique.</p></article><article><span>4</span><p data-i18n="product.step4">Retrouvez rapidement les preuves lorsqu’un audit, une inspection ou une demande de partenaire arrive.</p></article></div></div></section>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.integrationsEyebrow">Intégrations et préparation</p><h2 data-i18n="product.integrationsTitle">Connectez Duevio aux fournisseurs KYC/KYB, screening, registres et données conformité.</h2><p class="section-lead" data-i18n="product.integrationsLead">Duevio peut orchestrer identité, KYC/KYB, filtrage sanctions et PEP/PPE et données entreprises tout en centralisant workflow et piste d’audit.</p><div class="integration-grid"><span data-i18n="product.int1">Prestataires de vérification d’identité</span><span data-i18n="product.int2">Prestataires de screening et de listes de surveillance</span><span data-i18n="product.int3">Registres publics et sources d’entreprise</span><span data-i18n="product.int4">Référentiels documentaires</span><span data-i18n="product.int5">Systèmes CRM, core et onboarding</span><span data-i18n="product.int6">Couche de connexion API et entreprise</span></div></div></section>
+</section>
+
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Workflow ciblé</p>
+<h2>Revues KYC périodiques dans un workflow Duevio contrôlé</h2>
+<p class="section-lead">Conservez les dossiers, actions et preuves liés à Revues KYC périodiques avec le dossier client et le processus LCB-FT.</p>
+<div class="problem-grid">
+<div>Regroupez les informations et preuves pertinentes dans un dossier contrôlé.</div>
+<div>Reliez revues, tâches, validations et contexte de risque au même historique opérationnel.</div>
+<div>Retrouvez une piste de preuves claire pour contrôle interne, audit et demandes de supervision.</div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand"><img alt="Duevio" src="/assets/img/brand-DUEVIO-02.svg"/><p data-i18n="footer.tagline">Opérations AML pour onboarding, dossiers KYC, revues, workflows et preuves.</p></div>
+<div><h2 data-i18n="footer.product">Produit</h2><a data-i18n="nav.product" href="/fr/product/">Produit</a><a data-i18n="nav.industries" href="/fr/industries/">Secteurs</a><a data-i18n="nav.plans" href="/fr/pricing/">Tarifs</a><a data-i18n="nav.demo" href="/fr/#demo">Démo</a><div class="seo-related"><a class="seo-related-link" href="/fr/capabilities/risk-assessment/">Logiciel d’évaluation du risque client LCB-FT</a><a class="seo-related-link" href="/fr/capabilities/screening-integrations/">Filtrage sanctions, PEP/PPE et adverse media</a><a class="seo-related-link" href="/fr/capabilities/evidence-management/">Gestion des preuves et dossiers LCB-FT</a><a class="seo-related-link" href="/fr/capabilities/audit-trail/">Logiciel de piste d’audit LCB-FT</a><a class="seo-related-link" href="/fr/capabilities/kyc-onboarding/">Logiciel KYC/KYB et vigilance client</a><a class="seo-related-link" href="/fr/industries/payment-institutions/">Logiciel AML/KYC pour établissements de paiement et EMI</a></div></div>
+<div><h2 data-i18n="footer.legal">Mentions légales</h2><a data-i18n="legal.privacy" href="/fr/#privacy">Avis de confidentialité</a><a data-i18n="legal.cookies" href="/fr/#cookies">Politique relative aux cookies</a><a data-i18n="legal.terms" href="/fr/#terms">Conditions de service</a></div>
+<div class="footer-payments"><h2 data-i18n="payment.accepted">Moyens de paiement acceptés</h2><div class="payment-logos dark"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div></div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">Tous droits réservés.</span></p><button class="text-button footer-cookie" data-i18n="cookies.openSettings" id="footerCookieSettings" type="button">Paramètres des cookies</button></div>
+</footer>
+<div aria-labelledby="cookieTitle" aria-modal="false" class="cookie-banner" hidden="" id="cookieBanner" role="dialog"><div><strong data-i18n="cookieBanner.title" id="cookieTitle">Choix de confidentialité</strong><p data-i18n="cookieBanner.text">Nous utilisons un stockage essentiel du navigateur pour les préférences de langue et de confidentialité. Les technologies optionnelles d’analyse ou de marketing restent désactivées sauf si vous les choisissez.</p></div><div class="cookie-actions"><button class="button button-ghost compact" data-cookie-action="reject" data-i18n="cookieBanner.reject" type="button">Refuser les optionnels</button><button class="button button-secondary compact" data-cookie-action="settings" data-i18n="cookieBanner.settings" type="button">Paramètres</button><button class="button button-primary compact" data-cookie-action="accept" data-i18n="cookieBanner.accept" type="button">Tout accepter</button></div></div>
+<div class="modal-backdrop" hidden="" id="cookieModal"><div aria-labelledby="cookieModalTitle" aria-modal="true" class="modal" role="dialog"><div class="modal-head"><h2 data-i18n="cookieModal.title" id="cookieModalTitle">Paramètres des cookies</h2><button aria-label="Close" class="modal-close" type="button">×</button></div><p data-i18n="cookieModal.text">Le stockage essentiel est toujours actif car il est nécessaire pour mémoriser les préférences du site et de confidentialité.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Essentiel</strong><p data-i18n="cookieModal.essentialText">Préférences de langue, navigation et consentement.</p></div><span class="always-on" data-i18n="cookieModal.always">Toujours actif</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Analyse</strong><p data-i18n="cookieModal.analyticsText">Outils de mesure optionnels, s’ils sont ajoutés en production.</p></div><input id="analyticsConsent" type="checkbox"/></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Marketing</strong><p data-i18n="cookieModal.marketingText">Technologies optionnelles de publicité ou marketing, si elles sont ajoutées en production.</p></div><input id="marketingConsent" type="checkbox"/></label><button class="button button-primary block" data-i18n="cookieModal.save" id="saveCookieSettings" type="button">Enregistrer les préférences</button></div></div>
+</body>
+</html>
+

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-root="/" data-seo-route="pricing" data-seo-slug="pricing">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AML Compliance Software Pricing | Duevio</title>
+  <base href="/">
+  <meta name="description" content="AML Compliance Software Pricing. KYC/KYB, reviews, workflows and audit evidence in one controlled AML workspace.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#22386f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AML Compliance Software Pricing | Duevio">
+  <meta property="og:description" content="AML Compliance Software Pricing. KYC/KYB, reviews, workflows and audit evidence in one controlled AML workspace.">
+  <meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <meta property="og:site_name" content="Duevio">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/pricing/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/pricing/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/pricing/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/pricing/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/pricing/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/pricing/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/pricing/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/pricing/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/pricing/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261103-feedback21">
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+  <script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script src="/assets/js/app.js?v=20261103-feedback21" defer></script>
+  <meta property="og:url" content="https://duevio.com/pricing/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"AML compliance software for KYC/KYB onboarding, customer due diligence, UBO, risk assessment, periodic reviews, AML workflows and audit-ready evidence.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/pricing/#webpage","url":"https://duevio.com/pricing/","name":"AML Compliance Software Pricing | Duevio","description":"AML Compliance Software Pricing. KYC/KYB, reviews, workflows and audit evidence in one controlled AML workspace.","inLanguage":"en","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="access.skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Duevio home">
+        <img src="/assets/img/brand-DUEVIO-01.svg" alt="Duevio">
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="/" data-route="home" data-i18n="nav.home">Home</a>
+        <a href="/product/" data-route="product" data-i18n="nav.product">Product</a>
+        <a href="/industries/" data-route="industries" data-i18n="nav.industries">Industries</a>
+        <a href="/pricing/" data-route="pricing" data-i18n="nav.plans">Pricing</a>
+        <!-- <a href="#signup" data-route="signup" data-i18n="nav.signup">Signup</a> -->
+        <!-- <a href="/#demo" data-route="demo" data-i18n="nav.demo">Demo</a> -->
+      </nav>
+      <div class="header-actions">
+        <div class="language-switcher">
+          <button class="language-button" type="button" aria-haspopup="true" aria-expanded="false" id="languageButton">
+            <span class="language-code">EN</span><span aria-hidden="true">▾</span>
+          </button>
+          <div class="language-menu" id="languageMenu" role="menu" hidden>
+            <a role="menuitem" href="/pricing/" data-lang-link="en">English</a>
+            <a role="menuitem" href="/it/pricing/" data-lang-link="it">Italiano</a>
+            <a role="menuitem" href="/de/pricing/" data-lang-link="de">Deutsch</a>
+            <a role="menuitem" href="/es/pricing/" data-lang-link="es">Español</a>
+            <a role="menuitem" href="/fr/pricing/" data-lang-link="fr">Français</a>
+            <a role="menuitem" href="/ru/pricing/" data-lang-link="ru">Русский</a>
+          
+            <a role="menuitem" href="/mt/pricing/" data-lang-link="mt">Malti</a>
+          </div>
+        </div>
+        <a class="button button-ghost compact desktop-cta" href="/#demo" data-i18n="cta.bookDemo">Request a demo</a>
+        <a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="/" data-route="home" data-i18n="nav.home">Home</a>
+      <a href="/product/" data-route="product" data-i18n="nav.product">Product</a>
+      <a href="/industries/" data-route="industries" data-i18n="nav.industries">Industries</a>
+      <a href="/pricing/" data-route="pricing" data-i18n="nav.plans">Pricing</a>
+      <!-- <a href="#signup" data-i18n="nav.signup">Signup</a> -->
+      <!-- <a href="/#demo" data-i18n="nav.demo">Demo</a> -->
+    </nav>
+  </header>
+
+  <main id="main">
+<section class="page" data-page="pricing" aria-labelledby="pricing-title" hidden>
+      <div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-i18n="plans.eyebrow">Pricing</p><h1 id="pricing-title" data-i18n="plans.title">Stop managing KYC, AML workflows and reviews across disconnected files.</h1><p class="lead" data-i18n="plans.lead">Start registration online for Essential or Professional. New registrations are reviewed by the Duevio team before activation. Choose Custom for high-volume and tailored requirements.</p><!-- <div class="button-row"><a class="button button-primary" href="#signup" data-i18n="cta.startNow">Start registration</a><a class="button button-secondary" href="/#demo" data-i18n="cta.bookDemo">Request a demo</a></div> --></div><!-- <div class="overview-card"><div class="overview-head"><span data-i18n="plans.structure">Pricing structure</span><span class="status-dot"><span></span><span data-i18n="plans.choice">Flexible</span></span></div><h2 data-i18n="plans.overviewTitle">Choose how you want to start</h2><div class="metric-grid"><div><span>Essential</span><strong data-i18n="plans.online">Online</strong></div><div><span>Professional</span><strong data-i18n="plans.guided">Guided</strong></div><div><span>Enterprise</span><strong data-i18n="plans.tailored">Tailored</strong></div><div><span data-i18n="plans.activation">Activation</span><strong data-i18n="plans.immediate">Immediate*</strong></div></div><p class="micro" data-i18n="plans.activationNote">*Essential self-service after account creation and payment. Professional and Custom follow the agreed implementation path.</p></div> --></div></div>
+      <section class="section"><div class="container"><div class="pricing-grid">
+        <article class="price-card featured"><div class="price-tag" data-i18n="plans.startNow">Start registration</div><h2>Essential</h2><p class="price"><strong>9,99 €</strong><span class="price-meta"><span><b aria-hidden="true">/</b> <span data-i18n="plans.perMonth">per month</span></span><small data-i18n="plans.billedAnnually">(billed annually)</small></span></p><p data-i18n="plans.essentialText">For up to 25 managed clients. Includes 5 Business records and 5 User records; additional records and services are paid with tokens.</p><ul><li data-i18n="plans.e1">Up to 25 managed clients</li><li data-i18n="plans.e2">5 Business records included</li><li data-i18n="plans.e3">5 User records included</li><li data-i18n="plans.e4">Online registration with guided activation</li><li data-i18n="plans.e5">Additional records and services via tokens</li><li data-i18n="plans.e6">2,000 FREE welcome tokens, on top of included records</li></ul><a class="button button-primary block" href="https://signup.duevio.com/signup.aspx?lang=en&plan=essential&source=pricing" target="_blank" rel="noopener noreferrer" data-i18n="cta.startNow">Start registration</a></article>
+        <article class="price-card"><div class="price-tag" data-i18n="plans.growing">For growing teams</div><h2>Professional</h2><p class="price"><strong>49,99 €</strong><span class="price-meta"><span><b aria-hidden="true">/</b> <span data-i18n="plans.perMonth">per month</span></span><small data-i18n="plans.billedAnnually">(billed annually)</small></span></p><p class="price-description" data-i18n="plans.professionalText">For teams managing an unlimited number of clients. Includes 25 Business records and 25 User records.</p><ul><li data-i18n="plans.p1">Unlimited managed clients</li><li data-i18n="plans.p2">25 Business records included</li><li data-i18n="plans.p3">25 User records included</li><li data-i18n="plans.p4">Guided onboarding and setup</li><li data-i18n="plans.p5">Additional records and services via tokens</li><li data-i18n="plans.p6">10,000 FREE welcome tokens, on top of included records</li></ul><a class="button button-primary block" href="https://signup.duevio.com/signup.aspx?lang=en&plan=professional&source=pricing" target="_blank" rel="noopener noreferrer" data-i18n="cta.startNow">Start registration</a></article>
+        <article class="price-card"><div class="price-tag" data-i18n="plans.complex">For tailored requirements</div><h2>Custom</h2><p class="price-description" data-i18n="plans.enterpriseText">For bulk uploads, large volumes and tailored requirements. Billing can be monthly or annual.</p><ul><li data-i18n="plans.x1">Monthly or annual billing</li><li data-i18n="plans.x2">Bulk uploads and large volumes</li><li data-i18n="plans.x3">Tailored workflows</li><li data-i18n="plans.x4">Custom integrations and migration</li><li data-i18n="plans.x5">Commercial and implementation plan</li></ul><a class="button button-secondary block" href="/#enterprise" data-i18n="plans.discussEnterprise">Discuss Custom</a></article>
+      </div><div class="payment-strip"><span data-i18n="payment.accepted">Accepted payment methods</span><div class="payment-logos"><figure><img class="visa" src="/assets/img/visa.svg" alt="Visa"><figcaption>Visa</figcaption></figure><figure><img class="mastercard" src="/assets/img/mastercard.svg" alt="Mastercard"><figcaption>Mastercard</figcaption></figure><figure><img class="paypal" src="/assets/img/paypal.svg" alt="PayPal"><figcaption>PayPal</figcaption></figure></div><p data-i18n="payment.secure">Card and PayPal details are handled by the payment provider, not stored in this marketing website.</p></div></div></section>
+    <section class="section section-light duevio-token-section"><div class="container">
+<div class="token-section-heading"><p class="eyebrow" data-i18n="tokens.eyebrow">Tokens</p><h2 data-i18n="tokens.title">Pay only for additional records and usage-based services.</h2><p class="section-lead" data-i18n="tokens.intro">Services such as screening are not included in the subscription and are paid with Duevio tokens. You can use the free welcome tokens included with your plan to cover these services until your token balance runs out.</p></div>
+<div class="token-packages-heading"><p class="eyebrow" data-i18n="tokens.packagesTitle">Token packages</p><h3 data-i18n="tokens.packagesLead">Choose a token package for your additional services.</h3></div>
+<div class="token-packages-grid"><article class="token-package-card"><div class="token-package-top"><span class="token-package-price">€50</span><span class="token-package-ribbon token-package-ribbon--standard" data-i18n="tokens.standardLabel">Standard top-up</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Total tokens</span><span class="token-total-count" data-i18n="tokens.pack1">5,000 tokens</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Base tokens</span><span data-i18n="tokens.base1">5,000 tokens</span></div></div></article><article class="token-package-card token-package-card--bonus"><div class="token-package-top"><span class="token-package-price">€100</span><span class="token-package-ribbon" data-i18n="tokens.bonusRibbon">FREE BONUS</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Total tokens</span><span class="token-total-count" data-i18n="tokens.pack2">15,000 tokens</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Base tokens</span><span data-i18n="tokens.base2">10,000 tokens</span></div><div class="token-bonus-line"><span data-i18n="tokens.free2">+5,000 FREE tokens</span></div></div></article><article class="token-package-card token-package-card--best"><div class="token-package-top"><span class="token-package-price">€500</span><span class="token-package-ribbon" data-i18n="tokens.bestValueRibbon">BEST VALUE</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Total tokens</span><span class="token-total-count" data-i18n="tokens.pack3">80,000 tokens</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Base tokens</span><span data-i18n="tokens.base3">50,000 tokens</span></div><div class="token-bonus-line"><span data-i18n="tokens.free3">+30,000 FREE tokens</span></div></div></article></div>
+<div class="token-disclosure"><h3 class="token-disclosure-title" data-i18n="tokens.infoLabel">Good to know</h3><div class="token-disclosure-copy"><p data-i18n="tokens.benefitNote">Included Business/User records and free welcome tokens are separate plan benefits. Token packages are optional top-ups.</p><p data-i18n="tokens.note">Each package shows its total tokens and any free bonus. Additional services use tokens from your available balance.</p></div></div>
+</div></section></section>
+
+    
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Plans that scale with you</p>
+<h2>Choose a plan. Add tokens when you need them.</h2>
+<p class="section-lead">The subscription includes your starting records and welcome tokens. Additional usage stays optional.</p>
+<div class="problem-grid">
+<div>Essential includes 5 Business and 5 User records plus 2,000 welcome tokens.</div>
+<div>Professional includes 25 Business and 25 User records plus 10,000 welcome tokens.</div>
+<div>Custom supports tailored workflows, integrations and higher volumes.</div>
+</div></div></section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="/assets/img/brand-DUEVIO-02.svg" alt="Duevio"><p data-i18n="footer.tagline">AML operations for onboarding, KYC files, reviews, workflow and evidence.</p></div>
+      <div><h2 data-i18n="footer.product">Product</h2><a href="/product/" data-i18n="nav.product">Product</a><a href="/industries/" data-i18n="nav.industries">Industries</a><a href="/pricing/" data-i18n="nav.plans">Pricing</a><a href="/#demo" data-i18n="nav.demo">Demo</a><div class="seo-related"><a class="seo-related-link" href="/product/">AML Compliance Software</a><a class="seo-related-link" href="/capabilities/kyc-onboarding/">KYC/KYB Onboarding &amp; CDD Software</a><a class="seo-related-link" href="/capabilities/aml-workflow/">AML Workflow &amp; Case Management Software</a><a class="seo-related-link" href="/capabilities/audit-trail/">AML Audit Trail Software</a><a class="seo-related-link" href="/industries/payment-institutions/">AML &amp; KYC Software for Payment Institutions &amp; EMIs</a><a class="seo-related-link" href="/industries/law-firms/">AML Software for Law Firms</a></div></div>
+      <div><h2 data-i18n="footer.legal">Legal</h2><a href="/#privacy" data-i18n="legal.privacy">Privacy Notice</a><a href="/#cookies" data-i18n="legal.cookies">Cookie Policy</a><a href="/#terms" data-i18n="legal.terms">Terms of Service</a></div>
+      <div class="footer-payments"><h2 data-i18n="payment.accepted">Accepted payment methods</h2><div class="payment-logos dark"><figure><img class="visa" src="/assets/img/visa.svg" alt="Visa"><figcaption>Visa</figcaption></figure><figure><img class="mastercard" src="/assets/img/mastercard.svg" alt="Mastercard"><figcaption>Mastercard</figcaption></figure><figure><img class="paypal" src="/assets/img/paypal.svg" alt="PayPal"><figcaption>PayPal</figcaption></figure></div></div>
+    </div>
+    <div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">All rights reserved.</span></p><button class="text-button footer-cookie" type="button" id="footerCookieSettings" data-i18n="cookies.openSettings">Cookie settings</button></div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden><div><strong id="cookieTitle" data-i18n="cookieBanner.title">Privacy choices</strong><p data-i18n="cookieBanner.text">We use essential browser storage for language and privacy preferences. Optional analytics or marketing technologies will remain off unless you choose them.</p></div><div class="cookie-actions"><button class="button button-ghost compact" type="button" data-cookie-action="reject" data-i18n="cookieBanner.reject">Reject optional</button><button class="button button-secondary compact" type="button" data-cookie-action="settings" data-i18n="cookieBanner.settings">Settings</button><button class="button button-primary compact" type="button" data-cookie-action="accept" data-i18n="cookieBanner.accept">Accept all</button></div></div>
+
+  <div class="modal-backdrop" id="cookieModal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle"><div class="modal-head"><h2 id="cookieModalTitle" data-i18n="cookieModal.title">Cookie settings</h2><button type="button" class="modal-close" aria-label="Close">×</button></div><p data-i18n="cookieModal.text">Essential storage is always active because it is needed to remember site and privacy preferences.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Essential</strong><p data-i18n="cookieModal.essentialText">Language, routing and consent preferences.</p></div><span class="always-on" data-i18n="cookieModal.always">Always on</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Analytics</strong><p data-i18n="cookieModal.analyticsText">Optional measurement tools, if added in production.</p></div><input type="checkbox" id="analyticsConsent"></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Marketing</strong><p data-i18n="cookieModal.marketingText">Optional advertising or marketing technologies, if added in production.</p></div><input type="checkbox" id="marketingConsent"></label><button class="button button-primary block" type="button" id="saveCookieSettings" data-i18n="cookieModal.save">Save preferences</button></div></div>
+</body>
+</html>
+

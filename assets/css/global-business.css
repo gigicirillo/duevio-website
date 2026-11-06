@@ -1,0 +1,249 @@
+/* International business visual layer for Duevio */
+:root{
+  --surface-0:#ffffff;
+  --surface-1:#f6f8fb;
+  --surface-2:#eef3f8;
+  --surface-3:#e9f0f6;
+  --navy-soft:#263d73;
+  --teal-soft:#dff4f2;
+}
+
+body{
+  background:var(--surface-0);
+  color:#1b2638;
+}
+
+.site-header{
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid #dbe3ec;
+  box-shadow:0 1px 0 rgba(23,39,79,.025);
+}
+.desktop-nav a.active{color:var(--navy);font-weight:750}
+.desktop-nav a.active:after{background:linear-gradient(90deg,var(--teal),#2c8fad)}
+
+.button-primary{
+  color:#fff;
+  background:linear-gradient(135deg,#2da8aa 0%,#348fa8 100%);
+  box-shadow:0 8px 18px rgba(47,143,165,.16);
+}
+.button-primary:hover{
+  background:linear-gradient(135deg,#279c9f 0%,#2d8198 100%);
+  box-shadow:0 10px 22px rgba(47,143,165,.20);
+}
+.button-secondary{
+  background:rgba(255,255,255,.82);
+  border-color:#c9d5e2;
+}
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(59,184,185,.13),transparent 24%),
+    radial-gradient(circle at 8% 5%,rgba(34,56,111,.065),transparent 28%),
+    linear-gradient(180deg,#fbfdff 0%,#f2f6fa 100%);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#b8c9d9 20%,#b8c9d9 80%,transparent);
+}
+.hero-copy{position:relative;z-index:1}
+.hero-copy:before{
+  content:"";
+  display:block;
+  width:52px;
+  height:3px;
+  margin-bottom:18px;
+  background:linear-gradient(90deg,var(--teal),#2e7ea0);
+  border-radius:3px;
+}
+.eyebrow{color:#238e96}
+h1,.seo-home-secondary-title{color:#1f376b}
+.lead{color:#536276}
+
+.overview-card{
+  background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(249,251,253,.98));
+  border:1px solid #d5e0e9;
+  border-top:4px solid var(--teal);
+  box-shadow:0 18px 42px rgba(34,56,111,.10);
+}
+.metric-grid>div{
+  background:linear-gradient(180deg,#f7f9fb,#eef3f7);
+  border:1px solid #e1e7ed;
+}
+.status-dot{color:#157f68}
+
+.section{
+  position:relative;
+  border-top:1px solid rgba(213,224,233,.55);
+}
+.section-light{
+  background:linear-gradient(180deg,#f3f7fa 0%,#edf3f7 100%);
+}
+.page>.section:not(.section-light):not(.section-navy):nth-of-type(even){
+  background:#fbfcfd;
+}
+.section h2{color:#21396d}
+.section-lead{color:#5b687a}
+
+.problem-grid div{
+  position:relative;
+  background:rgba(255,255,255,.88);
+  border-color:#d8e1e8;
+  padding-left:23px;
+  box-shadow:0 6px 18px rgba(34,56,111,.035);
+}
+.problem-grid div:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:4px;
+  background:linear-gradient(180deg,var(--teal),#347c9b);
+  border-radius:8px 0 0 8px;
+}
+
+.feature-card,.module-card,.sector-card{
+  position:relative;
+  background:linear-gradient(180deg,#ffffff 0%,#fbfcfd 100%);
+  border-color:#d9e2e9;
+  box-shadow:0 8px 24px rgba(34,56,111,.045);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.feature-card:before,.module-card:before,.sector-card:before{
+  content:"";
+  position:absolute;
+  left:20px;
+  right:20px;
+  top:0;
+  height:2px;
+  background:linear-gradient(90deg,var(--teal),transparent 72%);
+}
+.feature-card:hover,.module-card:hover,.sector-card:hover{
+  transform:translateY(-2px);
+  border-color:#c8d7e3;
+  box-shadow:0 14px 32px rgba(34,56,111,.075);
+}
+.feature-icon,.module-card>span,.sector-card>span{
+  background:linear-gradient(135deg,#e2f5f3,#e8f0f8);
+  border:1px solid #d6e9e8;
+  color:#244675;
+}
+
+.section-navy{
+  background:
+    radial-gradient(circle at 85% 20%,rgba(59,184,185,.17),transparent 25%),
+    linear-gradient(135deg,#17274f 0%,#203868 58%,#1a4b67 100%);
+  border-top:0;
+  border-bottom:0;
+}
+.section-navy:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:4px;
+  background:linear-gradient(90deg,#2ea8aa,#4cc7c4,#2e80a0);
+}
+.comparison-wrap{
+  background:rgba(255,255,255,.035);
+  box-shadow:inset 0 1px rgba(255,255,255,.04);
+}
+
+.pill-grid span,.integration-grid span{
+  background:#f8fafc;
+  border-color:#d7e1e9;
+  color:#3f5168;
+}
+.pill-grid span{
+  box-shadow:0 3px 10px rgba(34,56,111,.025);
+}
+
+.steps-grid article{
+  background:linear-gradient(180deg,#fff,#f8fafc);
+  border-color:#d8e1e8;
+}
+.steps-grid article>span{
+  background:linear-gradient(135deg,#22386f,#315f85);
+}
+
+.price-card{
+  position:relative;
+  background:linear-gradient(180deg,#fff,#f9fbfc);
+  border-color:#d7e0e8;
+  box-shadow:0 10px 26px rgba(34,56,111,.05);
+  overflow:hidden;
+}
+.price-card:before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:4px;
+  background:#c7d3df;
+}
+.price-card.featured{
+  border-color:#8ecfd0;
+  box-shadow:0 16px 38px rgba(34,56,111,.10);
+}
+.price-card.featured:before{
+  background:linear-gradient(90deg,var(--teal),#2c86a3);
+}
+.price strong{color:#20396d}
+.price-tag{color:#258e96}
+
+.payment-strip{
+  background:linear-gradient(180deg,#f4f7fa,#edf2f6);
+  border-color:#d3dee7;
+}
+
+.form-card,.summary-card{
+  background:linear-gradient(180deg,#fff,#f9fbfc);
+  border-color:#d6e0e8;
+  box-shadow:0 10px 26px rgba(34,56,111,.045);
+}
+.form-card input,.form-card select,.form-card textarea{
+  background:#fbfcfd;
+  border-color:#c8d5df;
+}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{
+  background:#fff;
+}
+.plan-selector span{background:#f8fafc}
+.plan-selector input:checked+span{
+  background:linear-gradient(180deg,#effafa,#f7fbfc);
+}
+
+.legal-page{
+  background:linear-gradient(180deg,#f2f6f9,#eaf1f5);
+}
+.legal-body{
+  box-shadow:0 12px 30px rgba(34,56,111,.05);
+}
+
+.site-footer{
+  background:
+    radial-gradient(circle at 85% 0%,rgba(59,184,185,.12),transparent 25%),
+    linear-gradient(135deg,#142344 0%,#1b315d 65%,#183f57 100%);
+  border-top:4px solid #319fa4;
+}
+
+.cookie-banner{
+  background:rgba(255,255,255,.985);
+  border-color:#cedae4;
+}
+
+@media(max-width:860px){
+  .hero-copy:before{width:42px;margin-bottom:14px}
+  .feature-card:hover,.module-card:hover,.sector-card:hover{transform:none}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .feature-card,.module-card,.sector-card{transition:none}
+}

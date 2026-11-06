@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-root="/" data-seo-route="product" data-seo-slug="capabilities/beneficial-ownership">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beneficial Ownership &amp; UBO Software | Duevio</title>
+  <base href="/">
+  <meta name="description" content="Beneficial Ownership &amp; UBO Software. KYC/KYB, reviews, workflows and audit evidence in one controlled AML workspace.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#22386f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Beneficial Ownership &amp; UBO Software | Duevio">
+  <meta property="og:description" content="Beneficial Ownership &amp; UBO Software. KYC/KYB, reviews, workflows and audit evidence in one controlled AML workspace.">
+  <meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <meta property="og:site_name" content="Duevio">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/capabilities/beneficial-ownership/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/capabilities/beneficial-ownership/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261103-feedback21">
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+  <script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script src="/assets/js/app.js?v=20261103-feedback21" defer></script>
+  <meta property="og:url" content="https://duevio.com/capabilities/beneficial-ownership/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"AML compliance software for KYC/KYB onboarding, customer due diligence, UBO, risk assessment, periodic reviews, AML workflows and audit-ready evidence.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/capabilities/beneficial-ownership/#webpage","url":"https://duevio.com/capabilities/beneficial-ownership/","name":"Beneficial Ownership & UBO Software | Duevio","description":"Beneficial Ownership & UBO Software. KYC/KYB, reviews, workflows and audit evidence in one controlled AML workspace.","inLanguage":"en","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="access.skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Duevio home">
+        <img src="/assets/img/brand-DUEVIO-01.svg" alt="Duevio">
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="/" data-route="home" data-i18n="nav.home">Home</a>
+        <a href="/product/" data-route="product" data-i18n="nav.product">Product</a>
+        <a href="/industries/" data-route="industries" data-i18n="nav.industries">Industries</a>
+        <a href="/pricing/" data-route="pricing" data-i18n="nav.plans">Pricing</a>
+        <!-- <a href="#signup" data-route="signup" data-i18n="nav.signup">Signup</a> -->
+        <!-- <a href="/#demo" data-route="demo" data-i18n="nav.demo">Demo</a> -->
+      </nav>
+      <div class="header-actions">
+        <div class="language-switcher">
+          <button class="language-button" type="button" aria-haspopup="true" aria-expanded="false" id="languageButton">
+            <span class="language-code">EN</span><span aria-hidden="true">▾</span>
+          </button>
+          <div class="language-menu" id="languageMenu" role="menu" hidden>
+            <a role="menuitem" href="/capabilities/beneficial-ownership/" data-lang-link="en">English</a>
+            <a role="menuitem" href="/it/capabilities/beneficial-ownership/" data-lang-link="it">Italiano</a>
+            <a role="menuitem" href="/de/capabilities/beneficial-ownership/" data-lang-link="de">Deutsch</a>
+            <a role="menuitem" href="/es/capabilities/beneficial-ownership/" data-lang-link="es">Español</a>
+            <a role="menuitem" href="/fr/capabilities/beneficial-ownership/" data-lang-link="fr">Français</a>
+            <a role="menuitem" href="/ru/capabilities/beneficial-ownership/" data-lang-link="ru">Русский</a>
+          
+            <a role="menuitem" href="/mt/capabilities/beneficial-ownership/" data-lang-link="mt">Malti</a>
+          </div>
+        </div>
+        <a class="button button-ghost compact desktop-cta" href="/#demo" data-i18n="cta.bookDemo">Request a demo</a>
+        <a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="/" data-route="home" data-i18n="nav.home">Home</a>
+      <a href="/product/" data-route="product" data-i18n="nav.product">Product</a>
+      <a href="/industries/" data-route="industries" data-i18n="nav.industries">Industries</a>
+      <a href="/pricing/" data-route="pricing" data-i18n="nav.plans">Pricing</a>
+      <!-- <a href="#signup" data-i18n="nav.signup">Signup</a> -->
+      <!-- <a href="/#demo" data-i18n="nav.demo">Demo</a> -->
+    </nav>
+  </header>
+
+  <main id="main">
+<section class="page" data-page="product" aria-labelledby="product-title" hidden>
+      <div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">AML Compliance Software for KYC &amp; Audit Trail</p><h1 id="product-title">Beneficial Ownership &amp; UBO Software</h1><p class="lead">One controlled AML compliance workspace for KYC/KYB, customer due diligence, UBO, risk assessment, periodic reviews, workflows, evidence and audit trail.</p><div class="button-row"><a class="button button-primary" href="/pricing/" data-i18n="cta.startOnline">Start online</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="product.overviewLabel">Product overview</span><span class="status-dot"><span></span><span data-i18n="product.modular">Modular</span></span></div><h2 data-i18n="product.overviewTitle">Built for AML workflow and case management, not just data collection</h2><div class="metric-grid"><div><span data-i18n="product.metric1Label">Core modules</span><strong>6</strong></div><div><span data-i18n="product.metric2Label">Workflows</span><strong data-i18n="product.metric2Value">Structured</strong></div><div><span data-i18n="product.metric3Label">Evidence</span><strong data-i18n="product.metric3Value">Exportable</strong></div><div><span data-i18n="product.metric4Label">Scalability</span><strong data-i18n="product.metric4Value">Built in</strong></div></div><div class="highlight-list"><p><span>✓</span><span data-i18n="product.highlight1">Guided onboarding, document control and ownership visibility</span></p><p><span>✓</span><span data-i18n="product.highlight2">Tasks, approvals, review cycles and remediation tracking</span></p><p><span>✓</span><span data-i18n="product.highlight3">Evidence that stays connected to the client file</span></p></div></div></div></div>
+      <section class="section"><div class="container"><p class="eyebrow" data-i18n="product.modulesEyebrow">Core modules</p><h2 data-i18n="product.modulesTitle">AML and KYC modules across the full customer lifecycle.</h2><p class="section-lead" data-i18n="product.modulesLead">Configure KYC/KYB, risk-based due diligence, reviews and evidence around your clients and internal controls.</p><div class="feature-grid three module-grid">
+        <article class="module-card"><span>1</span><h3 data-i18n="product.m1Title">KYC/KYB onboarding</h3><p data-i18n="product.m1Text">Create guided customer due diligence journeys for individuals, companies and complex ownership structures.</p><ul><li data-i18n="product.m1a">Configurable journeys</li><li data-i18n="product.m1b">Structured intake</li><li data-i18n="product.m1c">Cleaner first-time collection</li></ul></article>
+        <article class="module-card"><span>2</span><h3 data-i18n="product.m2Title">UBO and beneficial ownership</h3><p data-i18n="product.m2Text">Keep ownership trees, beneficial owners and key roles inside the live KYC/KYB client file.</p><ul><li data-i18n="product.m2a">Direct and indirect ownership</li><li data-i18n="product.m2b">Role visibility</li><li data-i18n="product.m2c">Client confirmation support</li></ul></article>
+        <article class="module-card"><span>3</span><h3 data-i18n="product.m3Title">Dynamic questionnaires</h3><p data-i18n="product.m3Text">Use forms that adapt to client type, structure and information already collected.</p><ul><li data-i18n="product.m3a">Configurable forms</li><li data-i18n="product.m3b">Pre-filled data</li><li data-i18n="product.m3c">Less duplication</li></ul></article>
+        <article class="module-card"><span>4</span><h3 data-i18n="product.m4Title">Document control</h3><p data-i18n="product.m4Text">Treat documents as compliance evidence with status, validity and context.</p><ul><li data-i18n="product.m4a">Expiry-aware</li><li data-i18n="product.m4b">Version-aware</li><li data-i18n="product.m4c">Evidence-oriented</li></ul></article>
+        <article class="module-card"><span>5</span><h3 data-i18n="product.m5Title">Periodic reviews and ongoing monitoring</h3><p data-i18n="product.m5Text">Track KYC review cycles, expiring documents, open actions and remediation before they become compliance gaps.</p><ul><li data-i18n="product.m5a">Periodic reviews</li><li data-i18n="product.m5b">Escalation support</li><li data-i18n="product.m5c">Open-item visibility</li></ul></article>
+        <article class="module-card"><span>6</span><h3 data-i18n="product.m6Title">Audit trail and evidence packs</h3><p data-i18n="product.m6Text">Produce organised AML evidence for audits, inspections, partner reviews and internal compliance controls.</p><ul><li data-i18n="product.m6a">Evidence packs</li><li data-i18n="product.m6b">Client chronology</li><li data-i18n="product.m6c">Faster retrieval</li></ul></article>
+      </div></div></section>
+      <section class="section section-light"><div class="container"><p class="eyebrow" data-i18n="product.howEyebrow">How it works</p><h2 data-i18n="product.howTitle">Run KYC and AML workflows from onboarding to audit-ready evidence.</h2><p class="section-lead" data-i18n="product.howLead">Keep the customer due diligence record, risk context, tasks, approvals and decisions connected throughout the client lifecycle.</p><div class="steps-grid"><article><span>1</span><p data-i18n="product.step1">Capture onboarding data and documents through a guided process.</p></article><article><span>2</span><p data-i18n="product.step2">Build the live file with ownership, roles, checks, notes and decisions.</p></article><article><span>3</span><p data-i18n="product.step3">Track tasks, approvals, reviews, exceptions and remediation from one dashboard.</p></article><article><span>4</span><p data-i18n="product.step4">Retrieve evidence quickly when an audit, inspection or partner request arrives.</p></article></div></div></section>
+      <section class="section"><div class="container"><p class="eyebrow" data-i18n="product.integrationsEyebrow">Integrations and readiness</p><h2 data-i18n="product.integrationsTitle">Connect Duevio to KYC, screening, registry and compliance data providers.</h2><p class="section-lead" data-i18n="product.integrationsLead">Duevio can orchestrate identity, KYC/KYB, sanctions and PEP screening, and corporate-data providers while keeping workflow and audit trail in one place.</p><div class="integration-grid"><span data-i18n="product.int1">Identity verification providers</span><span data-i18n="product.int2">Screening and watchlist providers</span><span data-i18n="product.int3">Public registries and corporate sources</span><span data-i18n="product.int4">Document repositories</span><span data-i18n="product.int5">CRM, core and onboarding systems</span><span data-i18n="product.int6">API and enterprise connection layer</span></div></div></section>
+    </section>
+
+    
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Focused workflow</p>
+<h2>Beneficial Ownership &amp; UBO Management in a controlled Duevio workflow</h2>
+<p class="section-lead">Keep the records, actions and evidence for Beneficial Ownership &amp; UBO Management connected to the client file and the wider AML process.</p>
+<div class="problem-grid">
+<div>Keep the relevant information and supporting evidence in one controlled record.</div>
+<div>Connect reviews, tasks, approvals and risk context to the same operational history.</div>
+<div>Retrieve a clear evidence trail for internal review, audit and supervisory requests.</div>
+</div></div></section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="/assets/img/brand-DUEVIO-02.svg" alt="Duevio"><p data-i18n="footer.tagline">AML operations for onboarding, KYC files, reviews, workflow and evidence.</p></div>
+      <div><h2 data-i18n="footer.product">Product</h2><a href="/product/" data-i18n="nav.product">Product</a><a href="/industries/" data-i18n="nav.industries">Industries</a><a href="/pricing/" data-i18n="nav.plans">Pricing</a><a href="/#demo" data-i18n="nav.demo">Demo</a><div class="seo-related"><a class="seo-related-link" href="/capabilities/kyc-onboarding/">KYC/KYB Onboarding &amp; CDD Software</a><a class="seo-related-link" href="/capabilities/risk-assessment/">AML Customer Risk Assessment Software</a><a class="seo-related-link" href="/capabilities/periodic-reviews/">Periodic KYC Reviews &amp; Ongoing Monitoring</a><a class="seo-related-link" href="/capabilities/audit-trail/">AML Audit Trail Software</a><a class="seo-related-link" href="/industries/corporate-service-providers/">AML Software for CSPs, Trusts &amp; Fiduciaries</a><a class="seo-related-link" href="/industries/law-firms/">AML Software for Law Firms</a></div></div>
+      <div><h2 data-i18n="footer.legal">Legal</h2><a href="/#privacy" data-i18n="legal.privacy">Privacy Notice</a><a href="/#cookies" data-i18n="legal.cookies">Cookie Policy</a><a href="/#terms" data-i18n="legal.terms">Terms of Service</a></div>
+      <div class="footer-payments"><h2 data-i18n="payment.accepted">Accepted payment methods</h2><div class="payment-logos dark"><figure><img class="visa" src="/assets/img/visa.svg" alt="Visa"><figcaption>Visa</figcaption></figure><figure><img class="mastercard" src="/assets/img/mastercard.svg" alt="Mastercard"><figcaption>Mastercard</figcaption></figure><figure><img class="paypal" src="/assets/img/paypal.svg" alt="PayPal"><figcaption>PayPal</figcaption></figure></div></div>
+    </div>
+    <div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">All rights reserved.</span></p><button class="text-button footer-cookie" type="button" id="footerCookieSettings" data-i18n="cookies.openSettings">Cookie settings</button></div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden><div><strong id="cookieTitle" data-i18n="cookieBanner.title">Privacy choices</strong><p data-i18n="cookieBanner.text">We use essential browser storage for language and privacy preferences. Optional analytics or marketing technologies will remain off unless you choose them.</p></div><div class="cookie-actions"><button class="button button-ghost compact" type="button" data-cookie-action="reject" data-i18n="cookieBanner.reject">Reject optional</button><button class="button button-secondary compact" type="button" data-cookie-action="settings" data-i18n="cookieBanner.settings">Settings</button><button class="button button-primary compact" type="button" data-cookie-action="accept" data-i18n="cookieBanner.accept">Accept all</button></div></div>
+
+  <div class="modal-backdrop" id="cookieModal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle"><div class="modal-head"><h2 id="cookieModalTitle" data-i18n="cookieModal.title">Cookie settings</h2><button type="button" class="modal-close" aria-label="Close">×</button></div><p data-i18n="cookieModal.text">Essential storage is always active because it is needed to remember site and privacy preferences.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Essential</strong><p data-i18n="cookieModal.essentialText">Language, routing and consent preferences.</p></div><span class="always-on" data-i18n="cookieModal.always">Always on</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Analytics</strong><p data-i18n="cookieModal.analyticsText">Optional measurement tools, if added in production.</p></div><input type="checkbox" id="analyticsConsent"></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Marketing</strong><p data-i18n="cookieModal.marketingText">Optional advertising or marketing technologies, if added in production.</p></div><input type="checkbox" id="marketingConsent"></label><button class="button button-primary block" type="button" id="saveCookieSettings" data-i18n="cookieModal.save">Save preferences</button></div></div>
+</body>
+</html>
+

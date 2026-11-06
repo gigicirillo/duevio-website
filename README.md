@@ -1,5 +1,37 @@
 # Duevio website
 
-Complete multilingual Duevio website redesign, inspired by Alpian's spacious layout while preserving Duevio's light backgrounds, blue and turquoise palette, and original text.
+Restyling completo del sito pubblico Duevio, ispirato alla composizione di Alpian: navigazione sospesa, titoli ampi, spazi generosi, pulsanti arrotondati e pannelli chiari. Conserva blu e turchese Duevio.
 
-Implementation in progress.
+## Contenuti
+
+- 130 pagine pubbliche dalla sitemap Duevio del 6 novembre 2026.
+- Sette lingue: inglese, italiano, maltese, tedesco, spagnolo, francese e russo.
+- Home, prodotto, settori, prezzi, funzionalità, mercati e contenuti legali originali.
+- Richieste demo e Custom, preferenze cookie, link al servizio di registrazione e login originali.
+- Testi preservati; indirizzi email pubblici decodificati dall'offuscamento Cloudflare.
+
+## Anteprima
+
+Richiede Python 3, senza dipendenze da installare.
+
+```sh
+python3 -m http.server 4173
+```
+
+Aprire http://localhost:4173 oppure http://localhost:4173/it/.
+
+## Struttura
+
+Le pagine HTML e le traduzioni sono contenuti originali. `assets/css/redesign.css` contiene il restyling condiviso e i breakpoint responsive. `assets/js/app.js` conserva il comportamento originale; `assets/js/seo-route.js` gestisce le pagine interne.
+
+Il sito statico va servito dalla radice di un dominio: i percorsi degli asset sono assoluti. Non occorre alcuna build. Per GitHub Pages usare un dominio personalizzato o un hosting che pubblichi questa cartella alla radice; il sottopercorso standard `/duevio-website/` richiede una configurazione del base path.
+
+## Verifica
+
+```sh
+python3 scripts/check.py
+```
+
+Verifica impronte dei testi di tutte le pagine, asset locali e file di traduzione. Controlli visivi eseguiti in browser su desktop e mobile. I moduli conservano l'endpoint Duevio esistente: non sono state inviate richieste reali durante la verifica. L'accettazione CORS sul futuro dominio deve essere verificata dal gestore dell'endpoint.
+
+La pubblicazione in questa repository non modifica il dominio di produzione duevio.com.

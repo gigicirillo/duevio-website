@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-lang="ru" data-root="/" data-seo-route="product" data-seo-slug="capabilities/provider-agnostic-integrations">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Независимые от провайдера KYC/AML-интеграции | Duevio</title>
+  <base href="/">
+<meta name="description" content="Независимые от провайдера KYC/AML-интеграции. KYC/KYB, проверки, workflow и доказательства в единой контролируемой AML-среде.">
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#22386f" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta property="og:title" content="Независимые от провайдера KYC/AML-интеграции | Duevio">
+<meta property="og:description" content="Независимые от провайдера KYC/AML-интеграции. KYC/KYB, проверки, workflow и доказательства в единой контролируемой AML-среде.">
+<meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+<meta content="Duevio" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/ru/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/capabilities/provider-agnostic-integrations/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/capabilities/provider-agnostic-integrations/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<link href="/assets/css/styles.css?v=20261103-feedback21" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+<script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script defer="" src="/assets/js/app.js?v=20261103-feedback21"></script>
+  <meta property="og:url" content="https://duevio.com/ru/capabilities/provider-agnostic-integrations/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"AML/KYC система для ПОД/ФТ: проверка клиентов, KYC/KYB, бенефициары, оценка риска, периодический мониторинг, workflow и аудиторский след.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/ru/capabilities/provider-agnostic-integrations/#webpage","url":"https://duevio.com/ru/capabilities/provider-agnostic-integrations/","name":"Независимые от провайдера KYC/AML-интеграции | Duevio","description":"Независимые от провайдера KYC/AML-интеграции. KYC/KYB, проверки, workflow и доказательства в единой контролируемой AML-среде.","inLanguage":"ru","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+<a class="skip-link" data-i18n="access.skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Duevio home" class="brand" href="#home">
+<img alt="Duevio" src="/assets/img/brand-DUEVIO-01.svg"/>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a data-i18n="nav.home" data-route="home" href="/ru/">Главная</a>
+<a data-i18n="nav.product" data-route="product" href="/ru/product/">Продукт</a>
+<a data-i18n="nav.industries" data-route="industries" href="/ru/industries/">Отрасли</a>
+<a data-i18n="nav.plans" data-route="pricing" href="/ru/pricing/">Цены</a>
+<!-- <a data-i18n="nav.signup" data-route="signup" href="#signup">Регистрация</a> -->
+<!-- <a data-i18n="nav.demo" data-route="demo" href="/ru/#demo">Демо</a> -->
+</nav>
+<div class="header-actions">
+<div class="language-switcher">
+<button aria-expanded="false" aria-haspopup="true" class="language-button" id="languageButton" type="button">
+<span class="language-code">RU</span><span aria-hidden="true">▾</span>
+</button>
+<div class="language-menu" hidden="" id="languageMenu" role="menu">
+<a data-lang-link="en" href="/capabilities/provider-agnostic-integrations/" role="menuitem">English</a>
+<a data-lang-link="it" href="/it/capabilities/provider-agnostic-integrations/" role="menuitem">Italiano</a>
+<a data-lang-link="de" href="/de/capabilities/provider-agnostic-integrations/" role="menuitem">Deutsch</a>
+<a data-lang-link="es" href="/es/capabilities/provider-agnostic-integrations/" role="menuitem">Español</a>
+<a data-lang-link="fr" href="/fr/capabilities/provider-agnostic-integrations/" role="menuitem">Français</a>
+<a data-lang-link="ru" href="/ru/capabilities/provider-agnostic-integrations/" role="menuitem">Русский</a>
+
+            <a role="menuitem" href="/mt/capabilities/provider-agnostic-integrations/" data-lang-link="mt">Malti</a>
+          </div>
+</div>
+<a class="button button-ghost compact desktop-cta" data-i18n="cta.bookDemo" href="/ru/#demo">Запросить демо</a>
+<a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-menu-button" type="button">☰</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav">
+<a data-i18n="nav.home" href="/ru/" data-route="home">Главная</a>
+<a data-i18n="nav.product" href="/ru/product/" data-route="product">Продукт</a>
+<a data-i18n="nav.industries" href="/ru/industries/" data-route="industries">Отрасли</a>
+<a data-i18n="nav.plans" href="/ru/pricing/" data-route="pricing">Цены</a>
+<!-- <a data-i18n="nav.signup" href="#signup">Регистрация</a> -->
+<!-- <a data-i18n="nav.demo" href="/ru/#demo">Демо</a> -->
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="product-title" class="page" data-page="product" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">AML/KYC система для ПОД/ФТ, проверки клиентов и аудита</p><h1 id="product-title">Независимые от провайдера KYC/AML-интеграции</h1><p class="lead">Единая AML/KYC-среда для проверки клиентов, бенефициаров, оценки риска, периодических проверок, workflow, доказательств и аудиторского следа.</p><div class="button-row"><a class="button button-primary" data-i18n="cta.startOnline" href="/ru/pricing/">Начать онлайн</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="product.overviewLabel">Обзор продукта</span><span class="status-dot"><span></span><span data-i18n="product.modular">Модульный</span></span></div><h2 data-i18n="product.overviewTitle">Для AML workflow и case management, а не только для сбора данных</h2><div class="metric-grid"><div><span data-i18n="product.metric1Label">Основные модули</span><strong>6</strong></div><div><span data-i18n="product.metric2Label">Процессы</span><strong data-i18n="product.metric2Value">Структурированные</strong></div><div><span data-i18n="product.metric3Label">Доказательства</span><strong data-i18n="product.metric3Value">Экспортируемые</strong></div><div><span data-i18n="product.metric4Label">Масштабируемость</span><strong data-i18n="product.metric4Value">Встроенная</strong></div></div><div class="highlight-list"><p><span>✓</span><span data-i18n="product.highlight1">Управляемый онбординг, контроль документов и прозрачность собственности</span></p><p><span>✓</span><span data-i18n="product.highlight2">Задачи, согласования, циклы проверок и контроль устранения недостатков</span></p><p><span>✓</span><span data-i18n="product.highlight3">Доказательства остаются связанными с клиентским досье</span></p></div></div></div></div>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.modulesEyebrow">Основные модули</p><h2 data-i18n="product.modulesTitle">AML и KYC модули для всего жизненного цикла клиента.</h2><p class="section-lead" data-i18n="product.modulesLead">Настраивайте KYC/KYB, риск-ориентированную проверку, ревью и доказательства под клиентов и внутренние контроли.</p><div class="feature-grid three module-grid">
+<article class="module-card"><span>1</span><h3 data-i18n="product.m1Title">KYC/KYB онбординг и проверка клиентов</h3><p data-i18n="product.m1Text">Создавайте управляемые процессы проверки для физических лиц, компаний и сложных структур владения.</p><ul><li data-i18n="product.m1a">Настраиваемые сценарии</li><li data-i18n="product.m1b">Структурированный сбор</li><li data-i18n="product.m1c">Качественный первичный сбор</li></ul></article>
+<article class="module-card"><span>2</span><h3 data-i18n="product.m2Title">Бенефициарные владельцы и UBO</h3><p data-i18n="product.m2Text">Храните структуры владения, UBO и роли в актуальном KYC/KYB-досье клиента.</p><ul><li data-i18n="product.m2a">Прямое и косвенное владение</li><li data-i18n="product.m2b">Прозрачность ролей</li><li data-i18n="product.m2c">Поддержка подтверждения клиентом</li></ul></article>
+<article class="module-card"><span>3</span><h3 data-i18n="product.m3Title">Динамические анкеты</h3><p data-i18n="product.m3Text">Используйте формы, которые адаптируются к типу клиента, структуре и уже собранной информации.</p><ul><li data-i18n="product.m3a">Настраиваемые формы</li><li data-i18n="product.m3b">Предзаполненные данные</li><li data-i18n="product.m3c">Меньше дублирования</li></ul></article>
+<article class="module-card"><span>4</span><h3 data-i18n="product.m4Title">Контроль документов</h3><p data-i18n="product.m4Text">Рассматривайте документы как комплаенс-доказательства со статусом, сроком действия и контекстом.</p><ul><li data-i18n="product.m4a">Контроль сроков действия</li><li data-i18n="product.m4b">Контроль версий</li><li data-i18n="product.m4c">Ориентация на доказательства</li></ul></article>
+<article class="module-card"><span>5</span><h3 data-i18n="product.m5Title">Периодические KYC-проверки и мониторинг</h3><p data-i18n="product.m5Text">Контролируйте циклы KYC-ревью, сроки документов, открытые действия и remediation до появления пробелов.</p><ul><li data-i18n="product.m5a">Периодические проверки</li><li data-i18n="product.m5b">Поддержка эскалации</li><li data-i18n="product.m5c">Видимость открытых вопросов</li></ul></article>
+<article class="module-card"><span>6</span><h3 data-i18n="product.m6Title">Аудиторский след и пакеты доказательств</h3><p data-i18n="product.m6Text">Формируйте структурированные AML-доказательства для аудита, проверок, внутреннего контроля и запросов надзора.</p><ul><li data-i18n="product.m6a">Пакеты доказательств</li><li data-i18n="product.m6b">Хронология клиента</li><li data-i18n="product.m6c">Быстрый поиск</li></ul></article>
+</div></div></section>
+<section class="section section-light"><div class="container"><p class="eyebrow" data-i18n="product.howEyebrow">Как это работает</p><h2 data-i18n="product.howTitle">Ведите KYC и AML workflow от онбординга до аудиторских доказательств.</h2><p class="section-lead" data-i18n="product.howLead">Сохраняйте проверку клиента, риск-контекст, задачи, согласования и решения связанными на всём жизненном цикле клиента.</p><div class="steps-grid"><article><span>1</span><p data-i18n="product.step1">Собирайте данные и документы онбординга в управляемом процессе.</p></article><article><span>2</span><p data-i18n="product.step2">Формируйте актуальное досье с собственностью, ролями, проверками, заметками и решениями.</p></article><article><span>3</span><p data-i18n="product.step3">Отслеживайте задачи, согласования, проверки, исключения и устранение недостатков на одной панели.</p></article><article><span>4</span><p data-i18n="product.step4">Быстро находите доказательства при аудите, инспекции или запросе партнёра.</p></article></div></div></section>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.integrationsEyebrow">Интеграции и готовность</p><h2 data-i18n="product.integrationsTitle">Подключайте Duevio к KYC/KYB, screening, реестрам и комплаенс-провайдерам.</h2><p class="section-lead" data-i18n="product.integrationsLead">Duevio может объединять идентификацию, KYC/KYB, санкции и PEP и корпоративные данные, сохраняя workflow и аудиторский след в одной системе.</p><div class="integration-grid"><span data-i18n="product.int1">Провайдеры проверки личности</span><span data-i18n="product.int2">Провайдеры скрининга и списков наблюдения</span><span data-i18n="product.int3">Публичные реестры и корпоративные источники</span><span data-i18n="product.int4">Хранилища документов</span><span data-i18n="product.int5">CRM, core- и onboarding-системы</span><span data-i18n="product.int6">Уровень API и корпоративных интеграций</span></div></div></section>
+</section>
+
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Целевой процесс</p>
+<h2>Независимые от провайдера AML-интеграции в контролируемом процессе Duevio</h2>
+<p class="section-lead">Храните записи, задачи и доказательства по Независимые от провайдера AML-интеграции вместе с досье клиента и общим AML-процессом.</p>
+<div class="problem-grid">
+<div>Сохраняйте релевантные данные и подтверждения в одной контролируемой записи.</div>
+<div>Связывайте проверки, задачи, согласования и риск-контекст с единой историей процесса.</div>
+<div>Быстро формируйте понятный набор доказательств для внутренней проверки, аудита и надзора.</div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand"><img alt="Duevio" src="/assets/img/brand-DUEVIO-02.svg"/><p data-i18n="footer.tagline">AML-операции для онбординга, KYC-досье, проверок, процессов и доказательств.</p></div>
+<div><h2 data-i18n="footer.product">Продукт</h2><a data-i18n="nav.product" href="/ru/product/">Продукт</a><a data-i18n="nav.industries" href="/ru/industries/">Отрасли</a><a data-i18n="nav.plans" href="/ru/pricing/">Цены</a><a data-i18n="nav.demo" href="/ru/#demo">Демо</a><div class="seo-related"><a class="seo-related-link" href="/ru/capabilities/screening-integrations/">Санкции, PEP и AML-скрининг</a><a class="seo-related-link" href="/ru/capabilities/kyc-onboarding/">KYC/KYB онбординг и проверка клиентов</a><a class="seo-related-link" href="/ru/capabilities/aml-workflow/">AML workflow и управление кейсами</a><a class="seo-related-link" href="/ru/capabilities/risk-assessment/">Система оценки AML-риска клиента</a><a class="seo-related-link" href="/ru/industries/payment-institutions/">AML/KYC для платежных организаций и EMI</a><a class="seo-related-link" href="/ru/product/">AML/KYC система для комплаенса</a></div></div>
+<div><h2 data-i18n="footer.legal">Правовая информация</h2><a data-i18n="legal.privacy" href="/ru/#privacy">Уведомление о конфиденциальности</a><a data-i18n="legal.cookies" href="/ru/#cookies">Политика cookie</a><a data-i18n="legal.terms" href="/ru/#terms">Условия использования</a></div>
+<div class="footer-payments"><h2 data-i18n="payment.accepted">Принимаемые способы оплаты</h2><div class="payment-logos dark"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div></div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">Все права защищены.</span></p><button class="text-button footer-cookie" data-i18n="cookies.openSettings" id="footerCookieSettings" type="button">Настройки cookie</button></div>
+</footer>
+<div aria-labelledby="cookieTitle" aria-modal="false" class="cookie-banner" hidden="" id="cookieBanner" role="dialog"><div><strong data-i18n="cookieBanner.title" id="cookieTitle">Настройки конфиденциальности</strong><p data-i18n="cookieBanner.text">Мы используем обязательное хранилище браузера для языковых и privacy-настроек. Необязательные аналитические или маркетинговые технологии остаются отключёнными, пока вы их не выберете.</p></div><div class="cookie-actions"><button class="button button-ghost compact" data-cookie-action="reject" data-i18n="cookieBanner.reject" type="button">Отклонить необязательные</button><button class="button button-secondary compact" data-cookie-action="settings" data-i18n="cookieBanner.settings" type="button">Настройки</button><button class="button button-primary compact" data-cookie-action="accept" data-i18n="cookieBanner.accept" type="button">Принять все</button></div></div>
+<div class="modal-backdrop" hidden="" id="cookieModal"><div aria-labelledby="cookieModalTitle" aria-modal="true" class="modal" role="dialog"><div class="modal-head"><h2 data-i18n="cookieModal.title" id="cookieModalTitle">Настройки cookie</h2><button aria-label="Close" class="modal-close" type="button">×</button></div><p data-i18n="cookieModal.text">Обязательное хранение всегда активно, так как оно нужно для запоминания настроек сайта и конфиденциальности.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Обязательные</strong><p data-i18n="cookieModal.essentialText">Настройки языка, навигации и согласия.</p></div><span class="always-on" data-i18n="cookieModal.always">Всегда включено</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Аналитика</strong><p data-i18n="cookieModal.analyticsText">Необязательные инструменты измерения, если будут добавлены в рабочей версии.</p></div><input id="analyticsConsent" type="checkbox"/></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Маркетинг</strong><p data-i18n="cookieModal.marketingText">Необязательные рекламные или маркетинговые технологии, если будут добавлены в рабочей версии.</p></div><input id="marketingConsent" type="checkbox"/></label><button class="button button-primary block" data-i18n="cookieModal.save" id="saveCookieSettings" type="button">Сохранить настройки</button></div></div>
+</body>
+</html>
+

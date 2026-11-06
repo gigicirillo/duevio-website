@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-lang="fr" data-root="/" data-seo-route="industries" data-seo-slug="industries/payment-institutions">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Logiciel AML/KYC pour établissements de paiement et EMI | Duevio</title>
+  <base href="/">
+<meta name="description" content="Logiciel AML/KYC pour établissements de paiement et EMI. KYC/KYB, revues, workflows et preuves dans un environnement LCB-FT contrôlé.">
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#22386f" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta property="og:title" content="Logiciel AML/KYC pour établissements de paiement et EMI | Duevio">
+<meta property="og:description" content="Logiciel AML/KYC pour établissements de paiement et EMI. KYC/KYB, revues, workflows et preuves dans un environnement LCB-FT contrôlé.">
+<meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+<meta content="Duevio" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/fr/industries/payment-institutions/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/industries/payment-institutions/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/industries/payment-institutions/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/industries/payment-institutions/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/industries/payment-institutions/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/industries/payment-institutions/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/industries/payment-institutions/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/industries/payment-institutions/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/industries/payment-institutions/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<link href="/assets/css/styles.css?v=20261103-feedback21" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+<script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script defer="" src="/assets/js/app.js?v=20261103-feedback21"></script>
+  <meta property="og:url" content="https://duevio.com/fr/industries/payment-institutions/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Logiciel LCB-FT / AML et KYC pour onboarding, vigilance client, bénéficiaires effectifs, évaluation des risques, revues, workflows et piste d’audit.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/fr/industries/payment-institutions/#webpage","url":"https://duevio.com/fr/industries/payment-institutions/","name":"Logiciel AML/KYC pour établissements de paiement et EMI | Duevio","description":"Logiciel AML/KYC pour établissements de paiement et EMI. KYC/KYB, revues, workflows et preuves dans un environnement LCB-FT contrôlé.","inLanguage":"fr","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+<a class="skip-link" data-i18n="access.skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Duevio home" class="brand" href="#home">
+<img alt="Duevio" src="/assets/img/brand-DUEVIO-01.svg"/>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a data-i18n="nav.home" data-route="home" href="/fr/">Accueil</a>
+<a data-i18n="nav.product" data-route="product" href="/fr/product/">Produit</a>
+<a data-i18n="nav.industries" data-route="industries" href="/fr/industries/">Secteurs</a>
+<a data-i18n="nav.plans" data-route="pricing" href="/fr/pricing/">Tarifs</a>
+<!-- <a data-i18n="nav.signup" data-route="signup" href="#signup">Inscription</a> -->
+<!-- <a data-i18n="nav.demo" data-route="demo" href="/fr/#demo">Démo</a> -->
+</nav>
+<div class="header-actions">
+<div class="language-switcher">
+<button aria-expanded="false" aria-haspopup="true" class="language-button" id="languageButton" type="button">
+<span class="language-code">FR</span><span aria-hidden="true">▾</span>
+</button>
+<div class="language-menu" hidden="" id="languageMenu" role="menu">
+<a data-lang-link="en" href="/industries/payment-institutions/" role="menuitem">English</a>
+<a data-lang-link="it" href="/it/industries/payment-institutions/" role="menuitem">Italiano</a>
+<a data-lang-link="de" href="/de/industries/payment-institutions/" role="menuitem">Deutsch</a>
+<a data-lang-link="es" href="/es/industries/payment-institutions/" role="menuitem">Español</a>
+<a data-lang-link="fr" href="/fr/industries/payment-institutions/" role="menuitem">Français</a>
+<a data-lang-link="ru" href="/ru/industries/payment-institutions/" role="menuitem">Русский</a>
+
+            <a role="menuitem" href="/mt/industries/payment-institutions/" data-lang-link="mt">Malti</a>
+          </div>
+</div>
+<a class="button button-ghost compact desktop-cta" data-i18n="cta.bookDemo" href="/fr/#demo">Demander une démo</a>
+<a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-menu-button" type="button">☰</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav">
+<a data-i18n="nav.home" href="/fr/" data-route="home">Accueil</a>
+<a data-i18n="nav.product" href="/fr/product/" data-route="product">Produit</a>
+<a data-i18n="nav.industries" href="/fr/industries/" data-route="industries">Secteurs</a>
+<a data-i18n="nav.plans" href="/fr/pricing/" data-route="pricing">Tarifs</a>
+<!-- <a data-i18n="nav.signup" href="#signup">Inscription</a> -->
+<!-- <a data-i18n="nav.demo" href="/fr/#demo">Démo</a> -->
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="industries-title" class="page" data-page="industries" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">Logiciel LCB-FT / AML et KYC pour Vigilance Client et Audit</p><h1 id="industries-title">Logiciel AML/KYC pour établissements de paiement et EMI</h1><p class="lead">Un environnement LCB-FT/KYC pour vigilance client, bénéficiaires effectifs, évaluation des risques, revues, workflows, preuves et piste d’audit.</p><div class="button-row"><a class="button button-primary" data-i18n="cta.startOnline" href="/fr/pricing/">Commencer en ligne</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="industries.fit">Adéquation sectorielle</span><span class="status-dot"><span></span><span data-i18n="industries.international">International</span></span></div><h2 data-i18n="industries.overviewTitle">Conçu pour les opérateurs réglementés et les cabinets professionnels</h2><div class="metric-grid"><div><span data-i18n="industries.metric1Label">Secteurs</span><strong data-i18n="industries.metric1Value">Multiples</strong></div><div><span data-i18n="industries.metric2Label">Positionnement</span><strong data-i18n="industries.metric2Value">Flexible</strong></div><div><span data-i18n="industries.metric3Label">Juridictions</span><strong data-i18n="industries.metric3Value">Adaptable</strong></div><div><span data-i18n="industries.metric4Label">Point d’entrée</span><strong data-i18n="industries.metric4Value">En ligne</strong></div></div></div></div></div>
+<section class="section"><div class="container"><div class="feature-grid three sector-grid">
+<article class="sector-card"><span>L</span><h3 data-i18n="industries.s1Title">Cabinets d’avocats et professions réglementées</h3><p data-i18n="industries.s1Text">Gérez onboarding, documents KYC, informations de propriété et preuves de conformité à travers dossiers et relations.</p><ul><li data-i18n="industries.s1a">Onboarding plus propre</li><li data-i18n="industries.s1b">Organisation documentaire</li><li data-i18n="industries.s1c">Décisions traçables</li></ul></article>
+<article class="sector-card"><span>C</span><h3 data-i18n="industries.s2Title">CSP et fiduciaires</h3><p data-i18n="industries.s2Text">Maintenez dossiers sociétés, structures de bénéficiaires effectifs, revues récurrentes et preuves AML sur l’ensemble d’un portefeuille.</p><ul><li data-i18n="industries.s2a">Onboarding entreprise</li><li data-i18n="industries.s2b">Cartographie UBO</li><li data-i18n="industries.s2c">Contrôle des revues récurrentes</li></ul></article>
+<article class="sector-card"><span>E</span><h3 data-i18n="industries.s3Title">EMI, PI et opérateurs réglementés</h3><p data-i18n="industries.s3Text">Coordonnez onboarding maîtrisé, approbations internes, cycles de revue et preuves dans des environnements supervisés.</p><ul><li data-i18n="industries.s3a">Support à la gouvernance</li><li data-i18n="industries.s3b">Workflow évolutif</li><li data-i18n="industries.s3c">Production de preuves</li></ul></article>
+<article class="sector-card"><span>A</span><h3 data-i18n="industries.s4Title">Prestataires AML et MLRO externes</h3><p data-i18n="industries.s4Text">Gérez plusieurs portefeuilles clients, actions ouvertes, revues et demandes de preuves dans un espace contrôlé.</p><ul><li data-i18n="industries.s4a">Gestion multi-clients</li><li data-i18n="industries.s4b">Accès séparé</li><li data-i18n="industries.s4c">Supervision du portefeuille</li></ul></article>
+<article class="sector-card"><span>I</span><h3 data-i18n="industries.s5Title">Entreprises internationales</h3><p data-i18n="industries.s5Text">Adaptez les workflows aux différentes entités, juridictions et modèles opérationnels internes sans fragmenter les preuves.</p><ul><li data-i18n="industries.s5a">Support multi-juridictions</li><li data-i18n="industries.s5b">Modèle de contrôle cohérent</li><li data-i18n="industries.s5c">Interface multilingue</li></ul></article>
+<article class="sector-card"><span>S</span><h3 data-i18n="industries.s6Title">Petites entreprises réglementées</h3><p data-i18n="industries.s6Text">Commencez avec un espace AML en ligne puis passez à une mise en œuvre guidée ou sur mesure selon l’évolution des besoins.</p><ul><li data-i18n="industries.s6a">Point d’entrée simple</li><li data-i18n="industries.s6b">Inscription en ligne</li><li data-i18n="industries.s6c">Parcours d’évolution</li></ul></article>
+</div></div></section>
+</section>
+
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Workflow ciblé</p>
+<h2>Logiciel LCB-FT pour établissements de paiement et de monnaie électronique dans un workflow Duevio contrôlé</h2>
+<p class="section-lead">Conservez les dossiers, actions et preuves liés à Logiciel LCB-FT pour établissements de paiement et de monnaie électronique avec le dossier client et le processus LCB-FT.</p>
+<div class="problem-grid">
+<div>Regroupez les informations et preuves pertinentes dans un dossier contrôlé.</div>
+<div>Reliez revues, tâches, validations et contexte de risque au même historique opérationnel.</div>
+<div>Retrouvez une piste de preuves claire pour contrôle interne, audit et demandes de supervision.</div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand"><img alt="Duevio" src="/assets/img/brand-DUEVIO-02.svg"/><p data-i18n="footer.tagline">Opérations AML pour onboarding, dossiers KYC, revues, workflows et preuves.</p></div>
+<div><h2 data-i18n="footer.product">Produit</h2><a data-i18n="nav.product" href="/fr/product/">Produit</a><a data-i18n="nav.industries" href="/fr/industries/">Secteurs</a><a data-i18n="nav.plans" href="/fr/pricing/">Tarifs</a><a data-i18n="nav.demo" href="/fr/#demo">Démo</a><div class="seo-related"><a class="seo-related-link" href="/fr/capabilities/kyc-onboarding/">Logiciel KYC/KYB et vigilance client</a><a class="seo-related-link" href="/fr/capabilities/risk-assessment/">Logiciel d’évaluation du risque client LCB-FT</a><a class="seo-related-link" href="/fr/capabilities/screening-integrations/">Filtrage sanctions, PEP/PPE et adverse media</a><a class="seo-related-link" href="/fr/capabilities/audit-trail/">Logiciel de piste d’audit LCB-FT</a><a class="seo-related-link" href="/fr/capabilities/aml-workflow/">Workflow LCB-FT et gestion des dossiers</a><a class="seo-related-link" href="/fr/capabilities/provider-agnostic-integrations/">Intégrations KYC/AML multi-fournisseurs</a></div></div>
+<div><h2 data-i18n="footer.legal">Mentions légales</h2><a data-i18n="legal.privacy" href="/fr/#privacy">Avis de confidentialité</a><a data-i18n="legal.cookies" href="/fr/#cookies">Politique relative aux cookies</a><a data-i18n="legal.terms" href="/fr/#terms">Conditions de service</a></div>
+<div class="footer-payments"><h2 data-i18n="payment.accepted">Moyens de paiement acceptés</h2><div class="payment-logos dark"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div></div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">Tous droits réservés.</span></p><button class="text-button footer-cookie" data-i18n="cookies.openSettings" id="footerCookieSettings" type="button">Paramètres des cookies</button></div>
+</footer>
+<div aria-labelledby="cookieTitle" aria-modal="false" class="cookie-banner" hidden="" id="cookieBanner" role="dialog"><div><strong data-i18n="cookieBanner.title" id="cookieTitle">Choix de confidentialité</strong><p data-i18n="cookieBanner.text">Nous utilisons un stockage essentiel du navigateur pour les préférences de langue et de confidentialité. Les technologies optionnelles d’analyse ou de marketing restent désactivées sauf si vous les choisissez.</p></div><div class="cookie-actions"><button class="button button-ghost compact" data-cookie-action="reject" data-i18n="cookieBanner.reject" type="button">Refuser les optionnels</button><button class="button button-secondary compact" data-cookie-action="settings" data-i18n="cookieBanner.settings" type="button">Paramètres</button><button class="button button-primary compact" data-cookie-action="accept" data-i18n="cookieBanner.accept" type="button">Tout accepter</button></div></div>
+<div class="modal-backdrop" hidden="" id="cookieModal"><div aria-labelledby="cookieModalTitle" aria-modal="true" class="modal" role="dialog"><div class="modal-head"><h2 data-i18n="cookieModal.title" id="cookieModalTitle">Paramètres des cookies</h2><button aria-label="Close" class="modal-close" type="button">×</button></div><p data-i18n="cookieModal.text">Le stockage essentiel est toujours actif car il est nécessaire pour mémoriser les préférences du site et de confidentialité.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Essentiel</strong><p data-i18n="cookieModal.essentialText">Préférences de langue, navigation et consentement.</p></div><span class="always-on" data-i18n="cookieModal.always">Toujours actif</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Analyse</strong><p data-i18n="cookieModal.analyticsText">Outils de mesure optionnels, s’ils sont ajoutés en production.</p></div><input id="analyticsConsent" type="checkbox"/></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Marketing</strong><p data-i18n="cookieModal.marketingText">Technologies optionnelles de publicité ou marketing, si elles sont ajoutées en production.</p></div><input id="marketingConsent" type="checkbox"/></label><button class="button button-primary block" data-i18n="cookieModal.save" id="saveCookieSettings" type="button">Enregistrer les préférences</button></div></div>
+</body>
+</html>
+

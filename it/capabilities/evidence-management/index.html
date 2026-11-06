@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="it" data-lang="it" data-root="/" data-seo-route="product" data-seo-slug="capabilities/evidence-management">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Gestione fascicolo antiriciclaggio ed evidenze | Duevio</title>
+  <base href="/">
+<meta name="description" content="Gestione fascicolo antiriciclaggio ed evidenze. KYC/KYB, revisioni, workflow ed evidenze in un unico ambiente AML controllato.">
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#22386f" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta property="og:title" content="Gestione fascicolo antiriciclaggio ed evidenze | Duevio">
+<meta property="og:description" content="Gestione fascicolo antiriciclaggio ed evidenze. KYC/KYB, revisioni, workflow ed evidenze in un unico ambiente AML controllato.">
+<meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+<meta content="Duevio" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/it/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/capabilities/evidence-management/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/capabilities/evidence-management/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<link href="/assets/css/styles.css?v=20261103-feedback21" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+<script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script defer="" src="/assets/js/app.js?v=20261103-feedback21"></script>
+  <meta property="og:url" content="https://duevio.com/it/capabilities/evidence-management/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Software antiriciclaggio per adeguata verifica KYC/KYB, titolare effettivo, valutazione del rischio AML, revisioni periodiche, workflow e audit trail.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/it/capabilities/evidence-management/#webpage","url":"https://duevio.com/it/capabilities/evidence-management/","name":"Gestione fascicolo antiriciclaggio ed evidenze | Duevio","description":"Gestione fascicolo antiriciclaggio ed evidenze. KYC/KYB, revisioni, workflow ed evidenze in un unico ambiente AML controllato.","inLanguage":"it","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+<a class="skip-link" data-i18n="access.skip" href="#main">Vai al contenuto</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Duevio home" class="brand" href="#home">
+<img alt="Duevio" src="/assets/img/brand-DUEVIO-01.svg"/>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a data-i18n="nav.home" data-route="home" href="/it/">Home</a>
+<a data-i18n="nav.product" data-route="product" href="/it/product/">Prodotto</a>
+<a data-i18n="nav.industries" data-route="industries" href="/it/industries/">Settori</a>
+<a data-i18n="nav.plans" data-route="pricing" href="/it/pricing/">Pricing</a>
+<!-- <a data-i18n="nav.signup" data-route="signup" href="#signup">Registrazione</a> -->
+<!-- <a data-i18n="nav.demo" data-route="demo" href="/it/#demo">Demo</a> -->
+</nav>
+<div class="header-actions">
+<div class="language-switcher">
+<button aria-expanded="false" aria-haspopup="true" class="language-button" id="languageButton" type="button">
+<span class="language-code">IT</span><span aria-hidden="true">▾</span>
+</button>
+<div class="language-menu" hidden="" id="languageMenu" role="menu">
+<a data-lang-link="en" href="/capabilities/evidence-management/" role="menuitem">English</a>
+<a data-lang-link="it" href="/it/capabilities/evidence-management/" role="menuitem">Italiano</a>
+<a data-lang-link="de" href="/de/capabilities/evidence-management/" role="menuitem">Deutsch</a>
+<a data-lang-link="es" href="/es/capabilities/evidence-management/" role="menuitem">Español</a>
+<a data-lang-link="fr" href="/fr/capabilities/evidence-management/" role="menuitem">Français</a>
+<a data-lang-link="ru" href="/ru/capabilities/evidence-management/" role="menuitem">Русский</a>
+
+            <a role="menuitem" href="/mt/capabilities/evidence-management/" data-lang-link="mt">Malti</a>
+          </div>
+</div>
+<a class="button button-ghost compact desktop-cta" data-i18n="cta.bookDemo" href="/it/#demo">Richiedi una demo</a>
+<a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-menu-button" type="button">☰</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav">
+<a data-i18n="nav.home" href="/it/" data-route="home">Home</a>
+<a data-i18n="nav.product" href="/it/product/" data-route="product">Prodotto</a>
+<a data-i18n="nav.industries" href="/it/industries/" data-route="industries">Settori</a>
+<a data-i18n="nav.plans" href="/it/pricing/" data-route="pricing">Pricing</a>
+<!-- <a data-i18n="nav.signup" href="#signup">Registrazione</a> -->
+<!-- <a data-i18n="nav.demo" href="/it/#demo">Demo</a> -->
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="product-title" class="page" data-page="product" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">Software Antiriciclaggio per KYC e Audit Trail</p><h1 id="product-title">Gestione fascicolo antiriciclaggio ed evidenze</h1><p class="lead">Un unico ambiente AML per adeguata verifica KYC/KYB, titolare effettivo, valutazione del rischio, revisioni periodiche, workflow, evidenze e audit trail.</p><div class="button-row"><a class="button button-primary" data-i18n="cta.startOnline" href="/it/pricing/">Inizia online</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="product.overviewLabel">Panoramica prodotto</span><span class="status-dot"><span></span><span data-i18n="product.modular">Modulare</span></span></div><h2 data-i18n="product.overviewTitle">Pensato per workflow AML e gestione pratiche, non solo per raccogliere dati</h2><div class="metric-grid"><div><span data-i18n="product.metric1Label">Moduli principali</span><strong>6</strong></div><div><span data-i18n="product.metric2Label">Workflow</span><strong data-i18n="product.metric2Value">Strutturati</strong></div><div><span data-i18n="product.metric3Label">Evidenze</span><strong data-i18n="product.metric3Value">Esportabili</strong></div><div><span data-i18n="product.metric4Label">Scalabilità</span><strong data-i18n="product.metric4Value">Integrata</strong></div></div><div class="highlight-list"><p><span>✓</span><span data-i18n="product.highlight1">Onboarding guidato, controllo documentale e visibilità sugli assetti proprietari</span></p><p><span>✓</span><span data-i18n="product.highlight2">Task, approvazioni, cicli di revisione e monitoraggio della remediation</span></p><p><span>✓</span><span data-i18n="product.highlight3">Evidenze sempre collegate al fascicolo cliente</span></p></div></div></div></div>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.modulesEyebrow">Moduli principali</p><h2 data-i18n="product.modulesTitle">Moduli AML e KYC per l’intero ciclo di vita del cliente.</h2><p class="section-lead" data-i18n="product.modulesLead">Configura adeguata verifica KYC/KYB, valutazione del rischio, revisioni ed evidenze intorno ai tuoi controlli interni.</p><div class="feature-grid three module-grid">
+<article class="module-card"><span>1</span><h3 data-i18n="product.m1Title">Onboarding KYC/KYB e adeguata verifica</h3><p data-i18n="product.m1Text">Crea percorsi guidati di adeguata verifica per persone fisiche, società e strutture proprietarie complesse.</p><ul><li data-i18n="product.m1a">Percorsi configurabili</li><li data-i18n="product.m1b">Raccolta strutturata</li><li data-i18n="product.m1c">Migliore raccolta al primo invio</li></ul></article>
+<article class="module-card"><span>2</span><h3 data-i18n="product.m2Title">Titolare effettivo e assetto proprietario</h3><p data-i18n="product.m2Text">Mantieni assetti proprietari, UBO e ruoli nel fascicolo KYC/KYB aggiornato del cliente.</p><ul><li data-i18n="product.m2a">Proprietà diretta e indiretta</li><li data-i18n="product.m2b">Visibilità dei ruoli</li><li data-i18n="product.m2c">Supporto alla conferma del cliente</li></ul></article>
+<article class="module-card"><span>3</span><h3 data-i18n="product.m3Title">Questionari dinamici</h3><p data-i18n="product.m3Text">Usa moduli che si adattano al tipo di cliente, alla struttura e alle informazioni già raccolte.</p><ul><li data-i18n="product.m3a">Form configurabili</li><li data-i18n="product.m3b">Dati precompilati</li><li data-i18n="product.m3c">Meno duplicazioni</li></ul></article>
+<article class="module-card"><span>4</span><h3 data-i18n="product.m4Title">Controllo documentale</h3><p data-i18n="product.m4Text">Tratta i documenti come evidenze di compliance, con stato, validità e contesto.</p><ul><li data-i18n="product.m4a">Gestione delle scadenze</li><li data-i18n="product.m4b">Gestione delle versioni</li><li data-i18n="product.m4c">Orientato alle evidenze</li></ul></article>
+<article class="module-card"><span>5</span><h3 data-i18n="product.m5Title">Revisioni periodiche e monitoraggio</h3><p data-i18n="product.m5Text">Gestisci cicli di revisione KYC, scadenze documentali, attività aperte e remediation prima che diventino carenze.</p><ul><li data-i18n="product.m5a">Revisioni periodiche</li><li data-i18n="product.m5b">Supporto alle escalation</li><li data-i18n="product.m5c">Visibilità delle attività aperte</li></ul></article>
+<article class="module-card"><span>6</span><h3 data-i18n="product.m6Title">Audit trail e fascicolo antiriciclaggio</h3><p data-i18n="product.m6Text">Produci evidenze AML ordinate per audit, ispezioni, controlli interni e richieste di vigilanza.</p><ul><li data-i18n="product.m6a">Pacchetti di evidenze</li><li data-i18n="product.m6b">Cronologia cliente</li><li data-i18n="product.m6c">Recupero più rapido</li></ul></article>
+</div></div></section>
+<section class="section section-light"><div class="container"><p class="eyebrow" data-i18n="product.howEyebrow">Come funziona</p><h2 data-i18n="product.howTitle">Gestisci KYC e workflow AML dall’onboarding alle evidenze di audit.</h2><p class="section-lead" data-i18n="product.howLead">Mantieni collegati adeguata verifica, contesto di rischio, attività, approvazioni e decisioni per tutto il rapporto con il cliente.</p><div class="steps-grid"><article><span>1</span><p data-i18n="product.step1">Raccogli dati e documenti di onboarding attraverso un processo guidato.</p></article><article><span>2</span><p data-i18n="product.step2">Costruisci il fascicolo vivo con proprietà, ruoli, controlli, note e decisioni.</p></article><article><span>3</span><p data-i18n="product.step3">Traccia task, approvazioni, revisioni, eccezioni e remediation da un'unica dashboard.</p></article><article><span>4</span><p data-i18n="product.step4">Recupera rapidamente le evidenze quando arriva una richiesta di audit, ispezione o partner.</p></article></div></div></section>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.integrationsEyebrow">Integrazioni e predisposizione</p><h2 data-i18n="product.integrationsTitle">Integra Duevio con provider KYC/KYB, screening PEP e sanzioni e fonti camerali.</h2><p class="section-lead" data-i18n="product.integrationsLead">Duevio può orchestrare provider di identità, KYC/KYB, screening PEP/sanzioni e dati societari mantenendo workflow e audit trail in un unico punto.</p><div class="integration-grid"><span data-i18n="product.int1">Provider di verifica dell'identità</span><span data-i18n="product.int2">Provider di screening e watchlist</span><span data-i18n="product.int3">Registri pubblici e fonti societarie</span><span data-i18n="product.int4">Repository documentali</span><span data-i18n="product.int5">CRM, sistemi core e onboarding</span><span data-i18n="product.int6">API e livello di integrazione enterprise</span></div></div></section>
+</section>
+
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Workflow dedicato</p>
+<h2>Gestione evidenze antiriciclaggio in un workflow Duevio controllato</h2>
+<p class="section-lead">Mantieni dati, attività ed evidenze relativi a Gestione evidenze antiriciclaggio collegati al fascicolo cliente e al processo AML complessivo.</p>
+<div class="problem-grid">
+<div>Conserva informazioni ed evidenze pertinenti in un unico fascicolo controllato.</div>
+<div>Collega revisioni, task, approvazioni e contesto di rischio alla stessa storia operativa.</div>
+<div>Recupera una traccia chiara delle evidenze per controlli interni, audit e richieste di vigilanza.</div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand"><img alt="Duevio" src="/assets/img/brand-DUEVIO-02.svg"/><p data-i18n="footer.tagline">Operazioni AML per onboarding, fascicoli KYC, revisioni, workflow ed evidenze.</p></div>
+<div><h2 data-i18n="footer.product">Prodotto</h2><a data-i18n="nav.product" href="/it/product/">Prodotto</a><a data-i18n="nav.industries" href="/it/industries/">Settori</a><a data-i18n="nav.plans" href="/it/pricing/">Pricing</a><a data-i18n="nav.demo" href="/it/#demo">Demo</a><div class="seo-related"><a class="seo-related-link" href="/it/capabilities/audit-trail/">Software audit trail e tracciabilità antiriciclaggio</a><a class="seo-related-link" href="/it/capabilities/aml-workflow/">Software workflow AML e gestione pratiche</a><a class="seo-related-link" href="/it/capabilities/kyc-onboarding/">Software KYC/KYB per adeguata verifica</a><a class="seo-related-link" href="/it/capabilities/periodic-reviews/">Revisioni periodiche KYC e monitoraggio</a><a class="seo-related-link" href="/it/industries/corporate-service-providers/">Software AML per CSP e fiduciarie</a><a class="seo-related-link" href="/it/industries/law-firms/">Software antiriciclaggio per studi legali</a></div></div>
+<div><h2 data-i18n="footer.legal">Legale</h2><a data-i18n="legal.privacy" href="/it/#privacy">Informativa Privacy</a><a data-i18n="legal.cookies" href="/it/#cookies">Cookie Policy</a><a data-i18n="legal.terms" href="/it/#terms">Termini di Servizio</a></div>
+<div class="footer-payments"><h2 data-i18n="payment.accepted">Metodi di pagamento accettati</h2><div class="payment-logos dark"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div></div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></p><button class="text-button footer-cookie" data-i18n="cookies.openSettings" id="footerCookieSettings" type="button">Impostazioni cookie</button></div>
+</footer>
+<div aria-labelledby="cookieTitle" aria-modal="false" class="cookie-banner" hidden="" id="cookieBanner" role="dialog"><div><strong data-i18n="cookieBanner.title" id="cookieTitle">Scelte privacy</strong><p data-i18n="cookieBanner.text">Utilizziamo memoria essenziale del browser per lingua e preferenze privacy. Eventuali tecnologie opzionali di analytics o marketing resteranno disattivate finché non le scegli.</p></div><div class="cookie-actions"><button class="button button-ghost compact" data-cookie-action="reject" data-i18n="cookieBanner.reject" type="button">Rifiuta opzionali</button><button class="button button-secondary compact" data-cookie-action="settings" data-i18n="cookieBanner.settings" type="button">Impostazioni</button><button class="button button-primary compact" data-cookie-action="accept" data-i18n="cookieBanner.accept" type="button">Accetta tutto</button></div></div>
+<div class="modal-backdrop" hidden="" id="cookieModal"><div aria-labelledby="cookieModalTitle" aria-modal="true" class="modal" role="dialog"><div class="modal-head"><h2 data-i18n="cookieModal.title" id="cookieModalTitle">Impostazioni cookie</h2><button aria-label="Close" class="modal-close" type="button">×</button></div><p data-i18n="cookieModal.text">La memoria essenziale è sempre attiva perché necessaria a ricordare le preferenze del sito e della privacy.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Essenziali</strong><p data-i18n="cookieModal.essentialText">Lingua, navigazione e preferenze di consenso.</p></div><span class="always-on" data-i18n="cookieModal.always">Sempre attivi</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Analytics</strong><p data-i18n="cookieModal.analyticsText">Strumenti opzionali di misurazione, se aggiunti in produzione.</p></div><input id="analyticsConsent" type="checkbox"/></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Marketing</strong><p data-i18n="cookieModal.marketingText">Tecnologie opzionali pubblicitarie o marketing, se aggiunte in produzione.</p></div><input id="marketingConsent" type="checkbox"/></label><button class="button button-primary block" data-i18n="cookieModal.save" id="saveCookieSettings" type="button">Salva preferenze</button></div></div>
+</body>
+</html>
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-lang="ru" data-root="/" data-seo-route="pricing" data-seo-slug="pricing">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Тарифы AML/KYC-системы | Duevio</title>
+  <base href="/">
+<meta name="description" content="Тарифы AML/KYC-системы. KYC/KYB, проверки, workflow и доказательства в единой контролируемой AML-среде.">
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#22386f" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta property="og:title" content="Тарифы AML/KYC-системы | Duevio">
+<meta property="og:description" content="Тарифы AML/KYC-системы. KYC/KYB, проверки, workflow и доказательства в единой контролируемой AML-среде.">
+<meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+<meta content="Duevio" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/ru/pricing/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/pricing/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/pricing/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/pricing/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/pricing/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/pricing/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/pricing/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/pricing/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/pricing/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<link href="/assets/css/styles.css?v=20261103-feedback21" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+<script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script defer="" src="/assets/js/app.js?v=20261103-feedback21"></script>
+  <meta property="og:url" content="https://duevio.com/ru/pricing/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"AML/KYC система для ПОД/ФТ: проверка клиентов, KYC/KYB, бенефициары, оценка риска, периодический мониторинг, workflow и аудиторский след.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/ru/pricing/#webpage","url":"https://duevio.com/ru/pricing/","name":"Тарифы AML/KYC-системы | Duevio","description":"Тарифы AML/KYC-системы. KYC/KYB, проверки, workflow и доказательства в единой контролируемой AML-среде.","inLanguage":"ru","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+<a class="skip-link" data-i18n="access.skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Duevio home" class="brand" href="#home">
+<img alt="Duevio" src="/assets/img/brand-DUEVIO-01.svg"/>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a data-i18n="nav.home" data-route="home" href="/ru/">Главная</a>
+<a data-i18n="nav.product" data-route="product" href="/ru/product/">Продукт</a>
+<a data-i18n="nav.industries" data-route="industries" href="/ru/industries/">Отрасли</a>
+<a data-i18n="nav.plans" data-route="pricing" href="/ru/pricing/">Цены</a>
+<!-- <a data-i18n="nav.signup" data-route="signup" href="#signup">Регистрация</a> -->
+<!-- <a data-i18n="nav.demo" data-route="demo" href="/ru/#demo">Демо</a> -->
+</nav>
+<div class="header-actions">
+<div class="language-switcher">
+<button aria-expanded="false" aria-haspopup="true" class="language-button" id="languageButton" type="button">
+<span class="language-code">RU</span><span aria-hidden="true">▾</span>
+</button>
+<div class="language-menu" hidden="" id="languageMenu" role="menu">
+<a data-lang-link="en" href="/pricing/" role="menuitem">English</a>
+<a data-lang-link="it" href="/it/pricing/" role="menuitem">Italiano</a>
+<a data-lang-link="de" href="/de/pricing/" role="menuitem">Deutsch</a>
+<a data-lang-link="es" href="/es/pricing/" role="menuitem">Español</a>
+<a data-lang-link="fr" href="/fr/pricing/" role="menuitem">Français</a>
+<a data-lang-link="ru" href="/ru/pricing/" role="menuitem">Русский</a>
+
+            <a role="menuitem" href="/mt/pricing/" data-lang-link="mt">Malti</a>
+          </div>
+</div>
+<a class="button button-ghost compact desktop-cta" data-i18n="cta.bookDemo" href="/ru/#demo">Запросить демо</a>
+<a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-menu-button" type="button">☰</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav">
+<a data-i18n="nav.home" href="/ru/" data-route="home">Главная</a>
+<a data-i18n="nav.product" href="/ru/product/" data-route="product">Продукт</a>
+<a data-i18n="nav.industries" href="/ru/industries/" data-route="industries">Отрасли</a>
+<a data-i18n="nav.plans" href="/ru/pricing/" data-route="pricing">Цены</a>
+<!-- <a data-i18n="nav.signup" href="#signup">Регистрация</a> -->
+<!-- <a data-i18n="nav.demo" href="/ru/#demo">Демо</a> -->
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="pricing-title" class="page" data-page="pricing" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-i18n="plans.eyebrow">Цены</p><h1 data-i18n="plans.title" id="pricing-title">Не ведите KYC, AML workflow и ревью в разрозненных файлах.</h1><p class="lead" data-i18n="plans.lead">Начните с Essential или используйте Professional и Custom для AML workflow, KYC/KYB case management, интеграций и аудиторского следа.</p><!-- <div class="button-row"><a class="button button-primary" data-i18n="cta.startNow" href="#signup">Начать регистрацию</a><a class="button button-secondary" data-i18n="cta.bookDemo" href="/ru/#demo">Запросить демо</a></div> --></div><!-- <div class="overview-card"><div class="overview-head"><span data-i18n="plans.structure">Структура цен</span><span class="status-dot"><span></span><span data-i18n="plans.choice">Гибкая</span></span></div><h2 data-i18n="plans.overviewTitle">Выберите, как начать</h2><div class="metric-grid"><div><span>Essential</span><strong data-i18n="plans.online">Онлайн</strong></div><div><span>Professional</span><strong data-i18n="plans.guided">С сопровождением</strong></div><div><span>Enterprise</span><strong data-i18n="plans.tailored">Индивидуально</strong></div><div><span data-i18n="plans.activation">Активация</span><strong data-i18n="plans.immediate">Сразу*</strong></div></div><p class="micro" data-i18n="plans.activationNote">*Essential работает в режиме самообслуживания после создания аккаунта и оплаты. Professional и Custom проходят согласованный путь внедрения.</p></div> --></div></div>
+<section class="section"><div class="container"><div class="pricing-grid">
+<article class="price-card featured"><div class="price-tag" data-i18n="plans.startNow">Начать регистрацию</div><h2>Essential</h2><p class="price"><strong>9,99 €</strong><span class="price-meta"><span><b aria-hidden="true">/</b> <span data-i18n="plans.perMonth">в месяц</span></span><small data-i18n="plans.billedAnnually">(ежегодная оплата)</small></span></p><p data-i18n="plans.essentialText">До 25 управляемых клиентов. Включено 5 записей Business и 5 записей User; дополнительные записи и услуги оплачиваются токенами.</p><ul><li data-i18n="plans.e1">До 25 управляемых клиентов</li><li data-i18n="plans.e2">5 записей Business включено</li><li data-i18n="plans.e3">5 записей User включено</li><li data-i18n="plans.e4">Онлайн-регистрация с сопровождаемой активацией</li><li data-i18n="plans.e5">Дополнительные записи и услуги за токены</li><li data-i18n="plans.e6">2 000 приветственных токенов БЕСПЛАТНО сверх включённых записей</li></ul><a class="button button-primary block" data-i18n="cta.startNow" href="https://signup.duevio.com/signup.aspx?lang=ru&plan=essential&source=pricing" target="_blank" rel="noopener noreferrer">Начать регистрацию</a></article>
+<article class="price-card"><div class="price-tag" data-i18n="plans.growing">Для растущих команд</div><h2>Professional</h2><p class="price"><strong>49,99 €</strong><span class="price-meta"><span><b aria-hidden="true">/</b> <span data-i18n="plans.perMonth">в месяц</span></span><small data-i18n="plans.billedAnnually">(ежегодная оплата)</small></span></p><p class="price-description" data-i18n="plans.professionalText">Неограниченное число управляемых клиентов. Включено 25 записей Business и 25 записей User.</p><ul><li data-i18n="plans.p1">Неограниченное число клиентов</li><li data-i18n="plans.p2">25 записей Business включено</li><li data-i18n="plans.p3">25 записей User включено</li><li data-i18n="plans.p4">Сопровождаемое подключение и настройка</li><li data-i18n="plans.p5">Дополнительные записи и услуги за токены</li><li data-i18n="plans.p6">10 000 приветственных токенов БЕСПЛАТНО сверх включённых записей</li></ul><a class="button button-primary block" data-i18n="cta.startNow" href="https://signup.duevio.com/signup.aspx?lang=ru&plan=professional&source=pricing" target="_blank" rel="noopener noreferrer">Начать регистрацию</a></article>
+<article class="price-card"><div class="price-tag" data-i18n="plans.complex">Для индивидуальных требований</div><h2>Enterprise</h2><p class="price-description" data-i18n="plans.enterpriseText">Для массовых загрузок, больших объёмов и индивидуальных требований. Ежемесячная или ежегодная оплата.</p><ul><li data-i18n="plans.x1">Ежемесячная или ежегодная оплата</li><li data-i18n="plans.x2">Массовые загрузки и большие объёмы</li><li data-i18n="plans.x3">Индивидуальные процессы</li><li data-i18n="plans.x4">Индивидуальные интеграции и миграция</li><li data-i18n="plans.x5">Коммерческий план и план внедрения</li></ul><a class="button button-secondary block" data-i18n="plans.discussEnterprise" href="/ru/#enterprise">Обсудить Custom</a></article>
+</div><div class="payment-strip"><span data-i18n="payment.accepted">Принимаемые способы оплаты</span><div class="payment-logos"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div><p data-i18n="payment.secure">Данные банковской карты и PayPal обрабатываются платёжным провайдером и не хранятся на этом маркетинговом сайте.</p></div></div></section>
+<section class="section section-light duevio-token-section"><div class="container">
+<div class="token-section-heading"><p class="eyebrow" data-i18n="tokens.eyebrow">Токены</p><h2 data-i18n="tokens.title">Оплачивайте только дополнительные записи и услуги по мере использования.</h2><p class="section-lead" data-i18n="tokens.intro">Такие услуги, как screening, не входят в подписку и оплачиваются токенами Duevio. Бесплатные приветственные токены, включённые в ваш тариф, можно использовать для оплаты этих услуг, пока не исчерпается баланс.</p></div>
+<div class="token-packages-heading"><p class="eyebrow" data-i18n="tokens.packagesTitle">Пакеты токенов</p><h3 data-i18n="tokens.packagesLead">Выберите пакет токенов для дополнительных услуг.</h3></div>
+<div class="token-packages-grid"><article class="token-package-card"><div class="token-package-top"><span class="token-package-price">€50</span><span class="token-package-ribbon token-package-ribbon--standard" data-i18n="tokens.standardLabel">Стандартный пакет</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Всего токенов</span><span class="token-total-count" data-i18n="tokens.pack1">5 000 токенов</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Базовые токены</span><span data-i18n="tokens.base1">5 000 токенов</span></div></div></article><article class="token-package-card token-package-card--bonus"><div class="token-package-top"><span class="token-package-price">€100</span><span class="token-package-ribbon" data-i18n="tokens.bonusRibbon">БЕСПЛАТНЫЙ БОНУС</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Всего токенов</span><span class="token-total-count" data-i18n="tokens.pack2">15 000 токенов</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Базовые токены</span><span data-i18n="tokens.base2">10 000 токенов</span></div><div class="token-bonus-line"><span data-i18n="tokens.free2">+5 000 токенов БЕСПЛАТНО</span></div></div></article><article class="token-package-card token-package-card--best"><div class="token-package-top"><span class="token-package-price">€500</span><span class="token-package-ribbon" data-i18n="tokens.bestValueRibbon">МАКСИМАЛЬНАЯ ВЫГОДА</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Всего токенов</span><span class="token-total-count" data-i18n="tokens.pack3">80 000 токенов</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Базовые токены</span><span data-i18n="tokens.base3">50 000 токенов</span></div><div class="token-bonus-line"><span data-i18n="tokens.free3">+30 000 токенов БЕСПЛАТНО</span></div></div></article></div>
+<div class="token-disclosure"><h3 class="token-disclosure-title" data-i18n="tokens.infoLabel">Важно знать</h3><div class="token-disclosure-copy"><p data-i18n="tokens.benefitNote">Включённые записи Business/User и бесплатные приветственные токены — отдельные преимущества тарифа. Пакеты токенов приобретаются дополнительно.</p><p data-i18n="tokens.note">Для каждого пакета указаны общее число токенов и бесплатные бонусы. Дополнительные услуги оплачиваются из доступного баланса токенов.</p></div></div>
+</div></section></section>
+
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Планы и услуги</p>
+<h2>Выберите тариф. Пополняйте токены по необходимости.</h2>
+<p class="section-lead">Подписка включает начальные записи и приветственные токены. Дополнительные пакеты необязательны.</p>
+<div class="problem-grid">
+<div>Essential: 5 записей Business, 5 User и 2 000 приветственных токенов.</div>
+<div>Professional: 25 записей Business, 25 User и 10 000 приветственных токенов.</div>
+<div>Custom поддерживает большие объёмы, интеграции и индивидуальные процессы.</div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand"><img alt="Duevio" src="/assets/img/brand-DUEVIO-02.svg"/><p data-i18n="footer.tagline">AML-операции для онбординга, KYC-досье, проверок, процессов и доказательств.</p></div>
+<div><h2 data-i18n="footer.product">Продукт</h2><a data-i18n="nav.product" href="/ru/product/">Продукт</a><a data-i18n="nav.industries" href="/ru/industries/">Отрасли</a><a data-i18n="nav.plans" href="/ru/pricing/">Цены</a><a data-i18n="nav.demo" href="/ru/#demo">Демо</a><div class="seo-related"><a class="seo-related-link" href="/ru/product/">AML/KYC система для комплаенса</a><a class="seo-related-link" href="/ru/capabilities/kyc-onboarding/">KYC/KYB онбординг и проверка клиентов</a><a class="seo-related-link" href="/ru/capabilities/aml-workflow/">AML workflow и управление кейсами</a><a class="seo-related-link" href="/ru/capabilities/audit-trail/">AML аудит-трейл и аудиторский след</a><a class="seo-related-link" href="/ru/industries/payment-institutions/">AML/KYC для платежных организаций и EMI</a><a class="seo-related-link" href="/ru/industries/law-firms/">AML/KYC для юридических фирм</a></div></div>
+<div><h2 data-i18n="footer.legal">Правовая информация</h2><a data-i18n="legal.privacy" href="/ru/#privacy">Уведомление о конфиденциальности</a><a data-i18n="legal.cookies" href="/ru/#cookies">Политика cookie</a><a data-i18n="legal.terms" href="/ru/#terms">Условия использования</a></div>
+<div class="footer-payments"><h2 data-i18n="payment.accepted">Принимаемые способы оплаты</h2><div class="payment-logos dark"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div></div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">Все права защищены.</span></p><button class="text-button footer-cookie" data-i18n="cookies.openSettings" id="footerCookieSettings" type="button">Настройки cookie</button></div>
+</footer>
+<div aria-labelledby="cookieTitle" aria-modal="false" class="cookie-banner" hidden="" id="cookieBanner" role="dialog"><div><strong data-i18n="cookieBanner.title" id="cookieTitle">Настройки конфиденциальности</strong><p data-i18n="cookieBanner.text">Мы используем обязательное хранилище браузера для языковых и privacy-настроек. Необязательные аналитические или маркетинговые технологии остаются отключёнными, пока вы их не выберете.</p></div><div class="cookie-actions"><button class="button button-ghost compact" data-cookie-action="reject" data-i18n="cookieBanner.reject" type="button">Отклонить необязательные</button><button class="button button-secondary compact" data-cookie-action="settings" data-i18n="cookieBanner.settings" type="button">Настройки</button><button class="button button-primary compact" data-cookie-action="accept" data-i18n="cookieBanner.accept" type="button">Принять все</button></div></div>
+<div class="modal-backdrop" hidden="" id="cookieModal"><div aria-labelledby="cookieModalTitle" aria-modal="true" class="modal" role="dialog"><div class="modal-head"><h2 data-i18n="cookieModal.title" id="cookieModalTitle">Настройки cookie</h2><button aria-label="Close" class="modal-close" type="button">×</button></div><p data-i18n="cookieModal.text">Обязательное хранение всегда активно, так как оно нужно для запоминания настроек сайта и конфиденциальности.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Обязательные</strong><p data-i18n="cookieModal.essentialText">Настройки языка, навигации и согласия.</p></div><span class="always-on" data-i18n="cookieModal.always">Всегда включено</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Аналитика</strong><p data-i18n="cookieModal.analyticsText">Необязательные инструменты измерения, если будут добавлены в рабочей версии.</p></div><input id="analyticsConsent" type="checkbox"/></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Маркетинг</strong><p data-i18n="cookieModal.marketingText">Необязательные рекламные или маркетинговые технологии, если будут добавлены в рабочей версии.</p></div><input id="marketingConsent" type="checkbox"/></label><button class="button button-primary block" data-i18n="cookieModal.save" id="saveCookieSettings" type="button">Сохранить настройки</button></div></div>
+</body>
+</html>
+

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html data-lang="ru" data-root="../" lang="ru">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Duevio | AML-процессы от онбординга до аудита</title>
+<meta content="Управляйте KYC, клиентскими досье, собственностью, проверками, процессами и аудиторскими доказательствами в едином AML-пространстве." name="description"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#22386f" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="Duevio | AML-процессы от онбординга до аудита" property="og:title"/>
+<meta content="Управляйте KYC, клиентскими досье, собственностью, проверками, процессами и аудиторскими доказательствами в едином AML-пространстве." property="og:description"/>
+<meta content="../assets/img/brand-DUEVIO-01.svg" property="og:image"/>
+<meta content="Duevio" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://duevio.com/ru/" rel="canonical"/>
+<link href="https://duevio.com/" hreflang="en" rel="alternate"/>
+<link href="https://duevio.com/it/" hreflang="it" rel="alternate"/>
+<link href="https://duevio.com/de/" hreflang="de" rel="alternate"/>
+<link href="https://duevio.com/es/" hreflang="es" rel="alternate"/>
+<link href="https://duevio.com/fr/" hreflang="fr" rel="alternate"/>
+<link href="https://duevio.com/ru/" hreflang="ru" rel="alternate"/>
+<link href="https://duevio.com/" hreflang="x-default" rel="alternate"/>
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<link href="/assets/css/styles.css?v=20261103-feedback21" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+<script defer="" src="/assets/js/app.js?v=20261103-feedback21"></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+<a class="skip-link" data-i18n="access.skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Duevio home" class="brand" href="#home">
+<img alt="Duevio" src="/assets/img/brand-DUEVIO-01.svg"/>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a data-i18n="nav.home" data-route="home" href="#home">Главная</a>
+<a data-i18n="nav.product" data-route="product" href="#product">Продукт</a>
+<a data-i18n="nav.industries" data-route="industries" href="#industries">Отрасли</a>
+<a data-i18n="nav.plans" data-route="pricing" href="#pricing">Цены</a>
+<!-- <a data-i18n="nav.signup" data-route="signup" href="#signup">Регистрация</a> -->
+<!-- <a data-i18n="nav.demo" data-route="demo" href="#demo">Демо</a> -->
+</nav>
+<div class="header-actions">
+<div class="language-switcher">
+<button aria-expanded="false" aria-haspopup="true" class="language-button" id="languageButton" type="button">
+<span class="language-code">RU</span><span aria-hidden="true">▾</span>
+</button>
+<div class="language-menu" hidden="" id="languageMenu" role="menu">
+<a data-lang-link="en" href="../" role="menuitem">English</a>
+<a data-lang-link="it" href="../it/" role="menuitem">Italiano</a>
+<a data-lang-link="de" href="../de/" role="menuitem">Deutsch</a>
+<a data-lang-link="es" href="../es/" role="menuitem">Español</a>
+<a data-lang-link="fr" href="../fr/" role="menuitem">Français</a>
+<a data-lang-link="ru" href="../ru/" role="menuitem">Русский</a>
+</div>
+</div>
+<a class="button button-ghost compact desktop-cta" data-i18n="cta.bookDemo" href="#demo">Запросить демо</a>
+<a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu" class="mobile-menu-button" type="button">☰</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav">
+<a data-i18n="nav.home" href="/ru/" data-route="home">Главная</a>
+<a data-i18n="nav.product" href="/ru/product/" data-route="product">Продукт</a>
+<a data-i18n="nav.industries" href="/ru/industries/" data-route="industries">Отрасли</a>
+<a data-i18n="nav.plans" href="/ru/pricing/" data-route="pricing">Цены</a>
+<!-- <a data-i18n="nav.signup" href="#signup">Регистрация</a> -->
+<!-- <a data-i18n="nav.demo" href="#demo">Демо</a> -->
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="home-title" class="page active" data-page="home">
+<div class="hero hero-home">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow" data-i18n="home.eyebrow">Международная операционная система AML</p>
+<h1 data-i18n="home.title" id="home-title">AML-процессы под контролем, от онбординга до аудита.</h1>
+<p class="lead" data-i18n="home.lead">Duevio предоставляет регулируемым компаниям единое рабочее пространство для управления KYC, клиентскими досье, структурой собственности, проверками, задачами и доказательствами на всём жизненном цикле клиента.</p>
+<div class="button-row">
+<a class="button button-primary" data-i18n="cta.startOnline" href="#pricing">Начать онлайн</a>
+
+</div>
+</div>
+<div aria-label="Portfolio overview" class="overview-card">
+<div class="overview-head">
+<span data-i18n="home.overviewLabel">Обзор портфеля</span>
+<span class="status-dot"><span></span><span data-i18n="home.live">Активно</span></span>
+</div>
+<h2 data-i18n="home.overviewTitle">Как выглядит контролируемая AML-среда</h2>
+<div class="metric-grid">
+<div><span data-i18n="home.metric1Label">Клиентские досье</span><strong data-i18n="home.metric1Value">Централизованы</strong></div>
+<div><span data-i18n="home.metric2Label">Процесс проверки</span><strong data-i18n="home.metric2Value">Структурирован</strong></div>
+<div><span data-i18n="home.metric3Label">Доказательства</span><strong data-i18n="home.metric3Value">Прослеживаемые</strong></div>
+<div><span data-i18n="home.metric4Label">Регистрация</span><strong data-i18n="home.metric4Value">Онлайн</strong></div>
+</div>
+<div class="highlight-list">
+<p><span>✓</span><span data-i18n="home.highlight1">Единое клиентское досье вместо разрозненных папок и писем</span></p>
+<p><span>✓</span><span data-i18n="home.highlight2">Определённый процесс от онбординга до проверки и доказательств</span></p>
+<p><span>✓</span><span data-i18n="home.highlight3">Essential, Professional и Custom на одной платформе</span></p>
+</div>
+</div>
+</div>
+</div>
+<section class="home-visual-section" aria-labelledby="home-visual-title">
+  <div class="container home-visual-shell">
+    <div class="home-visual-media" data-parallax-scene>
+      <img src="/assets/img/duevio-connected-evidence.png" alt="" loading="lazy" data-parallax-media>
+      <div class="home-visual-shade" aria-hidden="true"></div>
+      <div class="home-visual-copy">
+        <p class="eyebrow light" data-i18n="home.visualEyebrow">Связанный комплаенс</p>
+        <h2 id="home-visual-title"><span data-i18n="home.visualLine1">Доказательства.</span><span data-i18n="home.visualLine2">Связаны.</span></h2>
+        <p data-i18n="home.visualLead">Единая визуальная нить от онбординга до каждой проверки, согласования и готового к аудиту решения.</p>
+      </div>
+    </div>
+    <div class="home-green-statement"><p data-i18n="home.visualStatement">Одно досье. Каждое решение.</p></div>
+  </div>
+</section>
+
+<section class="section section-light">
+<div class="container">
+<p class="eyebrow" data-i18n="home.challengeEyebrow">Задача комплаенса</p>
+<h2 data-i18n="home.challengeTitle">AML трудно обосновать, когда доказательства разрознены.</h2>
+<p class="section-lead" data-i18n="home.challengeLead">Данные KYC, сведения о собственности, результаты скрининга, согласования, даты проверок и подтверждающие документы теряют контекст, когда находятся в разных инструментах. Duevio сохраняет целостность операционной записи.</p>
+<div class="problem-grid">
+<div data-i18n="home.problem1">Данные KYC распределены между письмами, папками и таблицами</div>
+<div data-i18n="home.problem2">Периодические проверки и сроки документов ведутся вручную</div>
+<div data-i18n="home.problem3">Структуры собственности и UBO сложно восстановить</div>
+<div data-i18n="home.problem4">Результаты скрининга отделены от решений, которые они обосновывают</div>
+<div data-i18n="home.problem5">Согласования и исключения без полного аудиторского следа</div>
+<div data-i18n="home.problem6">Запросы аудиторов заставляют команду заново собирать досье</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<p class="eyebrow" data-i18n="home.whyEyebrow">Почему Duevio</p>
+<h2 data-i18n="home.whyTitle">Единый операционный слой для работы, стоящей за AML-комплаенсом.</h2>
+<p class="section-lead" data-i18n="home.whyLead">Duevio создан для команд, которые знают свои AML-обязанности и нуждаются в контролируемом, повторяемом способе выполнения работы и формирования доказательств.</p>
+<div class="feature-grid four">
+<article class="feature-card"><span class="feature-icon">F</span><h3 data-i18n="home.feature1Title">Единое клиентское досье</h3><p data-i18n="home.feature1Text">Храните данные онбординга, документы, заметки, проверки и решения в одном организованном досье клиента.</p></article>
+<article class="feature-card"><span class="feature-icon">W</span><h3 data-i18n="home.feature2Title">Контролируемые процессы</h3><p data-i18n="home.feature2Text">Преобразуйте повторяющиеся AML-действия в видимые задачи, согласования, сроки и этапы проверки.</p></article>
+<article class="feature-card"><span class="feature-icon">U</span><h3 data-i18n="home.feature3Title">Прозрачность собственности и UBO</h3><p data-i18n="home.feature3Text">Упростите проверку и ведение прямого и косвенного владения, бенефициарных владельцев и ключевых ролей.</p></article>
+<article class="feature-card"><span class="feature-icon">E</span><h3 data-i18n="home.feature4Title">Доказательства по умолчанию</h3><p data-i18n="home.feature4Text">Сохраняйте хронологию проверок, решений и корректирующих действий, чтобы доказательства были доступны по запросу.</p></article>
+</div>
+</div>
+</section>
+<section class="section section-navy">
+<div class="container">
+<p class="eyebrow light" data-i18n="home.compareEyebrow">Больше, чем сбор данных</p>
+<h2 class="light" data-i18n="home.compareTitle">Duevio объединяет онбординг, процессы, проверки и доказательства.</h2>
+<p class="section-lead light-muted" data-i18n="home.compareLead">Отдельный KYC-инструмент может собирать информацию. Duevio помогает командам управлять работой, которая продолжается после сбора данных.</p>
+<div class="comparison-wrap">
+<table class="comparison-table">
+<thead><tr><th data-i18n="home.tableCapability">Возможность</th><th data-i18n="home.tableKyc">Отдельный KYC-инструмент</th><th>Duevio</th></tr></thead>
+<tbody>
+<tr><td data-i18n="home.row1">Собирает данные и документы</td><td>✓</td><td>✓</td></tr>
+<tr><td data-i18n="home.row2">Поддерживает актуальное клиентское досье</td><td>—</td><td>✓</td></tr>
+<tr><td data-i18n="home.row3">Наглядно отображает собственность и роли</td><td>—</td><td>✓</td></tr>
+<tr><td data-i18n="home.row4">Координирует задачи и согласования</td><td>—</td><td>✓</td></tr>
+<tr><td data-i18n="home.row5">Отслеживает циклы периодических проверок</td><td>—</td><td>✓</td></tr>
+<tr><td data-i18n="home.row6">Формирует прослеживаемые пакеты доказательств</td><td>—</td><td>✓</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<p class="eyebrow" data-i18n="home.industriesEyebrow">Отрасли</p>
+<h2 data-i18n="home.industriesTitle">Разные отрасли. Разные контроли. Единая операционная модель AML.</h2>
+<p class="section-lead" data-i18n="home.industriesLead">Duevio поддерживает регулируемые компании и профессиональные фирмы с адаптируемыми процессами и единой структурой доказательств.</p>
+<div class="pill-grid">
+<span data-i18n="sector.law">Юридическая фирма</span><span data-i18n="sector.csp">CSP / фидуциарий</span><span data-i18n="sector.accountants">Бухгалтерские услуги</span><span data-i18n="sector.consultants">AML-консалтинг</span><span data-i18n="sector.emi">EMI / PI</span><span data-i18n="sector.vasp">VASP</span><span data-i18n="sector.gaming">Игорный бизнес</span><span data-i18n="sector.other">Другая регулируемая компания</span>
+</div>
+<div class="feature-grid four trust-grid">
+<article class="feature-card"><span class="feature-icon">T</span><h3 data-i18n="home.trust1Title">Контроль и прозрачность</h3><p data-i18n="home.trust1Text">Дайте комплаенс-командам и руководству более ясное представление об открытых действиях, проверках и доказательствах.</p></article>
+<article class="feature-card"><span class="feature-icon">R</span><h3 data-i18n="home.trust2Title">Ролевой доступ</h3><p data-i18n="home.trust2Text">Применяйте внутренние права доступа к проверкам, согласованиям и чувствительным данным клиентов.</p></article>
+<article class="feature-card"><span class="feature-icon">A</span><h3 data-i18n="home.trust3Title">Аудиторский след</h3><p data-i18n="home.trust3Text">Сохраняйте связь действий и решений с клиентским досье и ответственными сотрудниками.</p></article>
+<article class="feature-card"><span class="feature-icon">S</span><h3 data-i18n="home.trust4Title">Начать просто</h3><p data-i18n="home.trust4Text">Начните онлайн с Essential, а по мере роста организации переходите к сопровождаемой или индивидуальной настройке.</p></article>
+</div>
+</div>
+</section>
+</section>
+<section aria-labelledby="product-title" class="page" data-page="product" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-i18n="product.eyebrow">Продукт</p><h1 data-i18n="product.title" id="product-title">Структурированное AML-пространство для онбординга, мониторинга и доказательств.</h1><p class="lead" data-i18n="product.lead">Управляйте операционной стороной AML-комплаенса в единой среде, от первичного приёма клиента до периодических проверок, устранения недостатков и подготовки доказательств.</p><div class="button-row"><a class="button button-primary" data-i18n="cta.startOnline" href="#pricing">Начать онлайн</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="product.overviewLabel">Обзор продукта</span><span class="status-dot"><span></span><span data-i18n="product.modular">Модульный</span></span></div><h2 data-i18n="product.overviewTitle">Создан для ведения AML-процессов, а не только для сбора данных</h2><div class="metric-grid"><div><span data-i18n="product.metric1Label">Основные модули</span><strong>6</strong></div><div><span data-i18n="product.metric2Label">Процессы</span><strong data-i18n="product.metric2Value">Структурированные</strong></div><div><span data-i18n="product.metric3Label">Доказательства</span><strong data-i18n="product.metric3Value">Экспортируемые</strong></div><div><span data-i18n="product.metric4Label">Масштабируемость</span><strong data-i18n="product.metric4Value">Встроенная</strong></div></div><div class="highlight-list"><p><span>✓</span><span data-i18n="product.highlight1">Управляемый онбординг, контроль документов и прозрачность собственности</span></p><p><span>✓</span><span data-i18n="product.highlight2">Задачи, согласования, циклы проверок и контроль устранения недостатков</span></p><p><span>✓</span><span data-i18n="product.highlight3">Доказательства остаются связанными с клиентским досье</span></p></div></div></div></div>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.modulesEyebrow">Основные модули</p><h2 data-i18n="product.modulesTitle">Основные AML-модули для полного жизненного цикла клиента.</h2><p class="section-lead" data-i18n="product.modulesLead">Настройте операционную модель под клиентов, риск-подход и внутренние зоны ответственности.</p><div class="feature-grid three module-grid">
+<article class="module-card"><span>1</span><h3 data-i18n="product.m1Title">Управляемый онбординг</h3><p data-i18n="product.m1Text">Создавайте адаптивные сценарии сбора данных для физических лиц, компаний и сложных структур.</p><ul><li data-i18n="product.m1a">Настраиваемые сценарии</li><li data-i18n="product.m1b">Структурированный сбор</li><li data-i18n="product.m1c">Качественный первичный сбор</li></ul></article>
+<article class="module-card"><span>2</span><h3 data-i18n="product.m2Title">Карта собственности и ролей</h3><p data-i18n="product.m2Text">Включите деревья собственности, бенефициарных владельцев и ключевые роли в актуальное клиентское досье.</p><ul><li data-i18n="product.m2a">Прямое и косвенное владение</li><li data-i18n="product.m2b">Прозрачность ролей</li><li data-i18n="product.m2c">Поддержка подтверждения клиентом</li></ul></article>
+<article class="module-card"><span>3</span><h3 data-i18n="product.m3Title">Динамические анкеты</h3><p data-i18n="product.m3Text">Используйте формы, которые адаптируются к типу клиента, структуре и уже собранной информации.</p><ul><li data-i18n="product.m3a">Настраиваемые формы</li><li data-i18n="product.m3b">Предзаполненные данные</li><li data-i18n="product.m3c">Меньше дублирования</li></ul></article>
+<article class="module-card"><span>4</span><h3 data-i18n="product.m4Title">Контроль документов</h3><p data-i18n="product.m4Text">Рассматривайте документы как комплаенс-доказательства со статусом, сроком действия и контекстом.</p><ul><li data-i18n="product.m4a">Контроль сроков действия</li><li data-i18n="product.m4b">Контроль версий</li><li data-i18n="product.m4c">Ориентация на доказательства</li></ul></article>
+<article class="module-card"><span>5</span><h3 data-i18n="product.m5Title">Проверки и напоминания</h3><p data-i18n="product.m5Text">Отслеживайте сроки, истекающие документы, открытые действия и устранение недостатков до появления пробелов.</p><ul><li data-i18n="product.m5a">Периодические проверки</li><li data-i18n="product.m5b">Поддержка эскалации</li><li data-i18n="product.m5c">Видимость открытых вопросов</li></ul></article>
+<article class="module-card"><span>6</span><h3 data-i18n="product.m6Title">Экспорт доказательств</h3><p data-i18n="product.m6Text">Формируйте структурированные материалы для аудитов, инспекций, проверок партнёров и внутреннего контроля.</p><ul><li data-i18n="product.m6a">Пакеты доказательств</li><li data-i18n="product.m6b">Хронология клиента</li><li data-i18n="product.m6c">Быстрый поиск</li></ul></article>
+</div></div></section>
+<section class="section section-light"><div class="container"><p class="eyebrow" data-i18n="product.howEyebrow">Как это работает</p><h2 data-i18n="product.howTitle">Управляйте AML-процессом от онбординга до доказательств.</h2><p class="section-lead" data-i18n="product.howLead">Сохраняйте связь клиентского досье, задач и решений по мере развития отношений.</p><div class="steps-grid"><article><span>1</span><p data-i18n="product.step1">Собирайте данные и документы онбординга в управляемом процессе.</p></article><article><span>2</span><p data-i18n="product.step2">Формируйте актуальное досье с собственностью, ролями, проверками, заметками и решениями.</p></article><article><span>3</span><p data-i18n="product.step3">Отслеживайте задачи, согласования, проверки, исключения и устранение недостатков на одной панели.</p></article><article><span>4</span><p data-i18n="product.step4">Быстро находите доказательства при аудите, инспекции или запросе партнёра.</p></article></div></div></section>
+<section class="section"><div class="container"><p class="eyebrow" data-i18n="product.integrationsEyebrow">Интеграции и готовность</p><h2 data-i18n="product.integrationsTitle">Подключите Duevio к источникам данных и системам, которые уже использует ваша команда.</h2><p class="section-lead" data-i18n="product.integrationsLead">Duevio может стать центром операционной AML-среды, сохраняя специализированных поставщиков для идентификации, скрининга и данных.</p><div class="integration-grid"><span data-i18n="product.int1">Провайдеры проверки личности</span><span data-i18n="product.int2">Провайдеры скрининга и списков наблюдения</span><span data-i18n="product.int3">Публичные реестры и корпоративные источники</span><span data-i18n="product.int4">Хранилища документов</span><span data-i18n="product.int5">CRM, core- и onboarding-системы</span><span data-i18n="product.int6">Уровень API и корпоративных интеграций</span></div></div></section>
+</section>
+<section aria-labelledby="industries-title" class="page" data-page="industries" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-i18n="industries.eyebrow">Отрасли</p><h1 data-i18n="industries.title" id="industries-title">Разные отрасли. Разные контроли. Более ясный способ вести AML-работу.</h1><p class="lead" data-i18n="industries.lead">Duevio предназначен для регулируемых компаний и профессиональных фирм, которым нужны контролируемый онбординг, актуальные KYC-досье, регулярные проверки и доступные доказательства.</p><div class="button-row"><a class="button button-primary" data-i18n="cta.startOnline" href="#pricing">Начать онлайн</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="industries.fit">Отраслевое соответствие</span><span class="status-dot"><span></span><span data-i18n="industries.international">Международный</span></span></div><h2 data-i18n="industries.overviewTitle">Для регулируемых операторов и профессиональных практик</h2><div class="metric-grid"><div><span data-i18n="industries.metric1Label">Отрасли</span><strong data-i18n="industries.metric1Value">Несколько</strong></div><div><span data-i18n="industries.metric2Label">Подход</span><strong data-i18n="industries.metric2Value">Гибкий</strong></div><div><span data-i18n="industries.metric3Label">Юрисдикции</span><strong data-i18n="industries.metric3Value">Адаптируемый</strong></div><div><span data-i18n="industries.metric4Label">Точка входа</span><strong data-i18n="industries.metric4Value">Онлайн</strong></div></div></div></div></div>
+<section class="section"><div class="container"><div class="feature-grid three sector-grid">
+<article class="sector-card"><span>L</span><h3 data-i18n="industries.s1Title">Юридические и профессиональные фирмы</h3><p data-i18n="industries.s1Text">Управляйте онбордингом клиентов, KYC-документами, сведениями о собственности и комплаенс-доказательствами по делам и отношениям.</p><ul><li data-i18n="industries.s1a">Качественный онбординг</li><li data-i18n="industries.s1b">Организация документов</li><li data-i18n="industries.s1c">Прослеживаемые решения</li></ul></article>
+<article class="sector-card"><span>C</span><h3 data-i18n="industries.s2Title">CSP и фидуциарии</h3><p data-i18n="industries.s2Text">Ведите корпоративные досье, структуры бенефициарного владения, регулярные проверки и AML-доказательства по всему портфелю.</p><ul><li data-i18n="industries.s2a">Корпоративный онбординг</li><li data-i18n="industries.s2b">Карта UBO</li><li data-i18n="industries.s2c">Контроль регулярных проверок</li></ul></article>
+<article class="sector-card"><span>E</span><h3 data-i18n="industries.s3Title">EMI, PI и регулируемые операторы</h3><p data-i18n="industries.s3Text">Координируйте контролируемый онбординг, внутренние согласования, циклы проверок и доказательства в надзорной среде.</p><ul><li data-i18n="industries.s3a">Поддержка корпоративного управления</li><li data-i18n="industries.s3b">Масштабируемый процесс</li><li data-i18n="industries.s3c">Подготовка доказательств</li></ul></article>
+<article class="sector-card"><span>A</span><h3 data-i18n="industries.s4Title">Внешние AML-провайдеры и MLRO</h3><p data-i18n="industries.s4Text">Управляйте несколькими клиентскими портфелями, открытыми действиями, проверками и запросами доказательств в едином контролируемом пространстве.</p><ul><li data-i18n="industries.s4a">Управление несколькими клиентами</li><li data-i18n="industries.s4b">Разграниченный доступ</li><li data-i18n="industries.s4c">Контроль портфеля</li></ul></article>
+<article class="sector-card"><span>I</span><h3 data-i18n="industries.s5Title">Международные компании</h3><p data-i18n="industries.s5Text">Адаптируйте процессы к разным юридическим лицам, юрисдикциям и внутренним моделям без фрагментации доказательств.</p><ul><li data-i18n="industries.s5a">Поддержка нескольких юрисдикций</li><li data-i18n="industries.s5b">Единая модель контроля</li><li data-i18n="industries.s5c">Многоязычный интерфейс</li></ul></article>
+<article class="sector-card"><span>S</span><h3 data-i18n="industries.s6Title">Небольшие регулируемые компании</h3><p data-i18n="industries.s6Text">Начните с онлайн AML-пространства и переходите к сопровождаемому или индивидуальному внедрению по мере роста потребностей.</p><ul><li data-i18n="industries.s6a">Простой старт</li><li data-i18n="industries.s6b">Онлайн-регистрация</li><li data-i18n="industries.s6c">Путь расширения</li></ul></article>
+</div></div></section>
+</section>
+<section aria-labelledby="pricing-title" class="page" data-page="pricing" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-i18n="plans.eyebrow">Цены</p><h1 data-i18n="plans.title" id="pricing-title">Перестаньте вести AML-работу в разрозненных файлах и напоминаниях.</h1><p class="lead" data-i18n="plans.lead">Начните онлайн-регистрацию для Essential или Professional. Новые регистрации проверяются командой Duevio до активации. Выберите Custom для больших объёмов и индивидуальных требований.</p><!-- <div class="button-row"><a class="button button-primary" data-i18n="cta.startNow" href="#signup">Начать регистрацию</a><a class="button button-secondary" data-i18n="cta.bookDemo" href="#demo">Запросить демо</a></div> --></div><!-- <div class="overview-card"><div class="overview-head"><span data-i18n="plans.structure">Структура цен</span><span class="status-dot"><span></span><span data-i18n="plans.choice">Гибкая</span></span></div><h2 data-i18n="plans.overviewTitle">Выберите, как начать</h2><div class="metric-grid"><div><span>Essential</span><strong data-i18n="plans.online">Онлайн</strong></div><div><span>Professional</span><strong data-i18n="plans.guided">С сопровождением</strong></div><div><span>Enterprise</span><strong data-i18n="plans.tailored">Индивидуально</strong></div><div><span data-i18n="plans.activation">Активация</span><strong data-i18n="plans.immediate">Сразу*</strong></div></div><p class="micro" data-i18n="plans.activationNote">*Essential работает в режиме самообслуживания после создания аккаунта и оплаты. Professional и Custom проходят согласованный путь внедрения.</p></div> --></div></div>
+<section class="section"><div class="container"><div class="pricing-grid">
+<article class="price-card featured"><div class="price-tag" data-i18n="plans.startNow">Начать регистрацию</div><h2>Essential</h2><p class="price"><strong>9,99 €</strong><span class="price-meta"><span><b aria-hidden="true">/</b> <span data-i18n="plans.perMonth">в месяц</span></span><small data-i18n="plans.billedAnnually">(ежегодная оплата)</small></span></p><p data-i18n="plans.essentialText">До 25 управляемых клиентов. Включено 5 записей Business и 5 записей User; дополнительные записи и услуги оплачиваются токенами.</p><ul><li data-i18n="plans.e1">До 25 управляемых клиентов</li><li data-i18n="plans.e2">5 записей Business включено</li><li data-i18n="plans.e3">5 записей User включено</li><li data-i18n="plans.e4">Онлайн-регистрация с сопровождаемой активацией</li><li data-i18n="plans.e5">Дополнительные записи и услуги за токены</li><li data-i18n="plans.e6">2 000 приветственных токенов БЕСПЛАТНО сверх включённых записей</li></ul><a class="button button-primary block" data-i18n="cta.startNow" href="https://signup.duevio.com/signup.aspx?lang=ru&plan=essential&source=pricing" target="_blank" rel="noopener noreferrer">Начать регистрацию</a></article>
+<article class="price-card"><div class="price-tag" data-i18n="plans.growing">Для растущих команд</div><h2>Professional</h2><p class="price"><strong>49,99 €</strong><span class="price-meta"><span><b aria-hidden="true">/</b> <span data-i18n="plans.perMonth">в месяц</span></span><small data-i18n="plans.billedAnnually">(ежегодная оплата)</small></span></p><p class="price-description" data-i18n="plans.professionalText">Неограниченное число управляемых клиентов. Включено 25 записей Business и 25 записей User.</p><ul><li data-i18n="plans.p1">Неограниченное число клиентов</li><li data-i18n="plans.p2">25 записей Business включено</li><li data-i18n="plans.p3">25 записей User включено</li><li data-i18n="plans.p4">Сопровождаемое подключение и настройка</li><li data-i18n="plans.p5">Дополнительные записи и услуги за токены</li><li data-i18n="plans.p6">10 000 приветственных токенов БЕСПЛАТНО сверх включённых записей</li></ul><a class="button button-primary block" data-i18n="cta.startNow" href="https://signup.duevio.com/signup.aspx?lang=ru&plan=professional&source=pricing" target="_blank" rel="noopener noreferrer">Начать регистрацию</a></article>
+<article class="price-card"><div class="price-tag" data-i18n="plans.complex">Для индивидуальных требований</div><h2>Enterprise</h2><p class="price-description" data-i18n="plans.enterpriseText">Для массовых загрузок, больших объёмов и индивидуальных требований. Ежемесячная или ежегодная оплата.</p><ul><li data-i18n="plans.x1">Ежемесячная или ежегодная оплата</li><li data-i18n="plans.x2">Массовые загрузки и большие объёмы</li><li data-i18n="plans.x3">Индивидуальные процессы</li><li data-i18n="plans.x4">Индивидуальные интеграции и миграция</li><li data-i18n="plans.x5">Коммерческий план и план внедрения</li></ul><a class="button button-secondary block" data-i18n="plans.discussEnterprise" href="#enterprise">Обсудить Custom</a></article>
+</div><div class="payment-strip"><span data-i18n="payment.accepted">Принимаемые способы оплаты</span><div class="payment-logos"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div><p data-i18n="payment.secure">Данные банковской карты и PayPal обрабатываются платёжным провайдером и не хранятся на этом маркетинговом сайте.</p></div></div></section>
+<section class="section section-light duevio-token-section"><div class="container">
+<div class="token-section-heading"><p class="eyebrow" data-i18n="tokens.eyebrow">Токены</p><h2 data-i18n="tokens.title">Оплачивайте только дополнительные записи и услуги по мере использования.</h2><p class="section-lead" data-i18n="tokens.intro">Такие услуги, как screening, не входят в подписку и оплачиваются токенами Duevio. Бесплатные приветственные токены, включённые в ваш тариф, можно использовать для оплаты этих услуг, пока не исчерпается баланс.</p></div>
+<div class="token-packages-heading"><p class="eyebrow" data-i18n="tokens.packagesTitle">Пакеты токенов</p><h3 data-i18n="tokens.packagesLead">Выберите пакет токенов для дополнительных услуг.</h3></div>
+<div class="token-packages-grid"><article class="token-package-card"><div class="token-package-top"><span class="token-package-price">€50</span><span class="token-package-ribbon token-package-ribbon--standard" data-i18n="tokens.standardLabel">Стандартный пакет</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Всего токенов</span><span class="token-total-count" data-i18n="tokens.pack1">5 000 токенов</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Базовые токены</span><span data-i18n="tokens.base1">5 000 токенов</span></div></div></article><article class="token-package-card token-package-card--bonus"><div class="token-package-top"><span class="token-package-price">€100</span><span class="token-package-ribbon" data-i18n="tokens.bonusRibbon">БЕСПЛАТНЫЙ БОНУС</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Всего токенов</span><span class="token-total-count" data-i18n="tokens.pack2">15 000 токенов</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Базовые токены</span><span data-i18n="tokens.base2">10 000 токенов</span></div><div class="token-bonus-line"><span data-i18n="tokens.free2">+5 000 токенов БЕСПЛАТНО</span></div></div></article><article class="token-package-card token-package-card--best"><div class="token-package-top"><span class="token-package-price">€500</span><span class="token-package-ribbon" data-i18n="tokens.bestValueRibbon">МАКСИМАЛЬНАЯ ВЫГОДА</span></div><div class="token-total-block"><span class="token-total-caption" data-i18n="tokens.totalLabel">Всего токенов</span><span class="token-total-count" data-i18n="tokens.pack3">80 000 токенов</span></div><div class="token-package-breakdown"><div class="token-base-line"><span data-i18n="tokens.baseLabel">Базовые токены</span><span data-i18n="tokens.base3">50 000 токенов</span></div><div class="token-bonus-line"><span data-i18n="tokens.free3">+30 000 токенов БЕСПЛАТНО</span></div></div></article></div>
+<div class="token-disclosure"><h3 class="token-disclosure-title" data-i18n="tokens.infoLabel">Важно знать</h3><div class="token-disclosure-copy"><p data-i18n="tokens.benefitNote">Включённые записи Business/User и бесплатные приветственные токены — отдельные преимущества тарифа. Пакеты токенов приобретаются дополнительно.</p><p data-i18n="tokens.note">Для каждого пакета указаны общее число токенов и бесплатные бонусы. Дополнительные услуги оплачиваются из доступного баланса токенов.</p></div></div>
+</div></section></section>
+<section class="page" data-page="enterprise" aria-labelledby="enterprise-title" hidden>
+      <div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-i18n="enterprise.eyebrow">Enterprise</p><h1 id="enterprise-title" data-i18n="enterprise.title">Build a controlled AML operating model around your organisation.</h1><p class="lead" data-i18n="enterprise.lead">Tell us about your structure, jurisdictions and priorities. Our team will review the fit and arrange a focused Enterprise discovery call.</p></div><div class="overview-card"><div class="overview-head"><span data-i18n="enterprise.cardLabel">Enterprise consultation</span><span class="status-dot"><span></span><span>Duevio</span></span></div><h2 data-i18n="enterprise.cardTitle">Designed for complex regulated operations</h2><div class="metric-grid"><div><span data-i18n="enterprise.workflows">Workflows</span><strong data-i18n="enterprise.workflowsValue">Tailored</strong></div><div><span data-i18n="enterprise.rollout">Rollout</span><strong data-i18n="enterprise.rolloutValue">Guided</strong></div><div><span data-i18n="enterprise.integrations">Integrations</span><strong data-i18n="enterprise.integrationsValue">Planned</strong></div><div><span data-i18n="enterprise.governance">Governance</span><strong data-i18n="enterprise.governanceValue">Aligned</strong></div></div><div class="highlight-list"><p><span>✓</span><span data-i18n="enterprise.highlight1">A solution shaped around your operating model</span></p><p><span>✓</span><span data-i18n="enterprise.highlight2">A rollout plan aligned with teams and jurisdictions</span></p><p><span>✓</span><span data-i18n="enterprise.highlight3">A focused discussion with the right specialists</span></p></div></div></div></div>
+      <section class="section section-light"><div class="container"><form id="enterprise-form" class="form-card demo-form enterprise-form" action="https://formsubmit.co/support@duevio.com" method="POST"><input type="hidden" name="_subject" value="New Duevio Enterprise enquiry"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none"><h2 data-i18n="enterprise.formTitle">Discuss your Enterprise requirements</h2><p class="section-lead enterprise-form-lead" data-i18n="enterprise.formLead">Share a few details so we can prepare a relevant, focused conversation.</p><div class="form-grid"><label><span data-i18n="form.org">Organisation name</span><input name="organisation" autocomplete="organization" required></label><label><span data-i18n="form.name">Main contact name</span><input name="name" autocomplete="name" required></label><label><span data-i18n="form.email">Work email</span><input type="email" name="email" autocomplete="email" required></label><label><span data-i18n="form.country">Country / jurisdiction</span><input name="country" required></label><label><span data-i18n="enterprise.orgType">Organisation type</span><select name="organisation_type" required><option value="" data-i18n="enterprise.orgTypePlaceholder">Select organisation type</option><option value="Law firm" data-i18n="sector.law">Law firm</option><option value="CSP / fiduciary" data-i18n="sector.csp">CSP / fiduciary</option><option value="Accountancy" data-i18n="sector.accountants">Accountancy</option><option value="AML consultancy" data-i18n="sector.consultants">AML consultancy</option><option value="EMI / PI" data-i18n="sector.emi">EMI / PI</option><option value="VASP" data-i18n="sector.vasp">VASP</option><option value="Gaming" data-i18n="sector.gaming">Gaming</option><option value="Other regulated firm" data-i18n="sector.other">Other regulated firm</option></select></label><label><span data-i18n="form.team">Expected team size</span><select name="team_size" required><option value="" data-i18n="form.select">Select</option><option>2–5</option><option>6–20</option><option>21–50</option><option>51–200</option><option>200+</option></select></label><label><span data-i18n="enterprise.jurisdictions">Operating jurisdictions</span><input name="operating_jurisdictions" data-i18n-placeholder="enterprise.jurisdictionsPlaceholder" placeholder="Countries or regions where you operate" required></label><label><span data-i18n="enterprise.timeline">Preferred implementation timeframe</span><select name="implementation_timeframe" required><option value="" data-i18n="enterprise.timelinePlaceholder">Select timeframe</option><option value="Within 3 months" data-i18n="enterprise.timeline1">Within 3 months</option><option value="3–6 months" data-i18n="enterprise.timeline2">3–6 months</option><option value="6–12 months" data-i18n="enterprise.timeline3">6–12 months</option><option value="Exploring options" data-i18n="enterprise.timeline4">Exploring options</option></select></label></div><label class="full"><span data-i18n="enterprise.priorities">Main priorities and requirements</span><textarea name="priorities" rows="5" required data-i18n-placeholder="enterprise.prioritiesPlaceholder" placeholder="Tell us what you need to improve, control or integrate"></textarea></label><label class="full"><span data-i18n="enterprise.currentStack">Current systems or processes</span><textarea name="current_systems" rows="3" data-i18n-placeholder="enterprise.currentStackPlaceholder" placeholder="Optional: describe your current AML tools and workflow"></textarea></label><label class="checkbox"><input type="checkbox" name="privacy_accepted" value="yes" required><span><span data-i18n="enterprise.privacyConsent">I have read the</span> <a href="#privacy" data-i18n="legal.privacy">Privacy Notice</a>.</span></label><button class="button button-primary" type="submit" data-i18n="enterprise.submit">Request Enterprise consultation</button><p class="form-status" id="enterpriseStatus" role="status" aria-live="polite"></p></form></div></section>
+    </section>
+<section aria-labelledby="demo-title" class="page" data-page="demo" hidden="">
+<div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow" data-i18n="demo.eyebrow">Демо</p><h1 data-i18n="demo.title" id="demo-title">Посмотрите, как Duevio вписывается в вашу операционную модель AML.</h1><p class="lead" data-i18n="demo.lead">На ознакомительном звонке разберите текущий онбординг, структуру KYC-досье, процесс проверок и требования к доказательствам, чтобы определить подходящую точку старта.</p><div class="button-row"><a class="button button-primary" data-i18n="demo.book" href="#demo-form">Запросить демо</a><a class="button button-secondary" data-i18n="cta.startOnline" href="#pricing">Начать онлайн</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="demo.path">Путь выбора</span><span class="status-dot"><span></span><span data-i18n="demo.clear">Понятный</span></span></div><h2 data-i18n="demo.overviewTitle">Выберите подходящий вариант Duevio для вашей организации</h2><div class="metric-grid"><div><span data-i18n="demo.discovery">Анализ</span><strong data-i18n="demo.focused">Предметный</strong></div><div><span data-i18n="nav.signup">Регистрация</span><strong data-i18n="plans.online">Онлайн</strong></div><div><span data-i18n="nav.plans">Цены</span><strong data-i18n="demo.visible">Прозрачный</strong></div><div><span data-i18n="demo.followup">Сопровождение</span><strong data-i18n="product.metric2Value">Структурированные</strong></div></div></div></div></div>
+<section class="section"><div class="container"><div class="steps-grid demo-steps"><article><span>1</span><h3 data-i18n="demo.step1Title">Понять вашу AML-модель</h3><p data-i18n="demo.step1Text">Обсудите онбординг, структуру KYC-досье, циклы проверок и текущие операционные сложности.</p></article><article><span>2</span><h3 data-i18n="demo.step2Title">Увидеть Duevio в контексте</h3><p data-i18n="demo.step2Text">Посмотрите, как клиентские досье, задачи, собственность, проверки и доказательства могут работать вместе.</p></article><article><span>3</span><h3 data-i18n="demo.step3Title">Выбрать точку старта</h3><p data-i18n="demo.step3Text">Определите, что лучше подходит вашей организации: Essential, Professional или Custom.</p></article><article><span>4</span><h3 data-i18n="demo.step4Title">Спланировать внедрение</h3><p data-i18n="demo.step4Text">Согласуйте настройку, миграцию, поддержку онбординга и приоритеты интеграции, где это требуется.</p></article></div><form class="form-card demo-form" id="demo-form" action="https://formsubmit.co/support@duevio.com" method="POST"><input type="hidden" name="_subject" value="New Duevio demo request"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none"><h2 data-i18n="demo.formTitle">Запросить демо сейчас</h2><div class="form-grid"><label><span data-i18n="form.org">Название организации</span><input name="organisation" required=""/></label><label><span data-i18n="form.name">Имя основного контакта</span><input name="name" required=""/></label><label><span data-i18n="form.email">Рабочая электронная почта</span><input name="email" required="" type="email"/></label><label><span data-i18n="form.country">Страна / юрисдикция</span><input name="country" required=""/></label></div><label class="full"><span data-i18n="demo.formNeed">Что вы хотите рассмотреть?</span><textarea name="needs" rows="4"></textarea></label><label class="checkbox"><input required="" type="checkbox"/><span><span data-i18n="form.terms1">Я принимаю</span> <a data-i18n="legal.privacy" href="#privacy">Уведомление о конфиденциальности</a>.</span></label><button class="button button-primary" data-i18n="demo.submit" type="submit">Отправить запрос</button><p aria-live="polite" class="form-status" id="demoStatus" role="status"></p></form></div></section>
+</section>
+<section class="page legal-page" data-page="privacy" aria-labelledby="privacy-title" hidden>
+  <div class="container legal-container">
+    <p class="eyebrow"><span data-i18n="privacyNotice.b0.t0">Уведомление о конфиденциальности</span></p>
+    <h1 id="privacy-title"><span data-i18n="privacyNotice.b1.t0">Уведомление о конфиденциальности</span></h1>
+    <div class="legal-body">
+      <p><span data-i18n="privacyNotice.b2.t0">Настоящее Уведомление о конфиденциальности объясняет, как Duevio собирает и обрабатывает персональные данные в связи с веб-сайтом Duevio, онлайн-регистрацией, запросами на демо и Custom, администрированием учётных записей и соответствующими коммерческими сообщениями.</span></p>
+      <p><span data-i18n="privacyNotice.b3.t0">Оно не регулирует персональные данные, обрабатываемые Duevio от имени Клиентов через Платформу Duevio. Такая обработка отдельно регулируется Соглашением об обработке данных Duevio.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b4.t0">1. Кто мы</span></h2>
+      <p><span data-i18n="privacyNotice.b5.t0">Duevio — торговое наименование, используемое Dr. Mary Grace Vella, номер НДС MT24393203, с деловым адресом: 192, Vjal ix-Xarolla, Żurrieq, Мальта.</span></p>
+      <p><span data-i18n="privacyNotice.b6.t0">В отношении обработки, описанной в настоящем Уведомлении о конфиденциальности, Duevio выступает контролёром данных.</span></p>
+      <p><span data-i18n="privacyNotice.b7.t0">Контакт по вопросам конфиденциальности: </span><a href="mailto:privacy@duevio.com"><span data-i18n="privacyNotice.b7.t1">privacy@duevio.com</span></a></p>
+      <p><span data-i18n="privacyNotice.b8.t0">Общий контакт: </span><a href="mailto:info@duevio.com"><span data-i18n="privacyNotice.b8.t1">info@duevio.com</span></a></p>
+
+      <h2><span data-i18n="privacyNotice.b9.t0">2. Область применения Уведомления</span></h2>
+      <p><span data-i18n="privacyNotice.b10.t0">Настоящее Уведомление о конфиденциальности распространяется на персональные данные, собираемые через:</span></p>
+      <ul>
+        <li><span data-i18n="privacyNotice.b11.t0">www.duevio.com;</span></li>
+        <li><span data-i18n="privacyNotice.b12.t0">страницы регистрации и создания учётных записей, контролируемые Duevio;</span></li>
+        <li><span data-i18n="privacyNotice.b13.t0">запросы на демо;</span></li>
+        <li><span data-i18n="privacyNotice.b14.t0">запросы Professional и Custom;</span></li>
+        <li><span data-i18n="privacyNotice.b15.t0">коммерческие сообщения и обращения в поддержку;</span></li>
+        <li><span data-i18n="privacyNotice.b16.t0">администрирование учётных записей и подписок; и</span></li>
+        <li><span data-i18n="privacyNotice.b17.t0">связанные онлайн-сервисы, контролируемые Duevio.</span></li>
+      </ul>
+      <p><span data-i18n="privacyNotice.b18.t0">Если вы обращаетесь к Duevio по приглашению организации предоставить сведения KYC, информацию для онбординга или иные сведения по защищённой ссылке Duevio, такая организация обычно является контролёром предоставляемой вами информации, а Duevio обрабатывает её от имени этой организации.</span></p>
+      <p><span data-i18n="privacyNotice.b19.t0">В таком случае следует ознакомиться с уведомлением о конфиденциальности пригласившей вас организации.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b20.t0">3. Какие персональные данные мы собираем</span></h2>
+      <p><strong><span data-i18n="privacyNotice.b21.t0">Контактные и профессиональные сведения:</span></strong><span data-i18n="privacyNotice.b21.t1"> например, имя, рабочий адрес электронной почты, организация, должность и контактные данные.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b22.t0">Организационные и коммерческие сведения:</span></strong><span data-i18n="privacyNotice.b22.t1"> например, тип организации, юрисдикция, рабочие юрисдикции, размер команды, выбранный тариф, требования к внедрению и сведения, предоставляемые при запросе демо или Custom-консультации.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b23.t0">Сведения об учётной записи:</span></strong><span data-i18n="privacyNotice.b23.t1"> например, имя пользователя, идентификатор учётной записи, данные аутентификации, статус учётной записи и настройки.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b24.t0">Переписка:</span></strong><span data-i18n="privacyNotice.b24.t1"> включая обращения, запросы на демо, сообщения в поддержку и иные сведения, которые вы решите нам предоставить.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b25.t0">Сведения о подписках и транзакциях:</span></strong><span data-i18n="privacyNotice.b25.t1"> например, приобретённый тариф, статус транзакции, сведения для выставления счетов и платёжные ссылки-идентификаторы.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b26.t0">Технические сведения и сведения о безопасности:</span></strong><span data-i18n="privacyNotice.b26.t1"> например, IP-адрес, информация о браузере или устройстве, журналы входа, временные метки, события безопасности и информация, обоснованно необходимая для защиты веб-сайта и Сервисов.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b27.t0">Сведения о cookie и предпочтениях:</span></strong><span data-i18n="privacyNotice.b27.t1"> в соответствующих случаях, включая выбор согласий, языковые настройки и аналитические данные, если вы согласились на использование необязательных технологий.</span></p>
+      <p><span data-i18n="privacyNotice.b28.t0">Duevio обычно не получает и не хранит ваши полные платёжные реквизиты карты или учётные данные PayPal, если платёж обрабатывается непосредственно соответствующим платёжным провайдером.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b29.t0">4. Зачем мы обрабатываем персональные данные</span></h2>
+      <p><span data-i18n="privacyNotice.b30.t0">Мы обрабатываем персональные данные для следующих целей и на следующих правовых основаниях:</span></p>
+      <div class="comparison-wrap privacy-table-wrap"><table class="comparison-table privacy-table">
+        <thead><tr><th><span data-i18n="privacyNotice.b31.t0">Цель</span></th><th><span data-i18n="privacyNotice.b32.t0">Правовое основание</span></th></tr></thead>
+        <tbody>
+          <tr><td><span data-i18n="privacyNotice.b33.t0">Ответы на обращения и запросы на демо</span></td><td><span data-i18n="privacyNotice.b34.t0">Меры, принимаемые по вашему запросу до заключения договора, и/или законные интересы</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b35.t0">Создание и администрирование учётной записи</span></td><td><span data-i18n="privacyNotice.b36.t0">Необходимость исполнения договора</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b37.t0">Оформление подписок и администрирование платежей</span></td><td><span data-i18n="privacyNotice.b38.t0">Необходимость исполнения договора и юридические обязательства</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b39.t0">Предоставление консультаций Professional или Custom</span></td><td><span data-i18n="privacyNotice.b40.t0">Преддоговорные меры и законные интересы</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b41.t0">Поддержка клиентов и служебные сообщения</span></td><td><span data-i18n="privacyNotice.b42.t0">Необходимость исполнения договора и законные интересы</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b43.t0">Защита Duevio, предотвращение злоупотреблений и обеспечение безопасности</span></td><td><span data-i18n="privacyNotice.b44.t0">Законные интересы и, в соответствующих случаях, юридические обязательства</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b45.t0">Ведение деловой, бухгалтерской и юридической документации</span></td><td><span data-i18n="privacyNotice.b46.t0">Юридические обязательства и законные интересы</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b47.t0">Предъявление, осуществление или защита правовых требований</span></td><td><span data-i18n="privacyNotice.b48.t0">Законные интересы</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b49.t0">Рассылка маркетинговых сообщений или сообщений о продуктах, когда требуется согласие</span></td><td><span data-i18n="privacyNotice.b50.t0">Согласие</span></td></tr>
+          <tr><td><span data-i18n="privacyNotice.b51.t0">Использование необязательных аналитических или аналогичных технологий</span></td><td><span data-i18n="privacyNotice.b52.t0">Согласие, когда этого требует закон</span></td></tr>
+        </tbody>
+      </table></div>
+      <p><span data-i18n="privacyNotice.b53.t0">Когда мы опираемся на законные интересы, мы учитываем характер обработки, её необходимость и потенциальное воздействие на соответствующих лиц.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b54.t0">5. Маркетинговые сообщения</span></h2>
+      <p><span data-i18n="privacyNotice.b55.t0">Согласие на маркетинг отделено от принятия Условий Duevio или использования Сервисов.</span></p>
+      <p><span data-i18n="privacyNotice.b56.t0">Если вы выбираете получение новостей о продуктах или коммерческих сообщений, вы можете в любое время отозвать согласие с помощью предоставленного механизма отказа от рассылки или связавшись с нами.</span></p>
+      <p><span data-i18n="privacyNotice.b57.t0">Отзыв не затрагивает законность обработки, осуществлённой до отзыва согласия.</span></p>
+      <p><span data-i18n="privacyNotice.b58.t0">Служебные сообщения, сообщения о безопасности, договорные и административные сообщения не являются маркетинговыми и могут продолжать направляться, если это необходимо в связи с вашей учётной записью или Подпиской.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b59.t0">6. Данные Клиентов, обрабатываемые через Duevio</span></h2>
+      <p><span data-i18n="privacyNotice.b60.t0">Клиенты Duevio могут использовать Платформу для обработки сведений о собственных клиентах, потенциальных клиентах, бенефициарных владельцах, директорах, представителях и других лицах.</span></p>
+      <p><span data-i18n="privacyNotice.b61.t0">В отношении таких Персональных данных Клиентов соответствующий Клиент обычно определяет цели и способы обработки и выступает контролёром, а Duevio — обработчиком или, в соответствующих случаях, субобработчиком.</span></p>
+      <p><span data-i18n="privacyNotice.b62.t0">Такая обработка регулируется соглашением между Duevio и Клиентом, включая Соглашение об обработке данных Duevio.</span></p>
+      <p><span data-i18n="privacyNotice.b63.t0">Настоящее Уведомление о конфиденциальности не изменяет эти роли сторон.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b64.t0">7. Кто получает персональные данные</span></h2>
+      <p><span data-i18n="privacyNotice.b65.t0">Доступ к персональным данным могут получать уполномоченные сотрудники Duevio и поставщики услуг, используемые для работы веб-сайта и Сервисов.</span></p>
+      <p><span data-i18n="privacyNotice.b66.t0">В зависимости от соответствующей услуги получателями могут быть поставщики:</span></p>
+      <ul>
+        <li><span data-i18n="privacyNotice.b67.t0">облачного хостинга и инфраструктуры;</span></li>
+        <li><span data-i18n="privacyNotice.b68.t0">электронной почты и коммуникационных услуг;</span></li>
+        <li><span data-i18n="privacyNotice.b69.t0">услуг обработки платежей;</span></li>
+        <li><span data-i18n="privacyNotice.b70.t0">аналитики веб-сайта и управления согласиями;</span></li>
+        <li><span data-i18n="privacyNotice.b71.t0">услуг безопасности и технических услуг;</span></li>
+        <li><span data-i18n="privacyNotice.b72.t0">профессиональных, бухгалтерских или юридических услуг; и</span></li>
+        <li><span data-i18n="privacyNotice.b73.t0">других услуг, обоснованно необходимых для работы Duevio.</span></li>
+      </ul>
+      <p><span data-i18n="privacyNotice.b74.t0">Основная инфраструктура Duevio размещена в Европейском союзе и включает инфраструктуру Amazon Web Services (AWS), а также инфраструктуру, принадлежащую Duevio или находящуюся под её непосредственным контролем.</span></p>
+      <p><span data-i18n="privacyNotice.b75.t0">Duevio также может раскрывать персональные данные по требованию компетентного суда, регулятора, надзорного органа или другого государственного органа в соответствии с применимым законодательством.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b76.t0">Duevio не продаёт персональные данные.</span></strong></p>
+
+      <h2><span data-i18n="privacyNotice.b77.t0">8. Платежи</span></h2>
+      <p><span data-i18n="privacyNotice.b78.t0">Платежи могут обрабатываться сторонними платёжными провайдерами.</span></p>
+      <p><span data-i18n="privacyNotice.b79.t0">При перенаправлении к платёжному провайдеру он может обрабатывать сведения о платёжной карте, PayPal или другие платёжные данные в соответствии с собственными условиями конфиденциальности и юридическими обязанностями.</span></p>
+      <p><span data-i18n="privacyNotice.b80.t0">Duevio получает только сведения, обоснованно необходимые для подтверждения и администрирования транзакции, например статус платежа, сумму, идентификатор транзакции и платёжно-расчётную информацию.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b81.t0">9. Международные передачи данных</span></h2>
+      <p><span data-i18n="privacyNotice.b82.t0">Duevio настраивает свою основную производственную инфраструктуру и соответствующие сервисы для обработки данных в пределах Европейского союза.</span></p>
+      <p><span data-i18n="privacyNotice.b83.t0">Если в будущем персональные данные будут передаваться за пределы Европейской экономической зоны, Duevio обеспечит соответствие передачи применимому законодательству о защите данных и, при необходимости, её защиту посредством решения об адекватности, надлежащих договорных гарантий или другого законного механизма передачи.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b84.t0">10. Как долго мы храним персональные данные</span></h2>
+      <p><span data-i18n="privacyNotice.b85.t0">Duevio хранит персональные данные только в течение срока, обоснованно необходимого для цели их сбора и выполнения применимых договорных, юридических, бухгалтерских, регуляторных требований и требований безопасности.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b86.t0">Обращения и коммерческие обсуждения:</span></strong><span data-i18n="privacyNotice.b86.t1"> могут храниться до 24 месяцев после последнего значимого взаимодействия, если не начнутся договорные отношения или дальнейшее хранение не будет обоснованно необходимо.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b87.t0">Сведения об учётной записи и Подписке:</span></strong><span data-i18n="privacyNotice.b87.t1"> хранятся в течение срока отношений и затем в течение периода, обоснованно необходимого для соблюдения применимых юридических, бухгалтерских, налоговых требований и требований, связанных со сроками исковой давности.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b88.t0">Маркетинговые сведения:</span></strong><span data-i18n="privacyNotice.b88.t1"> хранятся до отзыва согласия или до момента, когда они перестанут быть обоснованно необходимыми для маркетинговой цели.</span></p>
+      <p><strong><span data-i18n="privacyNotice.b89.t0">Журналы безопасности и технические записи:</span></strong><span data-i18n="privacyNotice.b89.t1"> хранятся в течение сроков, соразмерных требованиям безопасности, предотвращения мошенничества, расследования инцидентов и эксплуатации; более длительное хранение возможно при необходимости в связи с конкретным инцидентом безопасности или юридическим обязательством.</span></p>
+      <p><span data-i18n="privacyNotice.b90.t0">Сведения о cookie и согласии хранятся согласно применимой Политике cookie и настройкам управления согласиями.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b91.t0">11. Cookie и аналогичные технологии</span></h2>
+      <p><span data-i18n="privacyNotice.b92.t0">Duevio использует cookie, локальное хранилище и аналогичные технологии, когда это необходимо для работы веб-сайта и сохранения предпочтений пользователей.</span></p>
+      <p><span data-i18n="privacyNotice.b93.t0">Необязательные аналитические, рекламные или аналогичные технологии активируются только в случаях, разрешённых применимым законодательством, и, при необходимости, после получения вашего согласия.</span></p>
+      <p><span data-i18n="privacyNotice.b94.t0">Сведения об используемых технологиях, их целях и применимых сроках хранения предоставляются в Политике cookie и центре настроек cookie.</span></p>
+      <p><span data-i18n="privacyNotice.b95.t0">Вы можете в любое время изменить предпочтения необязательных cookie через настройки cookie на веб-сайте.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b96.t0">12. Безопасность</span></h2>
+      <p><span data-i18n="privacyNotice.b97.t0">Duevio применяет технические и организационные меры, соответствующие характеру и рискам обрабатываемых персональных данных.</span></p>
+      <p><span data-i18n="privacyNotice.b98.t0">Эти меры включают средства контроля защищённой передачи, аутентификации, управления доступом, безопасности инфраструктуры, мониторинга, управления уязвимостями, резервного копирования и восстановления.</span></p>
+      <p><span data-i18n="privacyNotice.b99.t0">Ни один интернет-сервис не может гарантировать абсолютную безопасность.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b100.t0">13. Автоматизированное принятие решений</span></h2>
+      <p><span data-i18n="privacyNotice.b101.t0">Веб-сайт Duevio не использует персональные данные для принятия решений, основанных исключительно на автоматизированной обработке, которые порождают для вас юридические последствия или аналогичным образом существенно затрагивают вас.</span></p>
+      <p><span data-i18n="privacyNotice.b102.t0">Когда Клиенты Duevio используют функции Платформы для поддержки скрининга, оценки рисков или комплаенс-решений, соответствующий Клиент остаётся ответственным за собственные решения и применимые обязательства по защите данных.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b103.t0">14. Ваши права</span></h2>
+      <p><span data-i18n="privacyNotice.b104.t0">С учётом GDPR и применимого законодательства вы можете иметь право:</span></p>
+      <ul>
+        <li><span data-i18n="privacyNotice.b105.t0">получать доступ к своим персональным данным;</span></li>
+        <li><span data-i18n="privacyNotice.b106.t0">требовать исправления неточных персональных данных;</span></li>
+        <li><span data-i18n="privacyNotice.b107.t0">требовать удаления;</span></li>
+        <li><span data-i18n="privacyNotice.b108.t0">требовать ограничения обработки;</span></li>
+        <li><span data-i18n="privacyNotice.b109.t0">возражать против обработки на основании законных интересов;</span></li>
+        <li><span data-i18n="privacyNotice.b110.t0">получать определённые персональные данные в переносимом формате;</span></li>
+        <li><span data-i18n="privacyNotice.b111.t0">отзывать согласие, если обработка основана на согласии; и</span></li>
+        <li><span data-i18n="privacyNotice.b112.t0">подавать жалобу в компетентный надзорный орган.</span></li>
+      </ul>
+      <p><span data-i18n="privacyNotice.b113.t0">Эти права не являются абсолютными и могут подпадать под условия или исключения, предусмотренные применимым законодательством.</span></p>
+      <p><span data-i18n="privacyNotice.b114.t0">Запросы можно направлять на </span><a href="mailto:privacy@duevio.com"><span data-i18n="privacyNotice.b114.t1">privacy@duevio.com</span></a><span data-i18n="privacyNotice.b114.t2">.</span></p>
+      <p><span data-i18n="privacyNotice.b115.t0">Duevio может принять разумные меры для проверки вашей личности перед исполнением запроса.</span></p>
+      <p><span data-i18n="privacyNotice.b116.t0">Надзорным органом Мальты является Office of the Information and Data Protection Commissioner (IDPC).</span></p>
+
+      <h2><span data-i18n="privacyNotice.b117.t0">15. Сторонние веб-сайты и сервисы</span></h2>
+      <p><span data-i18n="privacyNotice.b118.t0">Веб-сайт Duevio может содержать ссылки на веб-сайты или сервисы, управляемые третьими лицами.</span></p>
+      <p><span data-i18n="privacyNotice.b119.t0">Duevio не контролирует практики конфиденциальности независимых сторонних сервисов. Вам следует ознакомиться с применимой информацией о конфиденциальности, предоставляемой такими третьими лицами.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b120.t0">16. Изменения настоящего Уведомления о конфиденциальности</span></h2>
+      <p><span data-i18n="privacyNotice.b121.t0">Duevio может обновлять настоящее Уведомление о конфиденциальности при необходимости отражения изменений веб-сайта, Сервисов, деятельности по обработке или применимого законодательства.</span></p>
+      <p><span data-i18n="privacyNotice.b122.t0">Текущая версия будет опубликована на веб-сайте Duevio вместе с датой вступления в силу.</span></p>
+      <p><span data-i18n="privacyNotice.b123.t0">Если изменение существенно влияет на способ обработки персональных данных, Duevio предоставит дополнительное уведомление, когда этого требует применимое законодательство.</span></p>
+
+      <h2><span data-i18n="privacyNotice.b124.t0">17. Контакты</span></h2>
+      <p><strong><span data-i18n="privacyNotice.b125.t0">Duevio</span></strong></p>
+      <p><span data-i18n="privacyNotice.b126.t0">192, Vjal ix-Xarolla</span><br><span data-i18n="privacyNotice.b126.t1">Żurrieq, Мальта</span></p>
+      <p><span data-i18n="privacyNotice.b127.t0">Конфиденциальность: </span><a href="mailto:privacy@duevio.com"><span data-i18n="privacyNotice.b127.t1">privacy@duevio.com</span></a></p>
+      <p><span data-i18n="privacyNotice.b128.t0">Общие вопросы: </span><a href="mailto:info@duevio.com"><span data-i18n="privacyNotice.b128.t1">info@duevio.com</span></a></p>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="cookies-title" class="page legal-page" data-page="cookies" hidden=""><div class="container legal-container"><p class="eyebrow" data-i18n="legal.cookies">Политика cookie</p><h1 data-i18n="cookies.title" id="cookies-title">Политика cookie и локального хранения</h1><div class="legal-body"><h2 data-i18n="cookies.h1">1. Обязательное хранение</h2><p data-i18n="cookies.p1">Duevio хранит выбор настроек конфиденциальности в локальном хранилище браузера под ключом duevio_privacy_preferences_v1. Записывается, приняты или отклонены категории Analytics и Marketing, а также время обновления настройки.</p><h2 data-i18n="cookies.h2">2. Аналитика</h2><p data-i18n="cookies.p2">Duevio использует Google Analytics 4 (G-GV43R7QPP0) с Google Consent Mode v2. Хранение Analytics по умолчанию запрещено и разрешается только после принятия категории Analytics. При отказе от Analytics тег Google остается в режиме отказа и может отправлять сигналы согласия или измерения без файлов cookie в соответствии с работой Google Consent Mode.</p><h2 data-i18n="cookies.h3">3. Маркетинговые технологии</h2><p data-i18n="cookies.p3">На этом маркетинговом сайте в настоящее время не настроен отдельный рекламный или маркетинговый тег. Сигналы согласия, связанные с рекламой, по умолчанию запрещены и могут быть разрешены только через настройки конфиденциальности.</p><h2 data-i18n="cookies.h4">4. Изменить настройки</h2><p><button class="text-button" data-i18n="cookies.openSettings" id="openCookieSettings" type="button">Настройки cookie</button></p><h2 data-i18n="cookies.h5">5. Используемые сейчас сервисы и хранилище</h2><p data-i18n="cookies.p5">Маркетинговый сайт использует локальное хранилище для настроек конфиденциальности, Google Analytics 4 с управлением согласием, FormSubmit для запросов демо и Custom и ссылки на отдельный сервис Duevio для регистрации и оплаты. Данные карт и PayPal обрабатываются соответствующим платежным провайдером и не хранятся на этом маркетинговом сайте.</p></div></div></section>
+<section aria-labelledby="ai-title" class="page legal-page" data-page="ai" hidden=""><div class="container legal-container"><p class="eyebrow" data-i18n="legal.ai">Прозрачность ИИ</p><h1 data-i18n="ai.title" id="ai-title">Прозрачность ИИ и ответственное использование</h1><p class="legal-update" data-i18n="ai.updated">Версия: 24 августа 2026 г.</p><div class="legal-body"><h2 data-i18n="ai.h1">1. Область применения</h2><p data-i18n="ai.p1">Это уведомление описывает принципы прозрачности, которые Duevio должен применять при включении функций с поддержкой ИИ. Оно не утверждает, что каждый модуль Duevio использует ИИ, и не классифицирует непроверенные функции как высокорисковые.</p><h2 data-i18n="ai.h2">2. Прозрачность при использовании</h2><p data-i18n="ai.p2">Если система ИИ предназначена для прямого взаимодействия с физическим лицом и это не очевидно, интерфейс должен ясно сообщать человеку, что он взаимодействует с системой ИИ, в соответствии со статьёй 50 EU AI Act.</p><h2 data-i18n="ai.h3">3. Контент, созданный или изменённый ИИ</h2><p data-i18n="ai.p3">Если Duevio предоставляет функции генерации или изменения синтетического контента, обязанности поставщика и оператора по машиночитаемой маркировке и раскрытию информации пользователю должны оцениваться и выполняться там, где этого требует статья 50.</p><h2 data-i18n="ai.h4">4. Контроль человеком</h2><p data-i18n="ai.p4">Результаты ИИ должны представляться как поддержка квалифицированных пользователей. Выводы по compliance, решения о риске клиента и регуляторные действия требуют, чтобы организация, использующая Duevio, применяла собственное корпоративное управление, политики и профессиональное суждение.</p><h2 data-i18n="ai.h5">5. Грамотность в области ИИ</h2><p data-i18n="ai.p5">Если сотрудники Duevio или клиента работают с системами ИИ, соответствующий поставщик или оператор должен принимать меры по AI literacy с учётом знаний, опыта и контекста использования, как требует статья 4 EU AI Act.</p><h2 data-i18n="ai.h6">6. Защита данных</h2><p data-i18n="ai.p6">Функции ИИ, обрабатывающие персональные данные, остаются предметом GDPR. До внедрения контролёры должны оценить правовое основание, прозрачность, минимизацию данных, безопасность, хранение, профилирование и требования к автоматизированным решениям.</p><h2 data-i18n="ai.h7">7. Оценка конкретной функции</h2><p data-i18n="ai.p7">До запуска любого модуля с поддержкой ИИ необходимо документировать его реальную цель, входы, выходы, пользователей и влияние на решения, чтобы определить применимую роль, категорию риска и обязанности по AI Act на основе реальной реализации.</p></div></div></section>
+<section aria-labelledby="terms-title" class="page legal-page" data-page="terms" hidden=""><div class="container legal-container"><p class="eyebrow" data-i18n="legal.terms">Условия использования</p><h1 data-i18n="terms.title" id="terms-title">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ ВЕБ-САЙТА</h1><div class="legal-body"><p><strong><span data-i18n="websiteTerms.b0.t0">Публичный веб-сайт, демонстрации, запросы и использование в преддоговорных целях</span></strong></p><p><strong><span data-i18n="websiteTerms.b1.t0">Версия 3.0 | Дата вступления в силу: 22 августа 2026 года</span></strong></p><p><span data-i18n="websiteTerms.b2.t0">Настоящие Условия использования веб-сайта регулируют доступ к публичному веб-сайту Duevio и его использование, а также доступ к публичной документации, демонстрациям, тестовым средам и иным ресурсам, предназначенным для общего доступа, и их использование.</span></p><p><span data-i18n="websiteTerms.b3.t0">Если посетитель регистрируется в Duevio, приобретает услуги Duevio или иным образом оформляет подписку на Duevio, использование платформы регулируется </span><strong><span data-i18n="websiteTerms.b3.t1">Условиями использования платформы и подписки Duevio</span></strong><span data-i18n="websiteTerms.b3.t2">, соответствующим планом подписки или Заказом, а также любыми иными документами, прямо включёнными в них. До активации платного доступа или доступа к производственной среде Клиент должен принять применимые Условия использования платформы и подписки.</span></p><h2><span data-i18n="websiteTerms.b4.t0">1. Duevio и использование исключительно в деловых целях</span></h2><p><span data-i18n="websiteTerms.b5.t0">«Duevio» означает торговое наименование, под которым поставщик, указанный в Юридическом уведомлении Duevio, осуществляет деятельность по эксплуатации веб-сайта и платформы Duevio.</span><strong><span data-i18n="websiteTerms.b5.t1"></span></strong><span data-i18n="websiteTerms.b5.t2"></span></p><p><span data-i18n="websiteTerms.b6.t0">Веб-сайт предназначен исключительно для предприятий, специалистов, регулируемых организаций и лиц, действующих в рамках торговли, предпринимательской или профессиональной деятельности. Duevio не предоставляется в качестве услуги для потребителей.</span></p><h2><span data-i18n="websiteTerms.b7.t0">2. Использование веб-сайта</span></h2><p><span data-i18n="websiteTerms.b8.t0">Получая доступ к веб-сайту или используя его, посетитель соглашается с настоящими Условиями использования веб-сайта.</span></p><p><span data-i18n="websiteTerms.b9.t0">Просмотр веб-сайта, направление запроса, запрос информации или участие в демонстрации не создают платную подписку, профессиональное поручение, фидуциарные отношения, отношения по оказанию консультационных услуг или иные продолжающиеся договорные отношения с Duevio.</span></p><p><span data-i18n="websiteTerms.b10.t0">Договор подписки заключается только после завершения соответствующего заказа или подписки и принятия </span><strong><span data-i18n="websiteTerms.b10.t1">Условий использования платформы и подписки Duevio</span></strong><span data-i18n="websiteTerms.b10.t2"> в порядке, установленном Duevio.</span></p><h2><span data-i18n="websiteTerms.b11.t0">3. Разрешённое использование</span></h2><p><span data-i18n="websiteTerms.b12.t0">Веб-сайт может использоваться только в законных информационных, оценочных, закупочных, регистрационных и коммерческих целях, связанных с Duevio.</span></p><h2><span data-i18n="websiteTerms.b13.t0">4. Запрещённые действия</span></h2><p><span data-i18n="websiteTerms.b14.t0">Посетителям запрещается:</span></p><ul><li><span data-i18n="websiteTerms.b15.t0">пытаться получить несанкционированный доступ к любой учётной записи, системе, API, исходному коду, базе данных, административному интерфейсу или непубличной среде;</span></li><li><span data-i18n="websiteTerms.b16.t0">проводить зондирование, сканирование, тестирование на проникновение или тестирование уязвимостей Duevio без предварительного письменного разрешения;</span></li><li><span data-i18n="websiteTerms.b17.t0">внедрять вредоносное программное обеспечение, вредоносный код, трафик типа «отказ в обслуживании», атаки на учётные данные или осуществлять иную враждебную деятельность;</span></li><li><span data-i18n="websiteTerms.b18.t0">осуществлять скрейпинг, обход, сбор, зеркалирование или систематическое извлечение контента или данных, за исключением случаев использования функций, прямо предоставленных Duevio;</span></li><li><span data-i18n="websiteTerms.b19.t0">обходить аутентификацию, ограничения частоты запросов, средства контроля доступа, технические ограничения или меры безопасности;</span></li><li><span data-i18n="websiteTerms.b20.t0">выдавать себя за другое лицо или организацию либо предоставлять ложную или вводящую в заблуждение информацию;</span></li><li><span data-i18n="websiteTerms.b21.t0">использовать материалы Duevio для создания, обучения, сравнительного тестирования или улучшения конкурирующего продукта, услуги, модели или набора данных без письменного разрешения;</span></li><li><span data-i18n="websiteTerms.b22.t0">копировать, повторно публиковать, распространять, перепродавать или коммерчески использовать материалы Duevio, кроме случаев, прямо разрешённых; или</span></li><li><span data-i18n="websiteTerms.b23.t0">использовать веб-сайт таким образом, который нарушает права на неприкосновенность частной жизни, конфиденциальность, интеллектуальную собственность или иные права либо создаёт существенный юридический, регуляторный, санкционный, связанный с безопасностью или репутационный риск.</span></li></ul><h2><span data-i18n="websiteTerms.b24.t0">5. Отсутствие юридических, регуляторных или профессиональных консультаций</span></h2><p><span data-i18n="websiteTerms.b25.t0">Описания AML, KYC, CDD, EDD, скрининга, оценки риска, бенефициарного владения, готовности к аудиту, доказательств, рабочих процессов или регуляторных процессов являются исключительно описаниями функциональных возможностей Duevio.</span></p><p><span data-i18n="websiteTerms.b26.t0">Они не являются юридической, регуляторной, налоговой, бухгалтерской, финансовой консультацией, консультацией по вопросам комплаенса или иной профессиональной консультацией.</span></p><p><span data-i18n="websiteTerms.b27.t0">Использование Duevio не подтверждает и не гарантирует соблюдение какого-либо закона, нормативного акта, руководства, лицензионного условия или надзорного ожидания.</span></p><h2><span data-i18n="websiteTerms.b28.t0">6. Маркетинговые заявления и демонстрации</span></h2><p><span data-i18n="websiteTerms.b29.t0">Маркетинговые материалы, снимки экрана, примеры, тематические исследования, демонстрации, сравнения, обсуждения продаж и дорожные карты продуктов носят исключительно иллюстративный характер и не создают гарантии или договорного обязательства, если только они прямо не включены в соответствующий Заказ или письменное соглашение.</span></p><p><span data-i18n="websiteTerms.b30.t0">Запланированные, экспериментальные, бета-версии или будущие функции могут быть изменены, отложены или прекращены.</span></p><h2><span data-i18n="websiteTerms.b31.t0">7. Демонстрации, пробные версии и тестовые среды</span></h2><p><span data-i18n="websiteTerms.b32.t0">Публичные демонстрации, предварительные версии, песочницы и тестовые среды предоставляются исключительно для оценки и могут содержать смоделированные, неполные или экспериментальные функции.</span></p><p><span data-i18n="websiteTerms.b33.t0">Они могут быть изменены, сброшены, ограничены или отозваны в любое время.</span></p><p><span data-i18n="websiteTerms.b34.t0">Посетителям запрещается загружать реальные конфиденциальные, регулируемые или персональные данные в публичную или непроизводственную среду, если Duevio прямо не подтвердит, что такая среда разрешена для этой цели.</span></p><h2><span data-i18n="websiteTerms.b35.t0">8. Интеллектуальная собственность</span></h2><p><span data-i18n="websiteTerms.b36.t0">Все права на веб-сайт Duevio, бренд, платформу, программное обеспечение, дизайн, интерфейсы, документацию, рабочие процессы, контент и иные принадлежащие материалы принадлежат Duevio, его лицензиарам и/или соответствующим правообладателям.</span></p><p><span data-i18n="websiteTerms.b37.t0">Посетителям предоставляется только ограниченное, отзывное и неисключительное право доступа к веб-сайту для предусмотренной цели.</span></p><p><span data-i18n="websiteTerms.b38.t0">Право собственности или права интеллектуальной собственности не передаются.</span></p><h2><span data-i18n="websiteTerms.b39.t0">9. Обратная связь</span></h2><p><span data-i18n="websiteTerms.b40.t0">Если посетитель добровольно предоставляет отзывы, предложения или идеи, касающиеся Duevio, Duevio вправе использовать их для разработки или улучшения своих продуктов и услуг без выплаты вознаграждения при условии, что это не влечёт передачу права собственности на конфиденциальную информацию или персональные данные посетителя.</span></p><h2><span data-i18n="websiteTerms.b41.t0">10. Веб-сайты и услуги третьих лиц</span></h2><p><span data-i18n="websiteTerms.b42.t0">Веб-сайт может содержать ссылки на веб-сайты, реестры, поставщиков услуг скрининга, поставщиков услуг идентификации, источники данных или иные услуги третьих лиц либо упоминать их.</span></p><p><span data-i18n="websiteTerms.b43.t0">Если прямо не указано иное, Duevio не контролирует их и не несёт ответственности за их доступность, точность, содержание, безопасность, лицензирование, практики в области конфиденциальности или договорные условия.</span></p><h2><span data-i18n="websiteTerms.b44.t0">11. Доступность и безопасность веб-сайта</span></h2><p><span data-i18n="websiteTerms.b45.t0">Публичный веб-сайт предоставляется на основе принципа </span><strong><span data-i18n="websiteTerms.b45.t1">«по мере доступности»</span></strong><span data-i18n="websiteTerms.b45.t2">.</span></p><p><span data-i18n="websiteTerms.b46.t0">Duevio не гарантирует бесперебойную доступность, совместимость с каждым устройством или браузером, отсутствие уязвимостей или защиту от любых враждебных действий третьих лиц.</span></p><p><span data-i18n="websiteTerms.b47.t0">Duevio вправе ограничить, приостановить или прекратить доступ по причинам технического обслуживания, безопасности, соблюдения закона, санкций, мошенничества, злоупотреблений или операционной деятельности.</span></p><h2><span data-i18n="websiteTerms.b48.t0">12. Ограничение ответственности</span></h2><p><span data-i18n="websiteTerms.b49.t0">В максимально допустимой законом степени Duevio не несёт ответственности за косвенные, случайные, специальные, штрафные или последующие убытки, включая потерю прибыли, дохода, сбережений, возможностей, деловой репутации или репутации, возникшие вследствие использования публичного веб-сайта, демонстраций, тестовых сред или веб-сайтов либо услуг третьих лиц или полагания на них.</span></p><p><span data-i18n="websiteTerms.b50.t0">Ничто в настоящих Условиях использования не исключает и не ограничивает ответственность, которая не может быть законно исключена или ограничена.</span></p><h2><span data-i18n="websiteTerms.b51.t0">13. Конфиденциальность и файлы cookie</span></h2><p><span data-i18n="websiteTerms.b52.t0">Персональные данные, собранные через веб-сайт, обрабатываются в соответствии с </span><strong><span data-i18n="websiteTerms.b52.t1">Политикой конфиденциальности Duevio</span></strong><span data-i18n="websiteTerms.b52.t2">.</span></p><p><span data-i18n="websiteTerms.b53.t0">Файлы cookie и аналогичные технологии регулируются </span><strong><span data-i18n="websiteTerms.b53.t1">Политикой использования файлов cookie Duevio</span></strong><span data-i18n="websiteTerms.b53.t2"> и любыми средствами управления согласием, доступными через веб-сайт.</span></p><h2><span data-i18n="websiteTerms.b54.t0">14. Юридическое уведомление и сведения о поставщике</span></h2><p><span data-i18n="websiteTerms.b55.t0">Наименование, адрес осуществления деятельности, идентификационный номер плательщика НДС и контактные данные поставщика, осуществляющего деятельность под торговым наименованием Duevio, указаны в Юридическом уведомлении Duevio.</span><strong><span data-i18n="websiteTerms.b55.t1"></span></strong><span data-i18n="websiteTerms.b55.t2"></span></p><p><span data-i18n="websiteTerms.b56.t0">Юридическое уведомление доступно через веб-сайт Duevio и является частью информации о поставщике, предоставляемой в связи с настоящими Условиями использования.</span></p><h2><span data-i18n="websiteTerms.b57.t0">15. Изменения веб-сайта и настоящих Условий</span></h2><p><span data-i18n="websiteTerms.b58.t0">Duevio вправе в любое время изменять, приостанавливать или прекращать размещение контента или функциональных возможностей веб-сайта.</span></p><p><span data-i18n="websiteTerms.b59.t0">Настоящие Условия использования также могут время от времени обновляться. Действующая версия и дата вступления в силу публикуются на веб-сайте.</span></p><h2><span data-i18n="websiteTerms.b60.t0">16. Применимое право и юрисдикция</span></h2><p><span data-i18n="websiteTerms.b61.t0">Настоящие Условия использования и любые внедоговорные обязательства, возникающие из них, регулируются законодательством Мальты.</span></p><p><span data-i18n="websiteTerms.b62.t0">Суды Мальты обладают исключительной юрисдикцией с учётом любых императивных норм, которые не могут быть законно исключены.</span></p></div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div class="footer-brand"><img alt="Duevio" src="/assets/img/brand-DUEVIO-02.svg"/><p data-i18n="footer.tagline">AML-операции для онбординга, KYC-досье, проверок, процессов и доказательств.</p></div>
+<div><h2 data-i18n="footer.product">Продукт</h2><a data-i18n="nav.product" href="#product">Продукт</a><a data-i18n="nav.industries" href="#industries">Отрасли</a><a data-i18n="nav.plans" href="#pricing">Цены</a><a data-i18n="nav.demo" href="#demo">Демо</a></div>
+<div><h2 data-i18n="footer.legal">Правовая информация</h2><a data-i18n="legal.privacy" href="#privacy">Уведомление о конфиденциальности</a><a data-i18n="legal.cookies" href="#cookies">Политика cookie</a><a data-i18n="legal.terms" href="#terms">Условия использования</a></div>
+<div class="footer-payments"><h2 data-i18n="payment.accepted">Принимаемые способы оплаты</h2><div class="payment-logos dark"><figure><img alt="Visa" class="visa" src="/assets/img/visa.svg"/><figcaption>Visa</figcaption></figure><figure><img alt="Mastercard" class="mastercard" src="/assets/img/mastercard.svg"/><figcaption>Mastercard</figcaption></figure><figure><img alt="PayPal" class="paypal" src="/assets/img/paypal.svg"/><figcaption>PayPal</figcaption></figure></div></div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">Все права защищены.</span></p><button class="text-button footer-cookie" data-i18n="cookies.openSettings" id="footerCookieSettings" type="button">Настройки cookie</button></div>
+</footer>
+<div aria-labelledby="cookieTitle" aria-modal="false" class="cookie-banner" hidden="" id="cookieBanner" role="dialog"><div><strong data-i18n="cookieBanner.title" id="cookieTitle">Настройки конфиденциальности</strong><p data-i18n="cookieBanner.text">Мы используем обязательное хранилище браузера для языковых и privacy-настроек. Необязательные аналитические или маркетинговые технологии остаются отключёнными, пока вы их не выберете.</p></div><div class="cookie-actions"><button class="button button-ghost compact" data-cookie-action="reject" data-i18n="cookieBanner.reject" type="button">Отклонить необязательные</button><button class="button button-secondary compact" data-cookie-action="settings" data-i18n="cookieBanner.settings" type="button">Настройки</button><button class="button button-primary compact" data-cookie-action="accept" data-i18n="cookieBanner.accept" type="button">Принять все</button></div></div>
+<div class="modal-backdrop" hidden="" id="cookieModal"><div aria-labelledby="cookieModalTitle" aria-modal="true" class="modal" role="dialog"><div class="modal-head"><h2 data-i18n="cookieModal.title" id="cookieModalTitle">Настройки cookie</h2><button aria-label="Close" class="modal-close" type="button">×</button></div><p data-i18n="cookieModal.text">Обязательное хранение всегда активно, так как оно нужно для запоминания настроек сайта и конфиденциальности.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Обязательные</strong><p data-i18n="cookieModal.essentialText">Настройки языка, навигации и согласия.</p></div><span class="always-on" data-i18n="cookieModal.always">Всегда включено</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Аналитика</strong><p data-i18n="cookieModal.analyticsText">Необязательные инструменты измерения, если будут добавлены в рабочей версии.</p></div><input id="analyticsConsent" type="checkbox"/></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Маркетинг</strong><p data-i18n="cookieModal.marketingText">Необязательные рекламные или маркетинговые технологии, если будут добавлены в рабочей версии.</p></div><input id="marketingConsent" type="checkbox"/></label><button class="button button-primary block" data-i18n="cookieModal.save" id="saveCookieSettings" type="button">Сохранить настройки</button></div></div>
+</body>
+</html>
+

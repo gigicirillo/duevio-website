@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="mt" data-lang="mt" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duevio | Operazzjonijiet AML mill-onboarding sal-awditjar</title>
+  <meta name="description" content="Immaniġġja KYC, fajls tal-klijenti, sjieda, reviżjonijiet, workflows u evidenza ta’ awditjar f’workspace AML wieħed.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://duevio.com/mt/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+  <style>html,body{margin:0;min-height:100%;background:#f4f7fb;font-family:Arial,sans-serif}.locale-loading{min-height:100vh;display:grid;place-items:center;color:#22386f}.locale-loading img{width:150px;margin:0 auto 18px}</style>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+  <div class="locale-loading"><div><img src="/assets/img/brand-DUEVIO-01.svg" alt="Duevio"><div>Qed titgħabba l-verżjoni bil-Malti…</div></div></div>
+  <script>
+  (async()=>{
+    try{
+      const response=await fetch('../index.html',{cache:'no-cache'});
+      let html=await response.text();
+      html=html.replace('<html lang="en" data-lang="en" data-root="">','<html lang="mt" data-lang="mt" data-root="../">');
+      html=html.replaceAll('href="/assets/','href="/assets/').replaceAll('src="/assets/','src="/assets/');
+      html=html.replace('<span class="language-code">EN</span>','<span class="language-code">MT</span>');
+      html=html.replace('href="it/" data-lang-link="it"','href="../it/" data-lang-link="it"');
+      html=html.replace('href="de/" data-lang-link="de"','href="../de/" data-lang-link="de"');
+      html=html.replace('href="es/" data-lang-link="es"','href="../es/" data-lang-link="es"');
+      html=html.replace('href="fr/" data-lang-link="fr"','href="../fr/" data-lang-link="fr"');
+      html=html.replace('href="ru/" data-lang-link="ru"','href="../ru/" data-lang-link="ru"');
+      html=html.replace('role="menuitem" href="" data-lang-link="en"','role="menuitem" href="../" data-lang-link="en"');
+      html=html.replace('<title>Duevio | AML operations from onboarding to audit</title>','<title>Duevio | Operazzjonijiet AML mill-onboarding sal-awditjar</title>');
+      html=html.replace('<link rel="canonical" href="https://duevio.com/">','<link rel="canonical" href="https://duevio.com/mt/">');
+      document.open();document.write(html);document.close();
+    }catch(e){document.querySelector('.locale-loading').textContent='Ma setgħetx titgħabba l-verżjoni bil-Malti.';}
+  })();
+  </script>
+</body>
+</html>

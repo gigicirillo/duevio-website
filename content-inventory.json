@@ -1,0 +1,652 @@
+[
+  {
+    "path": "index.html",
+    "source_sha256": "e099836b70949f6d0d82af10a27627a85fb393a324008f159849445109bee419",
+    "text_sha256": "b54e11c59826e302f450135a1dfadead3d461300eb29e0a422f2bcceb7d31444"
+  },
+  {
+    "path": "mt/index.html",
+    "source_sha256": "c3425f55b6f73dc72527c39e0a3b3b9a9c971ebee34d672b4a695d025a1f90cf",
+    "text_sha256": "2d0602f0888e29ab7291d13370d7207ef1276758bbf824274d5b8ec86374c978"
+  },
+  {
+    "path": "mt/capabilities/beneficial-ownership/index.html",
+    "source_sha256": "56b3680d564bdb676fef4a0ee2318a7a794c0cebda3e482b1c4646b1a60718d5",
+    "text_sha256": "0ce8be4f875468cc2c1ff4f10812f13d0aac4ef4485999299870d33ca170eac3"
+  },
+  {
+    "path": "mt/capabilities/aml-workflow/index.html",
+    "source_sha256": "33c68295afc26c40cf5e144588304c941f9e1039802f06f5ff30569f999ea346",
+    "text_sha256": "4ece29426376f1c817c425b2e90b136f340729cc21d9dbfb32bc0d17fc67a3a3"
+  },
+  {
+    "path": "mt/capabilities/risk-assessment/index.html",
+    "source_sha256": "267515945345be82eb360f9604306512a0667eca236f6de8b5c41a5611b31485",
+    "text_sha256": "d53881181fd42f7cd11c1e03db566e0e058a71af7b849a62a0a621ab5fb502fd"
+  },
+  {
+    "path": "mt/capabilities/evidence-management/index.html",
+    "source_sha256": "f56f6af501910d62bdad9fc645d7f57482b83f10d185d9a3d87257738f000bfd",
+    "text_sha256": "95d1027cbe12889de2010f1eefdeebbba267e75a6c5e870e6e45d72f82909dfa"
+  },
+  {
+    "path": "mt/capabilities/periodic-reviews/index.html",
+    "source_sha256": "090e57e053cd85c8f0633f326b6ba6481c14c4cefe8b59edeca7ee51d86b5869",
+    "text_sha256": "c5465e4ee79df634dc873f46cd170613f7beabc092e0bc87790f4de6d2ab85f3"
+  },
+  {
+    "path": "mt/capabilities/provider-agnostic-integrations/index.html",
+    "source_sha256": "97aa06978780d95b416489b88841239781afa9c202a8230a54bb1f1faf6ebc5c",
+    "text_sha256": "67e90a287d494d466879f131b7a7b4718c6853f302ff572ccdb6f1620428e0b2"
+  },
+  {
+    "path": "mt/capabilities/audit-trail/index.html",
+    "source_sha256": "2cf1d4a43050c41cb9c9c13e8e824f081b1ca897c7239df6c6ccb2d8a4f6fad5",
+    "text_sha256": "fb36e4f57ed15b6670d6e7906281cd1ab910ef1489b3cf61e6abe011cd02d229"
+  },
+  {
+    "path": "mt/capabilities/screening-integrations/index.html",
+    "source_sha256": "bad3532d910f99482d8a32031544f24ef909dcfa85b7b3db2d8dc89e106398a5",
+    "text_sha256": "9ded610d6fd5702dcf8c105f0646dd75ef710fee8fba46793ecb2e688d788595"
+  },
+  {
+    "path": "mt/capabilities/kyc-onboarding/index.html",
+    "source_sha256": "404f5424ba807992e2c7c62847185eff4ab8388664b6550b2bd928584332fdd2",
+    "text_sha256": "5576d493eae7fdbe692fb99ce47609f17b9410969226af8a75bb2fed0f03e201"
+  },
+  {
+    "path": "mt/industries/index.html",
+    "source_sha256": "1319a5df7b702f607a28491aedec5c157d8b1c3f3e5571cbc3f369e0b791dc87",
+    "text_sha256": "174720d7dde13ce7d1c9ddf33e580d25be0b201a56deb1e63f85eb7dc7fdd84d"
+  },
+  {
+    "path": "mt/industries/accountants/index.html",
+    "source_sha256": "7d4f51febe1234432da94b19b0681a6a6a0346a56afc223d81ce80b0e7931bd1",
+    "text_sha256": "ae0bafae26083cdc4567b77241f4f3d4f3c5a3b4c65eea8aff3e3ad0f3f40cb0"
+  },
+  {
+    "path": "mt/industries/corporate-service-providers/index.html",
+    "source_sha256": "c30e7ccb8ea98dc4f0451bd4834249c93140f85338b6b134026fed6f9802f060",
+    "text_sha256": "48d17ab81fb598c97500be600c2c040e91736f6428cde0bda7f9ceb82a55036f"
+  },
+  {
+    "path": "mt/industries/law-firms/index.html",
+    "source_sha256": "9d26eb2a2a4a0e8a04d7f2168dcde73a570666f79f9f85e9acc2c6d2dcaa1ba3",
+    "text_sha256": "774678203a794a06c45fe32d030fb44df01b0117c0d53f5a7df5021f54bc0987"
+  },
+  {
+    "path": "mt/industries/aml-consultants/index.html",
+    "source_sha256": "324925ec080920f3b7bff179d831f73f80ce8970f8089d42651f0a59023c9462",
+    "text_sha256": "a77e146a7a11d1992b42ecf301b5426284c98ef13956b135744edfa0b9d16598"
+  },
+  {
+    "path": "mt/industries/payment-institutions/index.html",
+    "source_sha256": "686fe2dd62578fa9c7e197a18397233dcb284fdec21a97c70d13afebb34dabf2",
+    "text_sha256": "04ceca38c67c2fed04e11ffd9899f8d105b8872b3f535f65e6b54484946bece0"
+  },
+  {
+    "path": "mt/product/index.html",
+    "source_sha256": "cb1293102136a82fb4f2021a2934c3a098311e4b5d28d253aa4cf76ecbecf728",
+    "text_sha256": "e0806baf6b6732fdada56506c906f203da5d41c90495719c6a90fc25d7a47d66"
+  },
+  {
+    "path": "mt/markets/malta/index.html",
+    "source_sha256": "320576ce14e96a5ba4a710a3b0431c201787577316c3394c86c207ca8164253a",
+    "text_sha256": "9d5142e6521071956ac24a93eeda17013ab870ccf2d40f98a106919a9db1ab22"
+  },
+  {
+    "path": "mt/pricing/index.html",
+    "source_sha256": "87b2f6083f91337c6b35551c58d0053e6370809f6ba28e5ae2a13176e03ea9cb",
+    "text_sha256": "f5af6c92c5260fe8ffa369490da60e973ab1799e1ed6cb7b20ee5bd11213e757"
+  },
+  {
+    "path": "capabilities/beneficial-ownership/index.html",
+    "source_sha256": "28568b9afa30e1c08d8ef576bfb1effaa333e6d475be4fafd096a90a41fcb62a",
+    "text_sha256": "2910f59e57084ea667e121a6e958845ffd1dc47509e3e574143afa2a89a1060b"
+  },
+  {
+    "path": "capabilities/aml-workflow/index.html",
+    "source_sha256": "a25c1c44b5881072cecf2c054da0284498f98ce731cb11f05d3755f56ca59c83",
+    "text_sha256": "ef7df759188016e82d116d25fd1ce5fe276571e352516146612740f8d6ad6149"
+  },
+  {
+    "path": "capabilities/risk-assessment/index.html",
+    "source_sha256": "3cac911a1a1d803240cdbc0bae69b180f83f0aa4499473eea42a5ee1be8e2d4d",
+    "text_sha256": "0ddae3d81efeb119b035dcdc7969f44e4931bc65c768d1cbdcf0dbf695b2eed0"
+  },
+  {
+    "path": "capabilities/evidence-management/index.html",
+    "source_sha256": "d3127f53eff44ba4ad58d52be9ba861b154f3d328c3b49c5ca250ba165c0c6a4",
+    "text_sha256": "187b7afbe7541a2ab6c56002f6fd970e75fe6da9cad0756ef517d7855e64ecdf"
+  },
+  {
+    "path": "capabilities/periodic-reviews/index.html",
+    "source_sha256": "af6e843672bdbba4b104f20d03fb84141fa7f4500b40560c2e95ad2798de1c46",
+    "text_sha256": "aef675e6efb983a61562820c475c52cc249c59b37e8aa54731266adc7f2de900"
+  },
+  {
+    "path": "capabilities/provider-agnostic-integrations/index.html",
+    "source_sha256": "6596fa1ede32fff75c3e8359e715bfe8453d8a75c90287928edc19786a414a96",
+    "text_sha256": "cda624a1eca4c5b87bb110ab04714ca950aea4b38fda6be80fb8ffcd7ceb49ff"
+  },
+  {
+    "path": "capabilities/audit-trail/index.html",
+    "source_sha256": "961e26434f061b890b3302e9c7dc84f45aa3902e389609eff3293ed7fb9a8408",
+    "text_sha256": "65f90242ae6dbc26abeeaf88706111823577ef3f038fbcfdf5598d3c781d3a43"
+  },
+  {
+    "path": "capabilities/screening-integrations/index.html",
+    "source_sha256": "927862ef04a2e262c9f9948e8f2967db86cf5e0bad610bf76492d1d225f62339",
+    "text_sha256": "8e90350e198601a82a9702ef678294d01039f9f72aeaba2b8a4422c8eb845806"
+  },
+  {
+    "path": "capabilities/kyc-onboarding/index.html",
+    "source_sha256": "a24ba8558c063b130c1e636012c46ba3169d265190c73e176cdf3de629fa779c",
+    "text_sha256": "2abb284d26bdf1d6947fec0feacaf4ab574e336553e19a25c26a3efbd2df020f"
+  },
+  {
+    "path": "it/index.html",
+    "source_sha256": "e7ca4a3cdf4080957540126c6d868de808e8a2e700ed0cccaf14b7a25678cd1b",
+    "text_sha256": "64ae31edad293011de21c4dfc6bfcec363bc3619d7c4e3194526a7c0a1045315"
+  },
+  {
+    "path": "it/capabilities/beneficial-ownership/index.html",
+    "source_sha256": "933243d3993df496534aa2c9e8d105476aa16194a027fcfb9fa121e160255bf9",
+    "text_sha256": "b8c06c97f11f71c73b9ee052f144aa1259864659aeb5b80ab05e54383d3b4024"
+  },
+  {
+    "path": "it/capabilities/aml-workflow/index.html",
+    "source_sha256": "f42a7dccf7feb0fb4bc1cc4dba863d8655eedb93e7b23e4d51020b3677f9130d",
+    "text_sha256": "e1f40ba20042d2b3d8e840cf8c4d4988be4b519228b2923274fd6aa2f7d83e00"
+  },
+  {
+    "path": "it/capabilities/risk-assessment/index.html",
+    "source_sha256": "2b95a75f531a83863c14311e5d8ecc45861acfc15a08b1f093f85f9c5377787d",
+    "text_sha256": "7e760e4a297165c712b23492ced8d21405537e40930fd3309407d41455dd8c66"
+  },
+  {
+    "path": "it/capabilities/evidence-management/index.html",
+    "source_sha256": "abe17a528f413fb12924587c02dc58fc5d127ed2e8569b5df6527d6d211dd2bc",
+    "text_sha256": "fb2ea219ce90d57eb48cc5e59d67f0a229d23192322d4599a77847978daf407b"
+  },
+  {
+    "path": "it/capabilities/periodic-reviews/index.html",
+    "source_sha256": "d5562e58d8eff787dae31b567964489e2449993550d47633f0f2b3015bd4b337",
+    "text_sha256": "39b9d6fc4e9d5006dff20f1f1fca25d6809a53fc6ad6fcd6397f8ca96eeb3c67"
+  },
+  {
+    "path": "it/capabilities/provider-agnostic-integrations/index.html",
+    "source_sha256": "f39d9590626852eac142829c03f38dcbb85dbb8377deef270e4501f9b49f63ee",
+    "text_sha256": "f7785c039d19c402272ddfde580e02c03784c790f977679aaaf69b89bdd962f0"
+  },
+  {
+    "path": "it/capabilities/audit-trail/index.html",
+    "source_sha256": "9a01118967fa4ed6f7bc6e37e8fa80d0936160a9001cd33209b04a242c56fcc1",
+    "text_sha256": "14f17bc217940408a03bd920c65a5ac6531ac21c724c838500946d13274ee5df"
+  },
+  {
+    "path": "it/capabilities/screening-integrations/index.html",
+    "source_sha256": "5e750b33c43d5bd5b4cdfc1957277b9e663373cc7d91b3b3501c1caecf768cd7",
+    "text_sha256": "305ea8a909f2c45fa801b07810a434d1910fdf5ac80025b0295e20f36c0ed3fe"
+  },
+  {
+    "path": "it/capabilities/kyc-onboarding/index.html",
+    "source_sha256": "8fd0aa173a48079b66ad15893daade3cb9f09daef9939abfb4ebd7eb044129d4",
+    "text_sha256": "3f457080daa62fc2a0c4141416d98eb1539cc417a9c298d9226b328dc521a5fc"
+  },
+  {
+    "path": "it/industries/index.html",
+    "source_sha256": "7f6386a8d3f3e141dda8e30fdfee8ff64f4a042588ad1435d65c3580e3c96da0",
+    "text_sha256": "a678d403417d6b3569ebfe5e9ac0d279543e7185dffd7675f11b9dafd7e0ebdf"
+  },
+  {
+    "path": "it/industries/accountants/index.html",
+    "source_sha256": "81a09380ae66912671e4984d03312ffa4fc780fd4bce5a3e1b56b7b0d05c8142",
+    "text_sha256": "b8dc31da3ed72f7e91f1315b0b7142574bad573bb58e0186e4bd980e8637f78f"
+  },
+  {
+    "path": "it/industries/corporate-service-providers/index.html",
+    "source_sha256": "f427d1032dd2fe682cf7ef858dd3652a99cdf656386ec769ac0bf4e90e173654",
+    "text_sha256": "fddf88ffe61b5aabd8bc1d67c3b34d07ee931d4cce1461a2749c6ba1e7f43ba6"
+  },
+  {
+    "path": "it/industries/law-firms/index.html",
+    "source_sha256": "4c2db3f08df9c6e141c3473bd0dfb8730f70db5ab3ac28607f0418aabaea4118",
+    "text_sha256": "953f650749700521f0e71b290d0581ff174932dc5d85b3a407505332a72ebfbf"
+  },
+  {
+    "path": "it/industries/aml-consultants/index.html",
+    "source_sha256": "fa94898e5b129cd4e0a081e312b3a53a29db6c515b102fc44a4a83301fb73118",
+    "text_sha256": "995ab8d660d30a815a47ab68ecaf752fe188cd3d5dc1df4edd07fc60559b8404"
+  },
+  {
+    "path": "it/industries/payment-institutions/index.html",
+    "source_sha256": "ad09c1433f94f7f221d20140ea575491ec2e9ed56cc805cc92380e1cf7475596",
+    "text_sha256": "6b5a58492776a3d0640548f5bdd98c5054c8a2bee22f96234c935e0671a1dbb6"
+  },
+  {
+    "path": "it/product/index.html",
+    "source_sha256": "d17f4d819b42bd1f42c9a32e5a62a1e72bd3ddbf5e3d8a1adab9dd91d78e6b76",
+    "text_sha256": "e050cdb0093039d20b27b8adfdda3e3428c871a1f7bd4187404a8cc9d77435ee"
+  },
+  {
+    "path": "it/markets/italy/index.html",
+    "source_sha256": "9b52b8ee9c48b20a631f858716458fbe144ecbe28cb6325c0d380c164bd87bad",
+    "text_sha256": "43ed093a8f1ce5a405191f4fde5ade0fe03fbf18cb0f3c5d394e35b5ade9a3a5"
+  },
+  {
+    "path": "it/pricing/index.html",
+    "source_sha256": "1d8d76f91fa8bef04632826591432308a79367ca814400b9420a5dbab2697710",
+    "text_sha256": "f4f2c6150a720324a5a96320ff29c869a3de56a4ed777a0c4bce416b577162ba"
+  },
+  {
+    "path": "industries/index.html",
+    "source_sha256": "322d33c2c8e262884b1c8e2b68d7eb5dc988b1624d4f2170f37580a8673d31b8",
+    "text_sha256": "b639dc7fe1fc9c79e292a2893397ee3a9c1c9ff1a0cfbf15569ee78dfdcdf36e"
+  },
+  {
+    "path": "industries/accountants/index.html",
+    "source_sha256": "3184e110247095033740ceeee267b7850a77887c75f6d6e30574dcfa4195f9a6",
+    "text_sha256": "6d33455a9c3a046792b6211d44e6bb5cd039460e93c56326a44a5650711464fb"
+  },
+  {
+    "path": "industries/corporate-service-providers/index.html",
+    "source_sha256": "5ab9f679060b9ecbc083803d0b33ec2605d9395e70761e422e806ea2198352bd",
+    "text_sha256": "32e02f4a96f749684fe1d837c0cd20b75b1a1fa4df3f97a903f82f3eb35327c3"
+  },
+  {
+    "path": "industries/law-firms/index.html",
+    "source_sha256": "72153761735ccb76c8dd3137d63c06b95d2228d3f0f8619e36a2974b966ff95f",
+    "text_sha256": "f2b8b687d4697586fd01d507a3d88ecf513e433ce9ae373639b22e2f1888eea3"
+  },
+  {
+    "path": "industries/aml-consultants/index.html",
+    "source_sha256": "0e49ca990d7e243041a7e59c19d2cd72fcba84cd067b49c112fde5efc50e7772",
+    "text_sha256": "d18a80542b5a81516b7ac96991414c9d9ae87bb273e32abf3279c45eacd1d39c"
+  },
+  {
+    "path": "industries/payment-institutions/index.html",
+    "source_sha256": "0c06db86320459db970c28b90c388ae688858c2246d6d35957af18e02f89b8bd",
+    "text_sha256": "72304efecb36447bca370e1dd55eafbabd4552057d4ef73896f94614bd050fa6"
+  },
+  {
+    "path": "ru/index.html",
+    "source_sha256": "9fc2822bd2d80348b126188a679743a5f2fa7f02e4aff1e5d9341b49e90ceacd",
+    "text_sha256": "91f91243103dabe5e7c3abb0c281922b1e1d32fb8a7448474620ceafda82b29d"
+  },
+  {
+    "path": "ru/capabilities/beneficial-ownership/index.html",
+    "source_sha256": "6489445e341035e678aa9ce57cb17e282ea3f56f0d1abd8d0730e1a4efb66855",
+    "text_sha256": "064303d2efdf058c48c2fac66168ae41a6a08d3a76e7288e77bc77d972fc1745"
+  },
+  {
+    "path": "ru/capabilities/aml-workflow/index.html",
+    "source_sha256": "d5c4325e2117f42a567d63162a1ea918beb0d13cb2addcf199bc32b2c5880375",
+    "text_sha256": "a77eb3d7ff86d4be9da6ab29834b46e416f84f9ab1bd1fb55cf6f9f8c1d5e3c5"
+  },
+  {
+    "path": "ru/capabilities/risk-assessment/index.html",
+    "source_sha256": "c89562d1e14e9e684d8d45b36d0206cfb79b04d2455b600be5043b43798d198c",
+    "text_sha256": "ff6927ca72db64fa6b819d96bee65621ae49a61c16f66af6688ce0b4b04844ea"
+  },
+  {
+    "path": "ru/capabilities/evidence-management/index.html",
+    "source_sha256": "a93a302498265248dcff9e01fee8c31a301b9bb467b5838a0b1f63daf0b64fd3",
+    "text_sha256": "8996959e67ad8c4a5b487cd1f43e1ebacda303fbd320c585de498b0a1a2b962f"
+  },
+  {
+    "path": "ru/capabilities/periodic-reviews/index.html",
+    "source_sha256": "b358999c663a9e3eae2128ee460f3780e5d6c3730bf95222e79e95b70c25112a",
+    "text_sha256": "688169580a4007b45c99620918f172dec75a226a10a77bb5ee0ca7e0c28a0b6c"
+  },
+  {
+    "path": "ru/capabilities/provider-agnostic-integrations/index.html",
+    "source_sha256": "d39068229f18a9a59fc8674d6096fa6d2ba42d2895d879c04cda943583e4eea6",
+    "text_sha256": "96f95ff06765b3feb9afae5c603bc51574fe458acca023ddbc0cd8292347d972"
+  },
+  {
+    "path": "ru/capabilities/audit-trail/index.html",
+    "source_sha256": "067f160840dc55bafe4a0a801b17db876cbe27881c0acbc5fbde65ed3bdaa01e",
+    "text_sha256": "2339b6a43d870d352b5c15790b785a3a7f7a85e2cf92efef7e1ab71d873cf2c5"
+  },
+  {
+    "path": "ru/capabilities/screening-integrations/index.html",
+    "source_sha256": "01375e79e06a989cf4aedac89e91ab80ba4f33b3138316c63cc2df82a90094a1",
+    "text_sha256": "6a73183fe9a262dd70284615778770c6d9097c89aa22b52fc6ac6e1a26d5b9d2"
+  },
+  {
+    "path": "ru/capabilities/kyc-onboarding/index.html",
+    "source_sha256": "1f67ae8124a2a3c1dc1ece9ebd1617bcfb82cf075d62e4923c0b90b3150de00b",
+    "text_sha256": "f84645653c6a418e700300a8eb2d5af5b5d9670caa73e74bc29b4ee631fdbaab"
+  },
+  {
+    "path": "ru/industries/index.html",
+    "source_sha256": "75ded31e2923db68416053bbf6c1eb6ae8b875f70368f7283ac4f872602bf536",
+    "text_sha256": "6883a8ab32fb625260bb5f6bc33375ff96f6a6899773b0f3f4568c2bc6754408"
+  },
+  {
+    "path": "ru/industries/accountants/index.html",
+    "source_sha256": "9745a10536fd960f77f419920155b0ca99d369fa6b1ce95ed1f7dc0e8469068d",
+    "text_sha256": "345c09bdab358c1b07358603df95ed6b89aac59fe7acebb03bd6361df42d65f8"
+  },
+  {
+    "path": "ru/industries/corporate-service-providers/index.html",
+    "source_sha256": "26282d2e2b0191876283477de2236d7cf022da1ea25b13f67050c3b85cc96620",
+    "text_sha256": "52942fff85f55938af17855cda7bfa9d052fba64b3814f1474325b5b8e6095f3"
+  },
+  {
+    "path": "ru/industries/law-firms/index.html",
+    "source_sha256": "136522f76f186281cc766ffe17c75dd467358d61882365553804e05998702060",
+    "text_sha256": "55d5d52c5e08ce44c90041f02af719b6468ba2861d6cbd8870e18590116c44fa"
+  },
+  {
+    "path": "ru/industries/aml-consultants/index.html",
+    "source_sha256": "c78a64943ef1192eccb83965be4580eccedb1c54ac3b7869448bcbb9c1c25c73",
+    "text_sha256": "075e7da5161160c45c895e455a73ecee85b76bb34aade2d6cab468fa5b076395"
+  },
+  {
+    "path": "ru/industries/payment-institutions/index.html",
+    "source_sha256": "161ce654265a2223442a5c7263fd55975088d059f68b57afda0447e1c05e0524",
+    "text_sha256": "3ac51e88b86cfaee020f7ec3a76db58190a266c9193e4be94c11a3fd674aecd9"
+  },
+  {
+    "path": "ru/product/index.html",
+    "source_sha256": "25be2cd67a0883d823e88b8d3435453d006a55b84e8002568a7680d6b2be94aa",
+    "text_sha256": "d2d6b2f4a8f3e81133451fc047aaa7d83b46dd7e988b88b83110861c6e1a6295"
+  },
+  {
+    "path": "ru/pricing/index.html",
+    "source_sha256": "7f5507027393f1a50b8a8e370a6dde3416339913a7d1b97f7bd5e9d2eef78f69",
+    "text_sha256": "e2ecdbdd0268d9ea0cd6f2ad30142a4f4aaaf647e1936ccd5d68c20c24f92de4"
+  },
+  {
+    "path": "product/index.html",
+    "source_sha256": "0b1ff2dc04ec8d4ec79227bc03e765960f1da51322959e450785fb27c66de66b",
+    "text_sha256": "4e12fe0a3f5d77023b0c669c9f49d7d5c55bfc25021e65fdd85a9d5f3bc1172a"
+  },
+  {
+    "path": "markets/italy/index.html",
+    "source_sha256": "877dc70a5219a56bce0dbd582ee28f6eb4c11758c0f31b069adfaaabd439425e",
+    "text_sha256": "2a39b8d9aec8a3c960254f46a24277588e991a717bba1e192e88eb6f545a71a7"
+  },
+  {
+    "path": "markets/malta/index.html",
+    "source_sha256": "40884b5abb22a22c6a305add0f65c613224784b515d07f2af1bf1edc42e5bbc4",
+    "text_sha256": "0489d14db676944de82e751c6fe38d9197154f9683efed90938e995763cca3e7"
+  },
+  {
+    "path": "de/index.html",
+    "source_sha256": "b52bc4fc876bf97ee29bd592b656f0dd2510d505f73567266f4b7a46a4697fa5",
+    "text_sha256": "c13fede6544c062b0eda09aa0e3ed9f95d060dc89e37a5c3166d69a36e29ec1a"
+  },
+  {
+    "path": "de/capabilities/beneficial-ownership/index.html",
+    "source_sha256": "42c240a8e71ed484459d63494a10be265a4dc7c4d2c46406e55abaaab3a96246",
+    "text_sha256": "db6564dea531ee5b22de3aa743cb44ad03a6ebe1800ca1af78e77e2c66ef19c6"
+  },
+  {
+    "path": "de/capabilities/aml-workflow/index.html",
+    "source_sha256": "7363684a319748e4cb69d0a01b14280cc6efd5107baa7b72313f7ceeb9abeb30",
+    "text_sha256": "98cdaba6729437acea009d2581e780bfdaaf1fe2f88f5c8c2dce2c493773e151"
+  },
+  {
+    "path": "de/capabilities/risk-assessment/index.html",
+    "source_sha256": "177ea7e1351ed583985e9a00bde4cc56f603a1981b7e0d92412361319d36438c",
+    "text_sha256": "e27dd38e4e14339374b3b9888b860de8c521f1c08c8f7a5c3f12d6c5930e92bb"
+  },
+  {
+    "path": "de/capabilities/evidence-management/index.html",
+    "source_sha256": "ead01316ffc7ac18aad2db7f13ff94eb145d9a40b3c697e6b6fea41cc520a05b",
+    "text_sha256": "dd92929efaf6e32f698c3a87c1ad391e1272aa72feb8f11a8260719d87c4bc6e"
+  },
+  {
+    "path": "de/capabilities/periodic-reviews/index.html",
+    "source_sha256": "0088f3d5e8c02294c4c48867e3ddb93cc6cff2194b8b834eadf9a5e817cb2f3d",
+    "text_sha256": "aa86fae3db486d0a1b57d21249d74d7fbd505a1e9fc3309885218c61baa71e56"
+  },
+  {
+    "path": "de/capabilities/provider-agnostic-integrations/index.html",
+    "source_sha256": "29516cb3135d07637637b067fb68f5d23e80879890ae458744d63ab67c46c1a6",
+    "text_sha256": "6010d093e54cb178a856ad58d0494acab86d31ceb1f17d9242f602d1a59705e9"
+  },
+  {
+    "path": "de/capabilities/audit-trail/index.html",
+    "source_sha256": "37b671b9b7bca4ec439c3bf9adb11bae16e48d674af6e229fe3f679d3f7e8ee6",
+    "text_sha256": "c9991db4a481f72cd256e1eef44f4eaf18a6923f71964df4a6fe8deb2cdcb490"
+  },
+  {
+    "path": "de/capabilities/screening-integrations/index.html",
+    "source_sha256": "4c9967181e775b6f8502ea4d00e58030328471711f32fa6dfa8a98f4316b37ec",
+    "text_sha256": "e1954de6724fa3c5757ce03b61741724492787ad7d37247f680427e21abc4192"
+  },
+  {
+    "path": "de/capabilities/kyc-onboarding/index.html",
+    "source_sha256": "2e2980b04c5cefc919cb96174e196685fdee404954093aeaedc63e03fda91db4",
+    "text_sha256": "ed5ae60ef1271f6702e357d7563cc670a6627d9333ca56009ffd3bd649e5a92d"
+  },
+  {
+    "path": "de/industries/index.html",
+    "source_sha256": "448648b410a214e382fbb46ef580cb37b6856222710465bf3db565b806cf2d87",
+    "text_sha256": "a4d285f9be868ac3076a5ac140c955a68943d7a7bb1986952016071ea3e06bbf"
+  },
+  {
+    "path": "de/industries/accountants/index.html",
+    "source_sha256": "6b7259d0cf9f57a80cb865ec480ec2da397bbf5e1a4ab03b91262759526a0a4a",
+    "text_sha256": "849a693db0331aab818b8ff032d4fa8482ffd124b223fb741562ba9d90f74482"
+  },
+  {
+    "path": "de/industries/corporate-service-providers/index.html",
+    "source_sha256": "9a06e82d7e42565dc9efb1e4e2e071b878cff56c7de6ea80ab43d0761644d6ab",
+    "text_sha256": "f5676c4e14b7b08bcfe75c462582408f0fd3edf0444e51418de1223a58290043"
+  },
+  {
+    "path": "de/industries/law-firms/index.html",
+    "source_sha256": "5b031d7a352202d7e45e0d7135f23a2d66675507b07fb480e1c9b11982adb514",
+    "text_sha256": "de89d614492fa39ae856abf9e030135003342acd2d436073573f6849a2bd338f"
+  },
+  {
+    "path": "de/industries/aml-consultants/index.html",
+    "source_sha256": "a6adb74895f79f3ce582cbee84587eac44287c2dc9ebb28fb34a62b5df0e4758",
+    "text_sha256": "bbbd595e1e919478f12e1bfe008069fa2179faec5cb39a5f953332131f4e13dd"
+  },
+  {
+    "path": "de/industries/payment-institutions/index.html",
+    "source_sha256": "c7f085bea45f751026242251765664f925e01e6e60a537a8795c363ae5673c16",
+    "text_sha256": "8c9986c0427269ed0c19631a90478d9fb647e40ea0c05c88865f18a9ca420a47"
+  },
+  {
+    "path": "de/product/index.html",
+    "source_sha256": "496e4d998b0f344f036a9d421bce3383e38330d1c272fa88341c48bf3510a347",
+    "text_sha256": "d09ec1589cbe49a7d75d4c12089c62e11df6465e36a62d1632ec959aa1ae083a"
+  },
+  {
+    "path": "de/pricing/index.html",
+    "source_sha256": "ed882b0b4378d835a8f50be20a595fe6d2af2680a91e343c17cc4cc98a61ce00",
+    "text_sha256": "5d9998b4fbc246f1df3e0012f2f8f789e43d7f0f8f8341aa20573e9f977e45b2"
+  },
+  {
+    "path": "fr/index.html",
+    "source_sha256": "f1c159b17953616482c55a5869d87c145e6aab27320ff0346ca235c6cab5cc5e",
+    "text_sha256": "753e523972331df1af78aff4f53c872573d63655aa7fe25af2778af9ef161520"
+  },
+  {
+    "path": "fr/capabilities/beneficial-ownership/index.html",
+    "source_sha256": "659e79f469e0e128abbde026d4549850d2e2b1b9e9516321a9704b10d5c708e4",
+    "text_sha256": "ef95ddadb30b1954260ef202cdd989825d904cd2ac7450818de5674d1c359fee"
+  },
+  {
+    "path": "fr/capabilities/aml-workflow/index.html",
+    "source_sha256": "2b330b2b08f3858e1de77e34d95491079562e24d9cea6c23cea5383e964d743a",
+    "text_sha256": "b791c57594af3a9ac5a5c48783eea4af5f983509199b9640e8ec0394cd0996a5"
+  },
+  {
+    "path": "fr/capabilities/risk-assessment/index.html",
+    "source_sha256": "9a3fd49d1a41147a3c6a5d3262a3870f3778c4fa8d44e1dc2f95c4682249e093",
+    "text_sha256": "fee9e59a1ee6038c9b8ad8b68293a3253f358ed1a05792dffd3aa6e7fe348f14"
+  },
+  {
+    "path": "fr/capabilities/evidence-management/index.html",
+    "source_sha256": "aa8bfcd22525bb943ed07142adfbe891d7644daafcf8a7bfb1636b8d30332fb0",
+    "text_sha256": "bdd938cb4d57201b1be818d478a2bd87a63810e545ab00c839c69ef54ee1ba4a"
+  },
+  {
+    "path": "fr/capabilities/periodic-reviews/index.html",
+    "source_sha256": "d4bdcc989ef4b106326a37a4903686bc9ae9132ca63ed5b98eb58a1295432988",
+    "text_sha256": "fa756ac31ee0aa390d386171cdb9fa9e317787489d7e926c4c3657201e6edd44"
+  },
+  {
+    "path": "fr/capabilities/provider-agnostic-integrations/index.html",
+    "source_sha256": "94b6b6f4022f9daf8b1d2a3c72fdaf4cdf02a8652f1df78031395aee3632690a",
+    "text_sha256": "fb9c3bed934640b66e6eee1a66641c34f60537cfda509696512a75b9792c47ea"
+  },
+  {
+    "path": "fr/capabilities/audit-trail/index.html",
+    "source_sha256": "765e273b8bbdc532977ee4d0a22268dd54a038b6193c1a03df2fe12fa400860a",
+    "text_sha256": "33824b0e84319599846bb87bf045c860a358f433d3d2bf9d51e4439db8dedc94"
+  },
+  {
+    "path": "fr/capabilities/screening-integrations/index.html",
+    "source_sha256": "7ded05b5ed3453c45888c730ac6d83e2b80f09a97033f061a8515a048c3ef553",
+    "text_sha256": "60e04013c9930dcbef5f979b07595a7220d9cf2fd87cc274a8acf50adc0596a6"
+  },
+  {
+    "path": "fr/capabilities/kyc-onboarding/index.html",
+    "source_sha256": "927e45f73212a961dd427931383a0601789877772c9c20e247b1ca871eff7683",
+    "text_sha256": "cbe74ded564cf1709268a5118ec15376d18f64a4bcebcaa51107abbc896b7853"
+  },
+  {
+    "path": "fr/industries/index.html",
+    "source_sha256": "3f80bd282397d31215b3a6898abf72878b5fb72d3b2739c1d6271ac346a28445",
+    "text_sha256": "421bb81587b48764b848fc4ebadd95e03f3c2155dcb64a33bc0729b0882a158a"
+  },
+  {
+    "path": "fr/industries/accountants/index.html",
+    "source_sha256": "590f27872277727966c557bd60189f14117d8eef12b7b7fd09208f9ddc7c6439",
+    "text_sha256": "147ed6e5b2555ebe0bc2121e337e3ec4307a065181d008bd225b2759b00ff91c"
+  },
+  {
+    "path": "fr/industries/corporate-service-providers/index.html",
+    "source_sha256": "40b98ba86c5050a0b5d29bf6fab2cbcadaa95c38a324bc46a83c3a63b3c5ff9e",
+    "text_sha256": "8ffd1165b6fcc9a6ea20f798558fc6e619385ce9d470026e88c892a91abe250e"
+  },
+  {
+    "path": "fr/industries/law-firms/index.html",
+    "source_sha256": "b35a0bfda037df625571d5ffb6ebbec0bd6f34841180fd54f20d688d59d1ee81",
+    "text_sha256": "e3877dd8f45b6171b105596a17a6340ba43713c7cea2970dbd444976b74a6234"
+  },
+  {
+    "path": "fr/industries/aml-consultants/index.html",
+    "source_sha256": "ba0c10918b097a6ac731bda6767ce7c4aa6ece3cef0818c8721d1e278fb08b37",
+    "text_sha256": "f1dc24df007f9db4c4221db8d65ea3b752f94d5e6fd0b761eea5ba0392ac8f41"
+  },
+  {
+    "path": "fr/industries/payment-institutions/index.html",
+    "source_sha256": "3131e7c89b855e51101440818431e91fdebb22de388cf52b8189bc92e4bec085",
+    "text_sha256": "101089cc802ec2498faacb7cc286f97c300ba501b3993efd53cab0d8f52ed817"
+  },
+  {
+    "path": "fr/product/index.html",
+    "source_sha256": "2aa1d5cf4cd1bd057d0533d19e4874f5614b19a5b7d96af035c06eaf4e3398ab",
+    "text_sha256": "7a85b0ff5ebba674ff5c8e6abca74e5967582a3efa8ed32146d37c38a1bf7b70"
+  },
+  {
+    "path": "fr/pricing/index.html",
+    "source_sha256": "d6cef3d4988622eb58a40206f562db0b15961627810d68497e9a307644a04a2b",
+    "text_sha256": "bcd090d8dee944040323dde79c0a008b867580ff81eb27c380841677ff828bb4"
+  },
+  {
+    "path": "es/index.html",
+    "source_sha256": "086cbb8450e353a7f37f63eaf9fff9537fb100941652f3a9f05fb3809b396a8c",
+    "text_sha256": "e17280f1e4f5a7386c51579db17fbac5bc8726ea513e8353a4188cf3b535eb7f"
+  },
+  {
+    "path": "es/capabilities/beneficial-ownership/index.html",
+    "source_sha256": "e736acd836241b52e3a5a3d5dcab21513900e38bd08fb747157d4068accca92f",
+    "text_sha256": "1186860c382a667e4f97e076b0b23024623e3b0e777fabb8a301f162aeefc4e4"
+  },
+  {
+    "path": "es/capabilities/aml-workflow/index.html",
+    "source_sha256": "caea0e04fc4e6d45fcd70b132b76f7b97b1c03c9aaa1e12af2e634082a8c18e7",
+    "text_sha256": "e0348f9b5eff35f2d0b52dbf60c5cc7529ae4edc0f45ccf238f96d95f70f66f1"
+  },
+  {
+    "path": "es/capabilities/risk-assessment/index.html",
+    "source_sha256": "515b15add77ae13e8a77be92fcad8dbbf4b8dadd4dbb5ff99a0a995b4a787eba",
+    "text_sha256": "bce49e07f4ecf15393255b1e15fe0c3cd73d70d6b8f483dad8d1f4bd32f2783d"
+  },
+  {
+    "path": "es/capabilities/evidence-management/index.html",
+    "source_sha256": "5e15872c3eef62050bbb0e33188a9d758e6b980974a9d617a8146d2c00855540",
+    "text_sha256": "756792a1f829b993578fad5883ce16d80b75f64a733efe1846698392d583abc9"
+  },
+  {
+    "path": "es/capabilities/periodic-reviews/index.html",
+    "source_sha256": "39dcabac92bd4113742f0a412dcc0a961879c7278b8621bb76697f288f110f0f",
+    "text_sha256": "cf64b74c21cae3bb298abc2d6859cbe5500196a81b2f9d1bd9480f54902bd1fa"
+  },
+  {
+    "path": "es/capabilities/provider-agnostic-integrations/index.html",
+    "source_sha256": "7f53f9fcff5de3aae4dba77021e43a8423d0f29cd6abc6f977a72dd05a98c785",
+    "text_sha256": "b4de7fccd2edd9afbcc44b0537b0e6ccfb191baf76d44e9e85f580a84b742f39"
+  },
+  {
+    "path": "es/capabilities/audit-trail/index.html",
+    "source_sha256": "e69d40f5fb78ad414dac88268295bf583485fc447c63f350302a2a70123db69a",
+    "text_sha256": "55c0db9e5e1d701ffb1ad077f6222b6a78331b125eac464619c09b665194f012"
+  },
+  {
+    "path": "es/capabilities/screening-integrations/index.html",
+    "source_sha256": "3cfb19dcc1a2fa7c71a2bb48abe68e8847569af527c8a0bb922427dc34097dd5",
+    "text_sha256": "0cf0cdb6e554984988ee8f656882efbfbf1a588d212f4c57a4812f5f48fc57a5"
+  },
+  {
+    "path": "es/capabilities/kyc-onboarding/index.html",
+    "source_sha256": "8d7b0c23bb85fd5a1851f089f723ff2eed99e5878263a9418c8b3af6b6d3b717",
+    "text_sha256": "92cb6486f1211461a023316f97c775204e1a5bde880bf750eb160d6c35284893"
+  },
+  {
+    "path": "es/industries/index.html",
+    "source_sha256": "622cc00fda4981c1be7c05e4d5b61cac1819af28d20ec690a34277fef89cde6b",
+    "text_sha256": "6107d4a79b82b6fc6d48581d0d5130f0f775d97b3ac48447d5a66bf676143691"
+  },
+  {
+    "path": "es/industries/accountants/index.html",
+    "source_sha256": "ac41e5abd5591a78b2cfbfb44514b9e840a755cfeb00db8d2213488e33033dac",
+    "text_sha256": "38276529bf8971d94cf1e54a440870f74c7dc65138e7aa952843c77540423125"
+  },
+  {
+    "path": "es/industries/corporate-service-providers/index.html",
+    "source_sha256": "e3d8aa83ef6c993db84e8bd3a555dfd3d8af4a3c22e8d839646e4b8070c01c4a",
+    "text_sha256": "13e30e85d90ddb22c5b7aafb706967a87e3f0e79ea9afd1c1bf874d56e78b026"
+  },
+  {
+    "path": "es/industries/law-firms/index.html",
+    "source_sha256": "1820ace0d5ebe78948f9e9eef9624e343611e9abcd801fb5fdee392330e1c88d",
+    "text_sha256": "58b8928b6aae149e36afced80b3a076ba5c452b2def9db667eb68a969824e586"
+  },
+  {
+    "path": "es/industries/aml-consultants/index.html",
+    "source_sha256": "1925631e7f80330259bb2251b6783555b4150d7e2ea45917a73485cb5cc4fa91",
+    "text_sha256": "15bea5cf178fe4968919c4c3171132afa6114a21aac23eca42fee78b6d6afb68"
+  },
+  {
+    "path": "es/industries/payment-institutions/index.html",
+    "source_sha256": "1c07d92d44310bf061fca7b76919e558413ae6c3709a403f38f97f54d4b760f8",
+    "text_sha256": "2c0dd631462857c5a84f32e4defb820a675d56accca978560de721bbdafa8953"
+  },
+  {
+    "path": "es/product/index.html",
+    "source_sha256": "f710c9878883a92f75e3ab5b3f33486e9a10461854a98ca33426f988e6b16ee3",
+    "text_sha256": "d01b215258b0932958b1a058b4b1893bc6a50789387abe57370fc7b32ca68750"
+  },
+  {
+    "path": "es/pricing/index.html",
+    "source_sha256": "90211acc25a09810f0ca149bb6776d3f6f9641492e5ff817d25ac446ecd57a52",
+    "text_sha256": "1e4bba8c97e72cca7b906d580e8ced5d00c796be581621b8241404b63cedf155"
+  },
+  {
+    "path": "pricing/index.html",
+    "source_sha256": "8730852de1d169f2a91b0da8029fb8aa5df3fb0fec513df2cf70f3b6665511aa",
+    "text_sha256": "7c3a273c41a7159b3ae35428f762ed1d3d396ddc9cfd629536d1a7f754083abd"
+  }
+]

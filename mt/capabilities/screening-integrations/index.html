@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="mt" data-lang="mt" data-root="/" data-seo-route="product" data-seo-slug="capabilities/screening-integrations">
+<head>
+  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}');
+      gtag('consent', 'update', {
+        analytics_storage: saved.analytics === true ? 'granted' : 'denied',
+        ad_storage: saved.marketing === true ? 'granted' : 'denied',
+        ad_user_data: saved.marketing === true ? 'granted' : 'denied',
+        ad_personalization: saved.marketing === true ? 'granted' : 'denied'
+      });
+    } catch (error) {}
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV43R7QPP0"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-GV43R7QPP0');
+  (function() {
+    const PREFERENCE_KEY = 'duevio_privacy_preferences_v1';
+    function readPreferences() {
+      try { return JSON.parse(localStorage.getItem(PREFERENCE_KEY) || '{}'); } catch (error) { return {}; }
+    }
+    function syncGoogleConsent() {
+      const saved = readPreferences();
+      const analytics = document.documentElement.dataset.analyticsConsent === 'true' || saved.analytics === true;
+      const marketing = document.documentElement.dataset.marketingConsent === 'true' || saved.marketing === true;
+      gtag('consent', 'update', {
+        analytics_storage: analytics ? 'granted' : 'denied',
+        ad_storage: marketing ? 'granted' : 'denied',
+        ad_user_data: marketing ? 'granted' : 'denied',
+        ad_personalization: marketing ? 'granted' : 'denied'
+      });
+    }
+    syncGoogleConsent();
+    new MutationObserver(syncGoogleConsent).observe(document.documentElement, {attributes:true,attributeFilter:['data-analytics-consent','data-marketing-consent']});
+    window.addEventListener('storage', function(event) { if (event.key === PREFERENCE_KEY) syncGoogleConsent(); });
+  })();
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanctions, PEP u AML screening integrations | Duevio</title>
+  <base href="/">
+  <meta name="description" content="Sanctions, PEP u AML screening integrations. KYC/KYB, reviews, workflows u evidence f’ambjent AML wieħed ikkontrollat.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#22386f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sanctions, PEP u AML screening integrations | Duevio">
+  <meta property="og:description" content="Sanctions, PEP u AML screening integrations. KYC/KYB, reviews, workflows u evidence f’ambjent AML wieħed ikkontrollat.">
+  <meta property="og:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <meta property="og:site_name" content="Duevio">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+
+<link rel="canonical" href="https://duevio.com/mt/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="en" href="https://duevio.com/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="it" href="https://duevio.com/it/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="de" href="https://duevio.com/de/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="es" href="https://duevio.com/es/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="fr" href="https://duevio.com/fr/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="ru" href="https://duevio.com/ru/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="mt" href="https://duevio.com/mt/capabilities/screening-integrations/">
+  <link rel="alternate" hreflang="x-default" href="https://duevio.com/capabilities/screening-integrations/">
+<link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261103-feedback21">
+  <link rel="stylesheet" href="/assets/css/test-alignment.css?v=20261103-lang8">
+  <script src="/assets/js/seo-route.js?v=20261103-nav6" defer></script>
+  <script src="/assets/js/app.js?v=20261103-feedback21" defer></script>
+  <meta property="og:url" content="https://duevio.com/mt/capabilities/screening-integrations/">
+  <meta name="twitter:image" content="https://duevio.com/assets/img/duevio-connected-evidence.png">
+  <link rel="icon" href="/assets/img/favicon-duevio.png" type="image/png" sizes="96x96">
+<!-- Duevio SEO structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://duevio.com/#organization","name":"Duevio","url":"https://duevio.com/","logo":"https://duevio.com/assets/img/brand-DUEVIO-01.svg"},{"@type":"WebSite","@id":"https://duevio.com/#website","url":"https://duevio.com/","name":"Duevio","publisher":{"@id":"https://duevio.com/#organization"},"inLanguage":["en","it","de","es","fr","ru","mt"]},{"@type":"SoftwareApplication","@id":"https://duevio.com/#software","name":"Duevio","url":"https://duevio.com/product/","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Software AML/KYC għal customer due diligence, UBO, risk assessment, periodic reviews, AML workflows, screening evidence u audit trail.","provider":{"@id":"https://duevio.com/#organization"},"offers":[{"@type":"Offer","name":"Duevio Essential","price":"9.99","priceCurrency":"EUR","description":"Per month, billed annually. Up to 25 managed clients; includes 5 Business and 5 User records.","url":"https://duevio.com/pricing/"},{"@type":"Offer","name":"Duevio Professional","price":"49.99","priceCurrency":"EUR","description":"Per month, billed annually. Unlimited managed clients; includes 25 Business and 25 User records.","url":"https://duevio.com/pricing/"}]},{"@type":"WebPage","@id":"https://duevio.com/mt/capabilities/screening-integrations/#webpage","url":"https://duevio.com/mt/capabilities/screening-integrations/","name":"Sanctions, PEP u AML screening integrations | Duevio","description":"Sanctions, PEP u AML screening integrations. KYC/KYB, reviews, workflows u evidence f’ambjent AML wieħed ikkontrollat.","inLanguage":"mt","isPartOf":{"@id":"https://duevio.com/#website"},"about":{"@id":"https://duevio.com/#software"}}]}</script>
+<!-- /Duevio SEO structured data -->
+<script src="/assets/js/seo-analytics-events.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="access.skip">Aqbeż għall-kontenut</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Duevio home">
+        <img src="/assets/img/brand-DUEVIO-01.svg" alt="Duevio">
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="/mt/" data-route="home" data-i18n="nav.home">Bidu</a>
+        <a href="/mt/product/" data-route="product" data-i18n="nav.product">Prodott</a>
+        <a href="/mt/industries/" data-route="industries" data-i18n="nav.industries">Setturi</a>
+        <a href="/mt/pricing/" data-route="pricing" data-i18n="nav.plans">Prezzijiet</a>
+        <!-- <a href="#signup" data-route="signup" data-i18n="nav.signup">Reġistrazzjoni</a> -->
+        <!-- <a href="/mt/#demo" data-route="demo" data-i18n="nav.demo">Demo</a> -->
+      </nav>
+      <div class="header-actions">
+        <div class="language-switcher">
+          <button class="language-button" type="button" aria-haspopup="true" aria-expanded="false" id="languageButton">
+            <span class="language-code">MT</span><span aria-hidden="true">▾</span>
+          </button>
+          <div class="language-menu" id="languageMenu" role="menu" hidden>
+            <a role="menuitem" href="/capabilities/screening-integrations/" data-lang-link="en">English</a>
+            <a role="menuitem" href="/it/capabilities/screening-integrations/" data-lang-link="it">Italiano</a>
+            <a role="menuitem" href="/de/capabilities/screening-integrations/" data-lang-link="de">Deutsch</a>
+            <a role="menuitem" href="/es/capabilities/screening-integrations/" data-lang-link="es">Español</a>
+            <a role="menuitem" href="/fr/capabilities/screening-integrations/" data-lang-link="fr">Français</a>
+            <a role="menuitem" href="/ru/capabilities/screening-integrations/" data-lang-link="ru">Русский</a>
+          
+            <a role="menuitem" href="/mt/capabilities/screening-integrations/" data-lang-link="mt">Malti</a>
+          </div>
+        </div>
+        <a class="button button-ghost compact desktop-cta" href="/mt/#demo" data-i18n="cta.bookDemo">Itlob demo</a>
+        <a class="button button-primary compact desktop-cta" href="https://suite.duevio.com/" target="_blank" rel="noopener noreferrer">Login</a>
+        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="/mt/" data-route="home" data-i18n="nav.home">Bidu</a>
+      <a href="/mt/product/" data-route="product" data-i18n="nav.product">Prodott</a>
+      <a href="/mt/industries/" data-route="industries" data-i18n="nav.industries">Setturi</a>
+      <a href="/mt/pricing/" data-route="pricing" data-i18n="nav.plans">Prezzijiet</a>
+      <!-- <a href="#signup" data-i18n="nav.signup">Reġistrazzjoni</a> -->
+      <!-- <a href="/mt/#demo" data-i18n="nav.demo">Demo</a> -->
+    </nav>
+  </header>
+
+  <main id="main">
+<section class="page" data-page="product" aria-labelledby="product-title" hidden>
+      <div class="hero subhero"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">AML/KYC Software Malta għal CDD, Risk Assessment &amp; Audit Trail</p><h1 id="product-title">Sanctions, PEP u AML screening integrations</h1><p class="lead">Ambjent AML/KYC wieħed għal customer due diligence, UBO, risk assessment, periodic reviews, workflows, evidence u audit trail.</p><div class="button-row"><a class="button button-primary" href="/mt/pricing/" data-i18n="cta.startOnline">Ibda online</a></div></div><div class="overview-card"><div class="overview-head"><span data-i18n="product.overviewLabel">Ħarsa ġenerali tal-prodott</span><span class="status-dot"><span></span><span data-i18n="product.modular">Modulari</span></span></div><h2 data-i18n="product.overviewTitle">Mibni għal AML workflow u case management, mhux biss data collection</h2><div class="metric-grid"><div><span data-i18n="product.metric1Label">Moduli ewlenin</span><strong>6</strong></div><div><span data-i18n="product.metric2Label">Workflows</span><strong data-i18n="product.metric2Value">Strutturati</strong></div><div><span data-i18n="product.metric3Label">Evidenza</span><strong data-i18n="product.metric3Value">Esportabbli</strong></div><div><span data-i18n="product.metric4Label">Skalabbiltà</span><strong data-i18n="product.metric4Value">Inkorporata</strong></div></div><div class="highlight-list"><p><span>✓</span><span data-i18n="product.highlight1">Onboarding iggwidat, kontroll tad-dokumenti u viżibbiltà tas-sjieda</span></p><p><span>✓</span><span data-i18n="product.highlight2">Kompiti, approvazzjonijiet, ċikli ta’ reviżjoni u tracking tar-remediation</span></p><p><span>✓</span><span data-i18n="product.highlight3">Evidenza li tibqa’ marbuta mal-fajl tal-klijent</span></p></div></div></div></div>
+      <section class="section"><div class="container"><p class="eyebrow" data-i18n="product.modulesEyebrow">Moduli ewlenin</p><h2 data-i18n="product.modulesTitle">AML u KYC modules għall-client lifecycle kollu.</h2><p class="section-lead" data-i18n="product.modulesLead">Ikkonfigura KYC/KYB, risk-based due diligence, reviews u evidence skont il-clients u internal controls tiegħek.</p><div class="feature-grid three module-grid">
+        <article class="module-card"><span>1</span><h3 data-i18n="product.m1Title">KYC/KYB onboarding u customer due diligence</h3><p data-i18n="product.m1Text">Oħloq guided due-diligence journeys għal individuals, companies u complex ownership structures.</p><ul><li data-i18n="product.m1a">Proċessi konfigurabbli</li><li data-i18n="product.m1b">Intake strutturat</li><li data-i18n="product.m1c">Ġbir inizjali aktar nadif</li></ul></article>
+        <article class="module-card"><span>2</span><h3 data-i18n="product.m2Title">Beneficial ownership u UBO</h3><p data-i18n="product.m2Text">Żomm ownership structures, UBOs u roles fil-KYC/KYB client file aġġornat.</p><ul><li data-i18n="product.m2a">Sjieda diretta u indiretta</li><li data-i18n="product.m2b">Viżibbiltà tar-rwoli</li><li data-i18n="product.m2c">Appoġġ għall-konferma tal-klijent</li></ul></article>
+        <article class="module-card"><span>3</span><h3 data-i18n="product.m3Title">Kwestjonarji dinamiċi</h3><p data-i18n="product.m3Text">Uża forms li jadattaw għat-tip ta’ klijent, struttura u informazzjoni diġà miġbura.</p><ul><li data-i18n="product.m3a">Forms konfigurabbli</li><li data-i18n="product.m3b">Data pre-filled</li><li data-i18n="product.m3c">Inqas duplikazzjoni</li></ul></article>
+        <article class="module-card"><span>4</span><h3 data-i18n="product.m4Title">Kontroll tad-dokumenti</h3><p data-i18n="product.m4Text">Ittratta d-dokumenti bħala evidenza ta’ compliance bi status, validità u kuntest.</p><ul><li data-i18n="product.m4a">Konxju mill-iskadenzi</li><li data-i18n="product.m4b">Konxju mill-verżjonijiet</li><li data-i18n="product.m4c">Iffukat fuq l-evidenza</li></ul></article>
+        <article class="module-card"><span>5</span><h3 data-i18n="product.m5Title">Periodic reviews u ongoing monitoring</h3><p data-i18n="product.m5Text">Segwi KYC review cycles, document expiry, open actions u remediation qabel ma jsiru compliance gaps.</p><ul><li data-i18n="product.m5a">Reviżjonijiet perjodiċi</li><li data-i18n="product.m5b">Appoġġ għall-escalation</li><li data-i18n="product.m5c">Viżibbiltà tal-items miftuħa</li></ul></article>
+        <article class="module-card"><span>6</span><h3 data-i18n="product.m6Title">Audit trail u evidence packs</h3><p data-i18n="product.m6Text">Ipproduċi AML evidence organizzata għal audits, inspections, internal controls u supervisory requests.</p><ul><li data-i18n="product.m6a">Pakketti ta’ evidenza</li><li data-i18n="product.m6b">Kronoloġija tal-klijent</li><li data-i18n="product.m6c">Irkupru aktar mgħaġġel</li></ul></article>
+      </div></div></section>
+      <section class="section section-light"><div class="container"><p class="eyebrow" data-i18n="product.howEyebrow">Kif jaħdem</p><h2 data-i18n="product.howTitle">Mexxi KYC u AML workflows mill-onboarding sal-audit-ready evidence.</h2><p class="section-lead" data-i18n="product.howLead">Żomm customer due diligence, risk context, tasks, approvals u decisions marbuta matul il-client lifecycle.</p><div class="steps-grid"><article><span>1</span><p data-i18n="product.step1">Iġbor data u dokumenti tal-onboarding permezz ta’ proċess iggwidat.</p></article><article><span>2</span><p data-i18n="product.step2">Ibni l-fajl ħaj b’sjieda, rwoli, kontrolli, noti u deċiżjonijiet.</p></article><article><span>3</span><p data-i18n="product.step3">Segwi kompiti, approvazzjonijiet, reviżjonijiet, eċċezzjonijiet u remediation minn dashboard waħda.</p></article><article><span>4</span><p data-i18n="product.step4">Irkupra evidenza malajr meta tasal talba ta’ audit, inspection jew partner.</p></article></div></div></section>
+      <section class="section"><div class="container"><p class="eyebrow" data-i18n="product.integrationsEyebrow">Integrazzjonijiet u readiness</p><h2 data-i18n="product.integrationsTitle">Qabbad Duevio ma’ KYC/KYB, screening, registries u compliance data providers.</h2><p class="section-lead" data-i18n="product.integrationsLead">Duevio jista’ jorchestra identity, KYC/KYB, sanctions u PEP screening u corporate data filwaqt li jżomm workflow u audit trail f’post wieħed.</p><div class="integration-grid"><span data-i18n="product.int1">Providers ta’ identity verification</span><span data-i18n="product.int2">Providers ta’ screening u watchlists</span><span data-i18n="product.int3">Reġistri pubbliċi u sorsi korporattivi</span><span data-i18n="product.int4">Repositories tad-dokumenti</span><span data-i18n="product.int5">CRM, core u sistemi ta’ onboarding</span><span data-i18n="product.int6">API u enterprise connection layer</span></div></div></section>
+    </section>
+
+    
+
+<section class="section section-light seo-focus-section"><div class="container">
+<p class="eyebrow">Workflow iffukat</p>
+<h2>Integrazzjonijiet għall-AML screening f’workflow Duevio kkontrollat</h2>
+<p class="section-lead">Żomm ir-rekords, l-azzjonijiet u l-evidence għal Integrazzjonijiet għall-AML screening marbuta mal-client file u mal-proċess AML kollu.</p>
+<div class="problem-grid">
+<div>Żomm l-informazzjoni u l-evidence rilevanti f’rekord wieħed ikkontrollat.</div>
+<div>Qabbad reviews, tasks, approvals u risk context mal-istess operational history.</div>
+<div>Irkupra evidence trail ċara għal internal review, audit u supervisory requests.</div>
+</div></div></section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="/assets/img/brand-DUEVIO-02.svg" alt="Duevio"><p data-i18n="footer.tagline">Operazzjonijiet AML għall-onboarding, fajls KYC, reviżjonijiet, workflow u evidenza.</p></div>
+      <div><h2 data-i18n="footer.product">Prodott</h2><a href="/mt/product/" data-i18n="nav.product">Prodott</a><a href="/mt/industries/" data-i18n="nav.industries">Setturi</a><a href="/mt/pricing/" data-i18n="nav.plans">Prezzijiet</a><a href="/mt/#demo" data-i18n="nav.demo">Demo</a><div class="seo-related"><a class="seo-related-link" href="/mt/capabilities/risk-assessment/">AML customer risk assessment software</a><a class="seo-related-link" href="/mt/capabilities/provider-agnostic-integrations/">Provider-agnostic KYC/AML integrations</a><a class="seo-related-link" href="/mt/capabilities/kyc-onboarding/">KYC/KYB onboarding u customer due diligence</a><a class="seo-related-link" href="/mt/capabilities/audit-trail/">AML audit trail software</a><a class="seo-related-link" href="/mt/industries/payment-institutions/">AML/KYC software għal payment institutions u EMIs</a><a class="seo-related-link" href="/mt/industries/aml-consultants/">AML case management għal compliance consultants u external MLROs</a></div></div>
+      <div><h2 data-i18n="footer.legal">Legali</h2><a href="/mt/#privacy" data-i18n="legal.privacy">Avviż dwar il-Privatezza</a><a href="/mt/#cookies" data-i18n="legal.cookies">Politika dwar Cookies</a><a href="/mt/#terms" data-i18n="legal.terms">Termini tas-Servizz</a></div>
+      <div class="footer-payments"><h2 data-i18n="payment.accepted">Metodi ta’ ħlas aċċettati</h2><div class="payment-logos dark"><figure><img class="visa" src="/assets/img/visa.svg" alt="Visa"><figcaption>Visa</figcaption></figure><figure><img class="mastercard" src="/assets/img/mastercard.svg" alt="Mastercard"><figcaption>Mastercard</figcaption></figure><figure><img class="paypal" src="/assets/img/paypal.svg" alt="PayPal"><figcaption>PayPal</figcaption></figure></div></div>
+    </div>
+    <div class="container footer-bottom"><p>© 2026 Duevio. <span data-i18n="footer.rights">Id-drittijiet kollha riżervati.</span></p><button class="text-button footer-cookie" type="button" id="footerCookieSettings" data-i18n="cookies.openSettings">Settings tal-cookies</button></div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden><div><strong id="cookieTitle" data-i18n="cookieBanner.title">Għażliet ta’ privatezza</strong><p data-i18n="cookieBanner.text">Nużaw browser storage essenzjali għall-preferenzi tal-lingwa u privatezza. Analytics jew marketing opzjonali jibqgħu mitfija sakemm tagħżilhom.</p></div><div class="cookie-actions"><button class="button button-ghost compact" type="button" data-cookie-action="reject" data-i18n="cookieBanner.reject">Irrifjuta l-opzjonali</button><button class="button button-secondary compact" type="button" data-cookie-action="settings" data-i18n="cookieBanner.settings">Settings</button><button class="button button-primary compact" type="button" data-cookie-action="accept" data-i18n="cookieBanner.accept">Aċċetta kollox</button></div></div>
+
+  <div class="modal-backdrop" id="cookieModal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle"><div class="modal-head"><h2 id="cookieModalTitle" data-i18n="cookieModal.title">Settings tal-cookies</h2><button type="button" class="modal-close" aria-label="Close">×</button></div><p data-i18n="cookieModal.text">Storage essenzjali huwa dejjem attiv għax huwa meħtieġ biex jiftakar il-preferenzi tas-sit u tal-privatezza.</p><div class="preference-row"><div><strong data-i18n="cookieModal.essential">Essenzjali</strong><p data-i18n="cookieModal.essentialText">Preferenzi tal-lingwa, routing u kunsens.</p></div><span class="always-on" data-i18n="cookieModal.always">Dejjem attiv</span></div><label class="preference-row"><div><strong data-i18n="cookieModal.analytics">Analytics</strong><p data-i18n="cookieModal.analyticsText">Għodod opzjonali ta’ measurement, jekk jiżdiedu fil-produzzjoni.</p></div><input type="checkbox" id="analyticsConsent"></label><label class="preference-row"><div><strong data-i18n="cookieModal.marketing">Marketing</strong><p data-i18n="cookieModal.marketingText">Teknoloġiji opzjonali ta’ advertising jew marketing, jekk jiżdiedu fil-produzzjoni.</p></div><input type="checkbox" id="marketingConsent"></label><button class="button button-primary block" type="button" id="saveCookieSettings" data-i18n="cookieModal.save">Issejvja l-preferenzi</button></div></div>
+</body>
+</html>
+
